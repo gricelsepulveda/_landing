@@ -87,11 +87,11 @@ html, body
 {
   font-size: 20px; /* REM */
   font-family: 'Titillium Web', 'Arial', sans-serif;
-  min-height: 100vh;
+  min-height: 200vh;
   @include zero;
 }
 
-button, input, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h6, span, a
+button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h6, span, a
 { 
   box-shadow: none;
   outline: none;
@@ -116,6 +116,8 @@ button, input, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h
   {
     outline: none;
     border: none;
+    box-shadow: none;
+    border-box: none;
   }
 }
 
@@ -268,26 +270,22 @@ button, input, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h
   }
 }
 
-.cg-button_a
+.cg-button_a, .cg-button_b
 {
-  background-color: $purple;
   text-align: center;
   height: 2.4rem;
   width: auto;
   position: relative;
   cursor: pointer;
   border-radius: 0.25rem;
-  border: 2px solid transparent;
   @include animate;
   @include flex;
-  &:hover 
-  {
-    border: 2px solid $white;
-  }
   figure
   {
     display: inline-block;
+    position: relative;
     color: $white;
+    background-color: $purple;
     width: 2.4rem;
     height: 2.4rem;
     text-align: center;
@@ -296,6 +294,17 @@ button, input, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h
     > i
     {
       font-size: 1.05rem;
+    }
+    .chevron_right
+    {
+      width: 0; 
+      height: 0; 
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid $purple;
+      position: absolute;
+      top: 18px;
+      right: -5px;
     }
   }
   span
@@ -319,11 +328,35 @@ button, input, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h
       align: center;
       transform: uppercase;
     }
+    > i
+    {
+      font-size: 1.05rem;
+      line-height: 2.4rem;
+    }
+  }
+  &:hover
+  {
+    figure 
+    {
+      background-color: $white;
+      color: $purple;
+    }
+    span 
+    {
+      background-color: $purple;
+      color: $white;
+    }
   }
   @media #{$sm}
   {
     margin-top: 1rem;
   }
+}
+
+/* LOGIN */ 
+.cg-log_off
+{
+  display: none;
 }
 
 /* TRIGGER MOBILE */
@@ -417,20 +450,606 @@ button, input, textarea, label, option, figure, ul, li, p, h1, h2, h3, h4, h5, h
   }
 }
 
-.display
+.cg-display
 {
   display: block!important;
 }
 
+/* NAVBAR ASIDE */
+.cg-wrapper_nav_aside
+{
+  width: 2.4rem;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  top: 0vh;
+  @include flex;
+}
+
+.cg-nav_aside
+{
+  width: 2.4rem;
+  height: 9.6rem;
+  @include flex;
+  flex-direction: column;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+  background-color: rgba($black, 0.8);
+  .cg_nav_aside_li
+  {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-bottom: 1px solid $gray;
+    cursor: pointer;
+    color: rgba($white, 0.5);
+    text-align: center;
+    @include animate;
+    &:last-of-type
+    {
+      border-bottom: 1px solid transparent;
+    }
+    &:hover
+    {
+      color: $white;
+    }
+    a
+    {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      text-align: center;
+      line-height: 2.4rem;
+      vertical-align: middle;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.cg-bg_popup
+{
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($black, 0.8);
+  z-index: 12;
+}
+
+.cg-wrapper_popup
+{
+  @include flex;
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  display: none;
+}
+
+#cg-popup
+{
+  width: 50vw;
+  height: 75vh;
+  overflow-x: hidden;
+  background-color: $white;
+  border-radius: 0.25rem;
+  position: relative;
+  @media #{$sm}
+  {
+    width: 85vw;
+    height: 85vh;
+  }
+}
+
+.cg-flex_pop
+{
+  width: 50vw;
+  height: 75vh;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3.4rem 0rem 0rem 0rem;
+  background-color: $white;
+  border-radius: 0.25rem;
+  overflow-y: scroll;
+  z-index: 14;
+  @include flex;
+  align-items: flex-start;
+  @media #{$sm}
+  {
+    width: 85vw;
+    height: 85vh;
+  }
+  /* SCROLLBARS */
+  &::-webkit-scrollbar 
+  {
+    width: 5px;
+    @include animate;
+  }
+  &::-webkit-scrollbar-track 
+  {
+    background: transparent;
+    @include animate;
+  }
+  .scrollable-contents-webkit-scrollbar * 
+  {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb 
+  {
+    background: transparent;
+    @include animate;
+  }
+}
+
+.cg-nav_pop
+{
+  display: block; 
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  height: 2.4rem;
+  width: 50vw;
+  line-height: 2.4rem;
+  position: relative;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  @media #{$sm}
+  {
+    width: 85vw;
+  }
+  > i 
+  {
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    cursor: pointer;
+    font:
+    {
+      size: 0.75rem;
+      weight: 300;
+    }
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.cg-form_pop
+{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  input 
+  {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    height: 2.4rem;
+    width: 10rem;
+    background-color: $white;
+    border-radius: 0.25rem;
+    border: 1px solid $gray;
+    padding: 0rem 0.5rem 0rem 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.25rem;
+    font:
+    {
+      size: 0.75rem;
+      weight: 300;
+    }
+    background:
+    {
+      size: 0.75rem auto;
+      position: 0.75rem;
+      repeat: no-repeat;
+    }
+    @include animate;
+    &:focus
+    {
+      border: 1px solid $red;
+    }
+  }
+}
+
+.cg-user
+{
+  background: url(../img/icons/user.svg);
+}
+
+.cg-pass
+{
+  background: url(../img/icons/pass.svg);
+}
+
+.cg-email
+{
+  background: url(../img/icons/mail.svg);
+}
+
+.cg-forget, .cg-human
+{
+  line-height: 2.4rem;
+  font:
+  {
+    size: 0.7rem;
+    weight: 400;
+  }
+  text:
+  {
+    align: center;
+    transform: uppercase;
+    decoration: underline;
+  }
+  cursor: pointer;
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+  @include animate;
+  &:hover 
+  {
+    color: $red;
+  }
+  @media #{$sm}
+  {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
+
+.cg-human
+{
+  text-decoration: none;
+  &:hover 
+  {
+    color: $black;
+  }
+}
+
+.cg-wrap_btns
+{
+  width: 100%;
+  height: auto;
+  @include flex;
+  background-color: $gray;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  @media #{$sm}
+  {
+    flex-direction: column;
+  }
+}
+
+.cg-wrapper_btn_form
+{
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  @media #{$sm}
+  {
+    margin-bottom: 0.5rem;
+  }
+  .cg-normal 
+  {
+    display: inline;
+    text-align: center;
+    font:
+    {
+      size: 0.7rem;
+      weight: 400;
+    }
+    color: $black;
+    line-height: 0.7rem;
+    position: relative;
+    margin: 0 auto;
+  }
+  @include flex;
+  input[type='checkbox']
+  {
+    display: inline;
+    margin-right: 0.25rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    text-align: center;
+  }
+  a.cg-button_b
+  {
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.cg-first_btn
+{
+  margin-right: 0.5rem!important;
+  @media #{$sm}
+  {
+    margin-right: 0rem;
+  }
+  figure 
+  {
+    background-color: $red;
+    .chevron_right
+    {
+      border-left: 5px solid $red;
+    }
+  }
+  span
+  {
+    color: $red;
+  }
+  &:hover
+  {
+    figure 
+    {
+      color: $red;
+    }
+    span 
+    {
+      background-color: $red;
+    }
+  }
+}
 
 
+.cg-section_form
+{
+  display: block;
+  width: 100%;
+  height: auto;
+  .cg-ul_section_form
+  {
+    border-bottom: 1px solid $gray;
+    margin-bottom: 1rem;
+    @include flex;
+    .cg-li_section_form
+    {
+      display: inline-block;
+      font:
+      {
+        size: 0.7rem;
+        weight: 300;
+      }
+      padding: 0rem 1rem 0rem 1rem;
+      cursor: pointer;
+      color: $gray;
+      line-height: 2.4rem;
+      text:
+      {
+        align: center;
+      }
+      vertical-align: middle;
+      i 
+      {
+        margin-right: 0.25rem;
+        line-height: 2.4rem;
+      }
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+    .cg-li_section_form_active
+    {
+      font-weight: 600;
+      color: $red;
+    }
+  }
+}
+
+.cg-select_wrapper
+{
+  display: block;
+  width: 10rem;
+  height: 2.4rem;
+  position: relative;
+  background-color: $white;
+  border-radius: 0.25rem;
+  border: 1px solid $gray;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  figure 
+  {
+    position: absolute;
+    right: 0;
+    top: -1px;
+    width: 2.7rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background: url(../img/icons/select.svg);
+    background:
+    {
+      size: auto 2.2rem;
+      position: center;
+      repeat: no-repeat;
+    }
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
+  }
+  select 
+  {
+    width: 10rem;
+    height: 2.4rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    appearance: none;
+    font: 
+    {
+      size: 0.7rem;
+      weight: 300;
+      family: 'Titillium Web', sans-serif;
+    }
+    color: darken($gray, 30%);
+  }
+}
 
 
+.cg-human_figure
+{
+  width: 15rem;
+  height: 3.75rem;
+  background-color: $gray;
+  margin: 0 auto;
+}
 
+.cg-wrapper_form_sections
+{
+  display: block;
+  width: 150vw;
+  height: auto;
+  position: relative;
+  margin-left: 0%;
+  @include flex;
+  align-items: flex-start;
+  @media #{$sm}
+  {
+    width: 255vw;
+    height: auto;
+  }
+  .cg-form_section_a,  .cg-form_section_b,  .cg-form_section_c
+  {
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+    @media #{$sm}
+    {
+      width: 85vw;
+    }
+  }
+}
 
+.cg-wrapper_conditions
+{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background-color: $black;
+  width: 90%;
+  height: 10rem;
+  overflow-y: scroll;
+  color: $white;
+  font-size: 0.5rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  .cg-number_condition 
+  {
+    display: block;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+  .cg-letter_condition 
+  {
+    display: block;
+    margin-left: 1.25rem;
+    margin-top: 0.5rem; 
+  }
+  .cg-roman_condition 
+  {
+    display: block;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem; 
+  }
+}
 
+.cg-form_icon_dialog
+{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  i
+  {
+    background-color: $red;
+    border-radius: 0.25rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    font-size: 1.05rem;
+    text-align: center;
+    color: $white;
+  }
+}
 
+.cg-form_big_txt
+{
+  font: 
+  {
+    size: 0.7rem;
+    weight: 400;
+  }
+}
 
+.cg-form_p
+{
+  margin-top: 0.5rem;
+  font: 
+  {
+    size: 0.5rem;
+    weight: 300;
+    style: italic;
+  }
+}
+
+.cg-success_register
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 15rem;
+  }
+}
+
+.cg-login
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 17.5rem;
+    @media #{$sm}
+    {
+      height: 80vh;
+    }
+  }
+}
+
+.cg-register
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 29.5rem;
+    @media #{$sm}
+    {
+      height: 90vh;
+    }
+    span.cg-human
+    {
+      @media #{$sm}
+      {
+        display: inline-block;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
 
 
 

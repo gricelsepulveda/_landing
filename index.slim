@@ -13,6 +13,8 @@ html lang="es"
     link rel="stylesheet" href="css/reset.css"
     /! CUSTOM STYLES
     link rel="stylesheet" href="css/styles.css"
+    /! CUSTOM STYLES
+    link rel="stylesheet" href="css/icons.css"
     /! FAVICON
     link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"
     link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"
@@ -39,7 +41,7 @@ html lang="es"
     /! FONTAWESOME
     script src="https://use.fontawesome.com/10eea058a9.js"
     /! CUSTOM SCRIPTS
-    script src="js/scripts.js"
+    script src="js/scripts-min.js"
     /! PICTURE FILL
     script src="js/picturefill.min.js"
   body
@@ -72,12 +74,256 @@ html lang="es"
             a href="#" Contacto
           li.cg-main_li.cg-main_li_out
             a href="#" F.A.Q.
-          a.cg-button_a.cg-log_off
+          a.cg-button_a.cg-log_on
             figure
               i.fa.fa-sign-in aria-hidden="true"
+              .chevron_right
             span Ingresar
+          a.cg-button_a.cg-log_off onclick="log_off()"
+            figure
+              i.fa.fa-user aria-hidden="true"
+              .chevron_right
+            span 
+              i.fa.fa-power-off aria-hidden="true"
       button.cg-nav_mobile.hidden-md.hidden-lg
         i.fa.fa-bars aria-hidden="true"
+    /! NAVBAR ASIDE
+    .cg-wrapper_nav_aside
+      ul.cg-nav_aside
+        li.cg_nav_aside_li
+          a.icon-developer href="#"
+        li.cg_nav_aside_li
+          a.icon-tools href="#"
+        li.cg_nav_aside_li
+          a.icon-youtube href="#"
+        li.cg_nav_aside_li
+          a.icon-search href="#"
+    /! POP UPS 
+    .cg-bg_popup
+    /! POP UP LOGIN
+    .cg-wrapper_popup.cg-login.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Login
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            input.cg-user type="text" placeholder="ingresa tu correo"
+            input.cg-pass type="password" placeholder="ingresa tu contraseña"
+            span.cg-forget
+              i.fa.fa-lock aria-hidden="true"
+              | ¿Olvidaste tu clave?
+            .cg-wrapper_btn_form
+                span.cg-normal 
+                  input type="checkbox" 
+                  | Recuérdame
+            .cg-wrap_btns
+              .cg-wrapper_btn_form
+                a.cg-button_b.cg-first_btn.cg-pop_trigger id="register"
+                  figure
+                    i.fa.fa-plus aria-hidden="true"
+                    .chevron_right
+                  span Regístrate
+              .cg-wrapper_btn_form
+                a.cg-button_b onclick="log_in()"
+                  figure
+                    i.fa.fa-sign-in aria-hidden="true"
+                    .chevron_right
+                  span Iniciar sesión
+    /! POP UP REGISTRO 
+    .cg-wrapper_popup.cg-register.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Registro
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            nav.cg-section_form
+              ul.cg-ul_section_form
+                li.cg-li_section_form.cg-li_section_form_active onclick="form_section_a()"
+                  i.fa.fa-user-plus aria-hidden="true"
+                  span.hidden-xs.hidden-sm Datos principales
+                li.cg-li_section_form onclick="form_section_b()"
+                  i.fa.fa-envelope aria-hidden="true"
+                  span.hidden-xs.hidden-sm Credenciales
+                li.cg-li_section_form onclick="form_section_c()"
+                  i.fa.fa-file-text aria-hidden="true"
+                  span.hidden-xs.hidden-sm Términos y cond. de uso
+            .cg-wrapper_form_sections
+              /! SECTION A FORM
+              .cg-form_section_a
+                input.cg-user type="text" placeholder="Nombres"
+                input.cg-user type="text" placeholder="Apellidos"
+                .cg-select_wrapper
+                  figure
+                  select.cg-region
+                    option selected="" disabled="" Selecciona región
+                    option opción de ejemplo
+                .cg-select_wrapper
+                  figure
+                  select.cg-comuna
+                    option selected="" disabled="" Selecciona comuna
+                    option opción de ejemplo
+                span.cg-human
+                  i.fa.fa-male aria-hidden="true"
+                  | ¿Eres un humano?
+                  figure.cg-human_figure
+                .cg-wrap_btns
+                  .cg-wrapper_btn_form
+                    a.cg-button_b onclick="form_section_b()"
+                      figure
+                        i.fa.fa-arrow-right aria-hidden="true"
+                        .chevron_right
+                      span Siguiente
+              /! SECTION B FORM
+              .cg-form_section_b
+                input.cg-email type="text" placeholder="Tu email"
+                input.cg-email type="text" placeholder="Repite tu email"
+                span.cg-human
+                  i.fa.fa-info-circle aria-hidden="true"
+                  | Mín. 6 caracteres con mayúsculas, minúsculas y números
+                input.cg-pass type="password" placeholder="Contraseña"
+                input.cg-pass type="password" placeholder="Repite tu contraseña"
+                .cg-wrap_btns
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-first_btn onclick="form_section_a()"
+                      figure
+                        i.fa.fa-arrow-left aria-hidden="true"
+                        .chevron_right
+                      span Anterior
+                  .cg-wrapper_btn_form
+                    a.cg-button_b onclick="form_section_c()"
+                      figure
+                        i.fa.fa-arrow-right aria-hidden="true"
+                        .chevron_right
+                      span Siguiente
+              /! SECTION C FORM
+              .cg-form_section_c
+                .cg-wrapper_conditions
+                  | Transbankdevelopers es un portal desarrollado y administrado por TRANSBANK S.A., en adelante Transbank, diseñado para entregar herramientas a desarrolladores e integradores de Webpay Plus en sitios propios o de comercios afiliados a Transbank, así como prospectos de comercios de Transbank.
+                  br
+                  | Transbankdevelopers proporciona interfaces de programación de aplicaciones (API’s), un kit de desarrollo de Software (SDK: Software Developer Kit) así como tutoriales de capacitación a desarrolladores que permitan ayudar a integrar Webpay Plus rápidamente en los portales de sus clientes o en los propios.
+                  span.cg-number_condition 
+                    | 1. Acceso al portal: Transbankdevelopers permite el acceso a la descarga de código fuente, documentación y/o tutoriales sin la necesidad de que se realice el registro como integrador. El registro como integrador permitirá al individuo contar con acceso al eLearning así como a todas las herramientas disponibles dentro del portal, conocer estadísticas de su avance para el caso del eLearning, comentar y entregar retroalimentación a los desarrolladores del portal en pro de buscar mejoras así como aportar a la comunidad.
+                  span.cg-number_condition 
+                    | 2. Protección de información personal: El usuario registrado es responsable de mantener su contraseña de cuenta dentro del portal así como de todas las actividades que se generen dentro de su cuenta. Una vez realizado el registro del integrador/desarrollador dentro del portal, éste se compromete a notificar a Transbankdevelopers de cualquier violación o uso no autorizado o falla de seguridad de su cuenta personal dentro del portal. Asimismo, el usuario registrado es responsable de mantener su información personal actualizada y precisa para su cuenta, incluyendo su dirección de correo personal así como cualquier información de contacto requerida al momento del registro.
+                  span.cg-number_condition 
+                    | 3. Restricciones a usuarios del portal.
+                    span.cg-letter_condition
+                      | a. Open Source (Código Abierto): La información que se entrega dentro del portal es de libre uso para los usuarios que accedan y se publica por Transbankdevelopers bajo licencia de código abierto por lo que están sujetos a los términos de la licencia de código abierto aplicable.
+                    span.cg-letter_condition
+                      | b. Restricciones: Las herramientas disponibles dentro del portal Transbankdevelopers tiene como único propósito facilitar la integración de comercios que operen con Webpay Plus. Por lo anterior, no puede utilizar ni permitir que las herramientas disponibles sean utilizadas para cualquier otro propósito como:
+                      span.cg-roman_condition
+                        | I. Ingeniería inversa, desensamblar, reconstruir, o descompilar cualquier código objeto que sea parte de la información disponible para descarga;
+                      span.cg-roman_condition
+                        | II. Cualquier intento por parte de los usuarios del portal de acceder a sistemas propietarios de Transbank, aparte de las herramientas que Transbankdevelopers entregue para modificaciones propias de la integración con Webpay Plus, así como interrumpir o impedir el funcionamiento de sistemas propios de Transbank o Transbankdevelopers;
+                      span.cg-roman_condition
+                        | III. Cualquier conducta fraudulenta o ilegal que se relacione con el uso en forma indebida de las herramientas disponibles en Transbankdevelopers;
+                      span.cg-roman_condition
+                        | IV. Restringir, inhibir, o participar en cualquier actividad que impida a cualquier otro desarrollador de usar las herramientas disponibles en Transbankdevelopers;
+                      span.cg-roman_condition
+                        | V. Solicitar, reunir, recolectar, o de algún otro modo obtener acceso a información de comercios o personas a través de las herramientas disponibles en el portal con pretensiones falsas o fraudulentas;
+                      span.cg-roman_condition
+                        | VI. Vender, transferir u ofrecer licencias de utilización de las herramientas disponibles en Transbankdevelopers;
+                      span.cg-roman_condition
+                        | VII. Utilizar las herramientas de desarrollo disponibles en Transbankdevelopers, ya sea directa o indirectamente, para fines distintos a los relacionados con la integración entre el comercio y Webpay Plus de Transbank;
+                      span.cg-roman_condition
+                        | VIII. Publicar, enviar, transmitir, vender o distribuir las herramientas de desarrollo de Transbankdevelopers;
+                      span.cg-roman_condition
+                        | IX. Utilizar o lanzar algún sistema automatizado que acceda a Transbankdevelopers o las herramientas de desarrollo disponibles en el portal de Transbankdevelopers, de modo que sean enviados más mensajes de solicitud a los servidores de Transbankdevelopers en un período determinado de tiempo en el que un ser humano puede razonablemente producir en el mismo período mediante el uso de un navegador web en cualquier uso convencional;
+                      span.cg-roman_condition
+                        | X. Alquilar, arrendar, prestar, comercializar, vender/revender o de otro modo cobrar por alguna de las herramientas disponibles en Transbankdevelopers;
+                      span.cg-roman_condition
+                        | XI. Transmitir cualquier virus, gusanos, defectos, troyanos, o cualquier programación de una naturaleza destructiva.
+                  span.cg-number_condition
+                    | 4. Modificaciones a las herramientas de desarrollo: Transbankdevelopers puede suspender, modificar o cambiar las herramientas de desarrollo disponibles en el portal en cualquier momento. Tales cambios podrían requerir actualizaciones a las herramientas de desarrollo ya descargadas para que la integración mantenga su compatibilidad con Webpay Plus. Transbankdevelopers y Transbank no tendrán ninguna responsabilidad u obligación en lo que respecta a las modificaciones o cambios en los cuales deba incurrir un comercio o desarrollador el cual deba actualizar alguna de las herramientas de desarrollo disponibles en el portal.
+                  span.cg-number_condition
+                    | 5. Licencia de uso de las herramientas de desarrollo: Transbank concede una licencia limitada, no exclusiva, revocable, no transferible y no sublicenciable para utilizar las herramientas de desarrollo únicamente con la finalidad de desarrollar, probar, y posteriormente dar uso de estas herramientas en las tiendas que el desarrollador considere. La anterior licencia, así como el uso de las herramientas de desarrollo de Transbankdevelopers no concede ningún derecho o licencia para procesar transacciones utilizando algunos de los servicios o sistemas de Transbank.
+                  span.cg-number_condition
+                    | 6. Retroalimentación: El objetivo de proporcionar herramientas de desarrollo a integradores o desarrolladores que deseen ver facilitada la integración de Webpay con alguna tienda virtual en desarrollo o de un tercero, permite que pueda proporcionar retroalimentación, sugerencias, comentarios y mejoras a las herramientas de desarrollo dispuestas en el portal Transbankdevelopers a modo de aporte a la comunidad de integradores. No obstante, Transbankdevelopers puede utilizar esta retroalimentación para cualquier propósito, sin obligación de ningún tipo. Se entregan todos los derechos, títulos e intereses sobre y por cualquier comentario que sea proporcionado a Transbankdevelopers, pudiendo este utilizar, ejecutar y explotar cualquier retroalimentación entregada sin restricciones y sin ninguna obligación de confidencialidad, atribución, contabilidad, compensación u otra obligación. Asimismo, el usuario del portal siempre renuncia y está de acuerdo en que nunca hará valer frente a Transbank y sus socios comerciales, empleados, representantes y afiliados algún derecho moral que puede tener en la retroalimentación realizada, incluso después de la expiración o terminación de este Acuerdo. "Derechos morales" significa cualquier derecho de reivindicar la paternidad de una obra, cualquier derecho a oponerse a cualquier deformación u otra modificación de una obra, y cualquier derecho similar, existente bajo la ley de un país, o en virtud de cualquier tratado.
+                  span.cg-number_condition
+                    | 7. Uso e Interrupción de Servicios: Transbank no garantiza ni declara que el uso que el usuario haga de la información disponible en Transbankdevelopers será ininterrumpido o que no contendrá errores, y el usuario acepta que Transbankdevelopers podrá periódicamente eliminar los servicios por un tiempo indeterminado o bien cancelar los servicios en cualquier momento sin necesidad de notificación alguna.
+                    br
+                    | El usuario reconoce expresamente que el uso o la incapacidad de usar los servicios quedan bajo su propia responsabilidad. Los servicios que se entreguen se hace en “el estado en que se encuentran” y “en la medida en que se encuentren disponibles” para su uso, sin garantías de ninguna clase, expresas o implícitas, como garantías de comerciabilidad e idoneidad para un fin determinado, de título y de no violación de derechos.
+                  span.cg-number_condition
+                    | 8. Exención de Responsabilidad e Indemnización: En ningún caso Transbank como administrador de Transbankdevelopers, los directores, funcionarios, empleados, afiliados, agentes, contratistas, mandantes, o licenciantes de Transbank resultarán responsables por daños directos, indirectos, incidentales, punitivos, especiales, o emergentes derivados del uso de cualquiera de los servicios o por cualquier otro reclamo relacionado de cualquier manera con el uso que el usuario haga de los servicios, por ejemplo, errores u omisiones en cualquier contenido, pérdidas o daños de cualquier clase derivados del uso de cualquier contenido publicado, transmitido, o proporcionado de cualquier otro modo por medio de los servicios, aún cuando hubiesen sido alertados de dicha posibilidad.
+                    br
+                    | El Usuario no podrá demandar por daños a Transbank, sus directores, funcionarios, empleados, afiliados, agentes, contratistas, mandantes, y licenciantes como resultado de su decisión de quitar o negar el procesamiento de cualquier tipo de información o contenido, de advertirlo, de suspender o cancelar su acceso a los servicios, o de tomar cualquier otra medida durante la investigación de una supuesta violación o como resultado de la conclusión de Transbankdevelopers, en el sentido de que ha existido incumplimiento de estos términos y condiciones. Esta disposición de exención de responsabilidad se aplica a toda violación descrita o contemplada en estos términos y condiciones.
+                  span.cg-number_condition
+                    | 9. Protección de información: Transbank en su portal Transbankdevelopers realizará esfuerzos razonables para proteger la información que el usuario proporcionó en relación con los servicios, pero el usuario reconoce que el envío de dicha información queda bajo su responsabilidad, renunciando Transbank por el presente instrumento a toda responsabilidad por pérdidas o responsabilidad relacionada con dicha información de cualquier manera.
+                  span.cg-number_condition
+                    | 10. Virus y otros ataques. Transbank en su portal Transbankdevelopers no declara ni garantiza que los servicios permanecerán libres de pérdidas, deterioro, ataques, virus, interferencia, piratería, u otro tipo de penetración de seguridad, negando toda responsabilidad relacionada con lo anteriormente mencionado. El usuario será responsable de hacer copias de seguridad de su propio sistema, incluidos los productos que haya adquirido.
+                  span.cg-number_condition
+                    | 11. Propiedad intelectual: Transbank se reserva todos los derechos sobre la propiedad del Portal Transbankdevelopers. El usuario final de las herramientas de desarrollo, así como el integrador o desarrollador no tiene derecho a utilizar las marcas Transbankdevelopers en cualquier forma, con excepción de lo permitido expresamente por Transbankdevelopers.
+                    br
+                    | El Usuario acepta que Transbankdevelopers, sus productos, gráficas, interfaces de usuario, clips de audio, clips de video, contenido editorial y los guiones y software utilizados para la puesta en marcha del Portal, distintos a las herramientas entregadas a desarrolladores e integradores, contienen información y material que es propiedad de Transbank y/o sus licenciantes y que se encuentra protegido por las leyes aplicables de propiedad intelectual y demás aplicables, inclusive entre otros, el derecho de autor. El Usuario acepta que no utilizará esa información o material de ninguna forma excepto para utilizar el portal Transbankdevelopers de acuerdo con estos Términos y Condiciones.
+                  span.cg-number_condition
+                    | 12. Cambios, suspensión , eliminación.
+                    br
+                    | Transbank en su portal Transbankdevelopers y sus licenciantes se reservan el derecho de cambiar, suspender, eliminar, o desactivar el acceso al Portal, contenido, u otro material en cualquier momento sin aviso. En ningún caso Transbank será responsable al hacer estos cambios. Transbankdevelopers también puede imponer límites al uso de determinadas herramientas o aplicaciones, en cualquier caso y sin aviso, ni responsabilidad alguna.
+                    br
+                    | Transbankdevelopers, el logo, y otras marcas comerciales, marcas de servicio, gráficas y logos utilizados en relación con el Portal son marcas comerciales registradas de Transbank. Otras marcas comerciales, marcas de servicios, gráficas y logos utilizados en relación con el Servicio pueden ser marcas comerciales de sus respectivos dueños. No se le cede al usuario registrado usted ningún derecho o licencia con respecto a ninguna de las marcas comerciales anteriores así como tampoco ningún uso de tales marcas comerciales.
+                  span.cg-number_condition
+                    | 13. Duración y Terminación.
+                    span.cg-letter_condition
+                      | a. Para el usuario registrado, el presente Acuerdo terminará automáticamente en el incumplimiento de cualquiera de sus términos. Sin perjuicio de lo anterior, Transbank puede, a su entera discreción, suspender el registro como usuario en cualquier momento si:
+                      span.cg-roman_condition
+                        | I. La información que haya proporcionado para su registro como usuario es falsa, inexacta, desactualizada o incompleta;
+                      span.cg-roman_condition
+                        | II. El usuario registrado o el establecimiento comercial se dedica a alguna actividad ilegal.
+                    span.cg-letter_condition
+                      | b. El usuario registrado puede terminar este Acuerdo por cualquier motivo o sin motivo alguno, a su conveniencia, mediante el envío de una notificación dentro del portal a Transbankdevelopers indicando su deseo de terminar su participación como usuario activo en Transbankdevelopers.
+                  span.cg-number_condition
+                    | 14. Relación de las partes: El registrarse como usuario en la plataforma Transbankdevelopers no crea y no se interpretará como la creación de una empresa conjunta, co-propiedad, asociación, franquicia, o relación de agencia entre el usuario registrado y Transbank.
+                .cg-wrapper_btn_form
+                  span.cg-normal 
+                    input type="checkbox" 
+                    | He leído y acepto los términos y condiciones de TRANSBANK DEVELOPERS
+                .cg-wrap_btns
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-first_btn onclick="form_section_b()"
+                      figure
+                        i.fa.fa-arrow-left aria-hidden="true"
+                        .chevron_right
+                      span Anterior
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-pop_trigger id="success_register"
+                      figure
+                        i.fa.fa-arrow-right aria-hidden="true"
+                        .chevron_right
+                      span Siguiente
+    /! POP UP SUCCESS REGISTER
+    .cg-wrapper_popup.cg-success_register.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Registro exitoso
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            figure.cg-form_icon_dialog
+              i.fa.fa-paper-plane aria-hidden="true"
+            span.cg-form_big_txt
+              | Se envió un correo a su cuenta inscrita.
+              br
+              | Es necesaria la validación de la cuenta.
+            p.cg-form_p Recuerda revisar la bandeja de spam.
+            .cg-wrap_btns
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-close_pop
+                      figure
+                        i.fa.fa-check aria-hidden="true"
+                        .chevron_right
+                      span Finalizar
+
+
+
+
+
+
+
+
+
+
 
 
 

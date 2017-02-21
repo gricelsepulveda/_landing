@@ -16,7 +16,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -28,6 +28,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/icons.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/icons-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -48,6 +58,111 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/fonts\/icomoon\/icomoon.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/icomoon\/icomoon.eot",
+		"oF": 0
+		},
+	"\/fonts\/icomoon\/icomoon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/icomoon\/icomoon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/icomoon\/icomoon.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/icomoon\/icomoon.ttf",
+		"oF": 0
+		},
+	"\/fonts\/icomoon\/icomoon.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/icomoon\/icomoon.woff",
+		"oF": 0
+		},
+	"\/icomoon\/demo-files\/demo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/icomoon\/demo-files\/demo-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/icomoon\/demo-files\/demo.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/icomoon\/demo-files\/demo-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/icomoon\/demo.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/icomoon\/demo.html",
+		"oF": 0
+		},
+	"\/icomoon\/fonts\/icomoon.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/icomoon\/fonts\/icomoon.eot",
+		"oF": 0
+		},
+	"\/icomoon\/fonts\/icomoon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/icomoon\/fonts\/icomoon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/icomoon\/fonts\/icomoon.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/icomoon\/fonts\/icomoon.ttf",
+		"oF": 0
+		},
+	"\/icomoon\/fonts\/icomoon.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/icomoon\/fonts\/icomoon.woff",
+		"oF": 0
+		},
+	"\/icomoon\/Read Me.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/icomoon\/Read Me.txt",
+		"oF": 0
+		},
+	"\/icomoon\/selection.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/icomoon\/selection-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/icomoon\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/icomoon\/style-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -220,6 +335,106 @@
 		"oAP": "\/img\/favicon\/mstile-70x70.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/img\/icons\/comuna.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/comuna.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/developer.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/developer.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/mail.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/mail.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/pass.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/pass.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/region.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/region.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/select.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/select.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/tools.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/tools.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/user.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/user.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/section_headers\/example-header.jpg": {
 		"ft": 16384,
