@@ -1140,6 +1140,7 @@ section.cg-welcome
   }
   flex-direction: column;
   padding: 1rem;
+  display: none;
   .cg-h1_welcome
   {
     color: #FFD900;
@@ -1752,6 +1753,100 @@ section.cg-section_tools
     }
   }
 }
+
+/* VIDEO */
+
+section.cg-videos
+{
+  width: 100%;
+  height: 100vh;
+  background-color: $white;
+  display: block;
+  position: relative;
+  .my-slider
+  {
+    padding-top: 8rem;
+    height: 100vh;
+    position: relative;
+    .cg-section_videos_h2
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4.5rem;
+      @include flex;
+      display: block;
+      font:
+      {
+        size: 2.4rem;
+        weight: 600;
+      }
+      color: $black;
+      text:
+      {
+        align: center;
+      }
+      padding-top: 4rem;
+    }
+  }
+  .cg-slider_video_ul
+  {
+    height: 100%;
+    .cg-slider_video_li
+    {
+      height: 100%;
+      z-index: 9;
+      position: relative;
+      &:before
+      {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:
+        {
+          image: url(../img/grid_texture.svg);
+          size: 200px;
+          position: center;
+          repeat: repeat;
+        }
+      }
+    }
+  }
+}
+
+aside.cg-slider_video_aside
+{
+  display: block;
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
+  background-color: $purple;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  color: $white;
+  font:
+  {
+    size: 1.2rem;
+    weight: 400;
+  }
+  text-align: left;
+  z-index: 10;
+  h4.cg-slider_video_h4
+  {
+    display: block;
+  }
+  img 
+  {
+    display: block;
+    width: 15rem;
+    height: auto;
+    margin-top: 0.25rem;
+  }
+}
+
 
 /* SECTION DISCOVER */
 section.cg-section_discover

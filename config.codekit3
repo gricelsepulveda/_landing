@@ -15,6 +15,60 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/bootstrap.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap.zip",
+		"oF": 0
+		},
+	"\/bootstrap\/config.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/bootstrap\/config-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bootstrap\/css\/bootstrap-theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/bootstrap\/css\/bootstrap-theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap\/css\/bootstrap-theme.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/bootstrap\/css\/bootstrap-theme.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap\/css\/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/bootstrap\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap\/css\/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/bootstrap\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/config.rb": {
 		"ft": 131072,
 		"oA": 0,
@@ -38,6 +92,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/animate-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/bootstrap-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/bootstrap-min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -108,6 +172,46 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/unslider-dots-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/unslider-dots-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/unslider-dots.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/unslider-dots-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/unslider-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/unslider-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/unslider.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/unslider-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -526,6 +630,16 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/grid_texture.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/grid_texture.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/header_article_1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -757,6 +871,170 @@
 		"oS": 1,
 		"rAC": 0
 		},
+	"\/JoanClaret-jcSlider-19d0f07\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/.gitignore",
+		"oF": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/css\/jcslider.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/css\/jcslider-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/css\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/css\/styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/1.jpg": {
+		"ft": 16384,
+		"iS": 58387,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/1.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/2.jpg": {
+		"ft": 16384,
+		"iS": 60419,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/3.jpg": {
+		"ft": 16384,
+		"iS": 92124,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/4.jpg": {
+		"ft": 16384,
+		"iS": 68901,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/4.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/5.jpg": {
+		"ft": 16384,
+		"iS": 81272,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/5.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/6.jpg": {
+		"ft": 16384,
+		"iS": 45398,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/6.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/7.jpg": {
+		"ft": 16384,
+		"iS": 71072,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/7.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/8.jpg": {
+		"ft": 16384,
+		"iS": 84426,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/8.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/9.jpg": {
+		"ft": 16384,
+		"iS": 63269,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/9.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/img\/header.jpg": {
+		"ft": 16384,
+		"iS": 273994,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/img\/header.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/demo\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/demo\/index.html",
+		"oF": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/jquery.jcslider.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/jquery.jcslider-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/jquery.jcslider.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/jquery.jcslider.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/JoanClaret-jcSlider-19d0f07\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/JoanClaret-jcSlider-19d0f07\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/js\/3d-lines-animation.js": {
 		"ft": 64,
 		"mi": 0,
@@ -847,6 +1125,33 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/unslider-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/unslider-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/unslider.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/unslider-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/video.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/video-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -865,12 +1170,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/scss\/s": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/scss\/s",
-		"oF": 0
-		},
 	"\/scss\/styles.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -883,6 +1182,18 @@
 		"oF": 1,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/sources\/sample_video_1.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sources\/sample_video_1.mp4",
+		"oF": 0
+		},
+	"\/sources\/sample_video_2.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sources\/sample_video_2.mp4.crdownload",
+		"oF": 0
 		}
 	},
 "hooks": [

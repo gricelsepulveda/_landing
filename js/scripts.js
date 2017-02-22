@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  //INITIAL ANIMATION
+  $(".cg-bg_welcome").fadeIn("slow");
+  $('.cg-bg_welcome').css(
+        {'display': "flex"});
   // TRIGGER MOBILE MENU
   $(".cg-nav_mobile").click(function(){
     $(".cg-menu_ul").animate
@@ -202,5 +206,19 @@ $(document).ready(function () {
     },
   })
 });
+
+//SLIDER VIDEO
+//SLIDER
+$(document).ready(function($) {
+  $('.my-slider').unslider({
+    keys: false,
+    dots: true,
+    fluid: true,
+    speed: 2000,
+    delay: 8000,
+    autoplay: true,
+  });
+});
+
 
 

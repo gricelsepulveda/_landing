@@ -19,6 +19,9 @@ html lang="es"
     link rel="stylesheet" href="css/animate.css"
     /! FONTAWESOME
     link rel="stylesheet" href="css/font-awesome.min.css"
+    /! BANNER VIDEO
+    link rel="stylesheet" href="css/unslider.css"
+    link rel="stylesheet" href="css/unslider-dots.css"
     /! FAVICON
     link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"
     link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"
@@ -51,6 +54,9 @@ html lang="es"
     script src="js/projector.js"
     script src="js/canvas-renderer.js"
     script src="js/color.js"    
+    /! BANNER VIDEO
+    script src="js/unslider.js"
+    script src="js/video.js"
   body
     navbar.cg-navbar_main.cg-navbar_main_bottom
       .flex
@@ -392,6 +398,23 @@ html lang="es"
                 .cg-wrapper_buttons_tools.cg-wrap_btn_tools_4
                   button.cg-button_tool WebPay Plus
                   button.cg-button_tool One Click
+    /! SECTION VIDEOS
+    section.cg-videos
+      .my-slider
+        h2.cg-section_videos_h2.cg-videos-animation Videos tbk. | Developers
+        ul.cg-slider_video_ul
+          li.cg-slider_video_li.cg-slider_video_li_1
+            video autoplay="autoplay" muted="" loop="" controls=""
+              source src="sources/sample_video_1.mp4" type="video/mp4"
+            aside.cg-slider_video_aside
+              h4.cg-slider_video_h4 Te invitamos a conocer
+              img src="img/tbk_logo.svg"
+          li.cg-slider_video_li.cg-slider_video_li_2
+            video autoplay="autoplay" muted="" loop="" controls=""
+              source src="sources/sample_video_2.mp4" type="video/mp4"
+            aside.cg-slider_video_aside
+              h4.cg-slider_video_h4 Te invitamos a descubrir
+              img src="img/tbk_logo.svg"
     /! SECTION DISCOVER
     section.cg-section_discover
       h2.cg-section_h2.cg-discover-animation Descubre tbk. | Developers
@@ -434,6 +457,7 @@ html lang="es"
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
               br
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
+    /! SECTION FOOTER
     section.cg-footer
       .cg-flex_footer
         article.cg-article_footer
