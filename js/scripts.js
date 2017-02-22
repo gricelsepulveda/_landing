@@ -207,7 +207,6 @@ $(document).ready(function () {
   })
 });
 
-//SLIDER VIDEO
 //SLIDER
 $(document).ready(function($) {
   $('.my-slider').unslider({
@@ -219,6 +218,9 @@ $(document).ready(function($) {
     autoplay: true,
   });
 });
+
+//SLIDER VIDEO
+
 
 
 
