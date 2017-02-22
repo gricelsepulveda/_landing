@@ -183,10 +183,24 @@ $(document).ready(function () {
           $('.cg-nav_mobile').removeClass('cg-nav_mobile_top');
       }
   });
+  //FADE IN WELCOME STUFF
   var divs = $('.cg-fade_effect');
   $(window).on('scroll', function() {
      var st = $(this).scrollTop();
      divs.css({ 'opacity' : (1 - st/300) });
   });
+  //SCROLL LISTENER TOOLS SECTION
+  var waypoint = new Waypoint({
+    element: document.getElementById('cg-webpoint_tools'),
+    handler: function(direction) {
+      $('.cg-tools-animation').addClass('animated fadeInDown');
+      $('.cg-tools-animation_2').css(
+        {'visibility': "visible"});
+      $('.wrapper_flex_tools').css(
+        {'visibility': "visible"});
+      $('.cg-tools-animation_2').addClass('animated zoomIn');
+    },
+  })
 });
+
 
