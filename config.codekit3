@@ -21,6 +21,16 @@
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
+	"\/css\/animate.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/animate-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/bootstrap.css": {
 		"aP": 1,
 		"bl": 0,
@@ -28,6 +38,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/icons-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/icons-min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -166,11 +186,517 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/imakewebthings-waypoints-34d9f6d\/.eslintrc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/.eslintrc",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/.gitignore",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/.travis.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/.travis.yml",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/CHANGELOG.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/CHANGELOG.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/CONTRIBUTING.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/CONTRIBUTING.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/gulpfile.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/gulpfile-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/jquery.waypoints.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/jquery.waypoints-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/jquery.waypoints.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/jquery.waypoints.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/noframework.waypoints.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/noframework.waypoints-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/noframework.waypoints.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/noframework.waypoints.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/infinite.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/infinite-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/infinite.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/infinite.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/inview.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/inview-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/inview.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/inview.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/sticky.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/sticky-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/sticky.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/shortcuts\/sticky.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/waypoints.debug.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/waypoints.debug-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/zepto.waypoints.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/zepto.waypoints-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/lib\/zepto.waypoints.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/lib\/zepto.waypoints.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/licenses.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/licenses.txt",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/jquery-zepto-fn-extension.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/jquery-zepto-fn-extension-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/jquery.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/jquery-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/noframework.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/noframework-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/zepto.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/adapters\/zepto-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/context.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/context-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/debug.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/debug-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/group.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/group-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/shortcuts\/infinite.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/shortcuts\/infinite-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/shortcuts\/inview.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/shortcuts\/inview-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/shortcuts\/sticky.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/shortcuts\/sticky-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/src\/waypoint.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/src\/waypoint-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/adapter-fn-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/adapter-fn-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/context-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/context-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/debug-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/debug-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/fixtures\/infinite.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/fixtures\/infinite.html",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/fixtures\/standard.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/fixtures\/standard.html",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/fixtures\/sticky.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/fixtures\/sticky.html",
+		"oF": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/group-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/group-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/infinite-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/infinite-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/inview-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/inview-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/coffee-script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/coffee-script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine-html.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine-html-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine-jquery.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine-jquery-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/jasmine-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/require.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/require-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/lib\/testloader.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/lib\/testloader-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/settings.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/settings-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/sticky-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/sticky-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/test\/waypoint-spec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/test\/waypoint-spec-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/imakewebthings-waypoints-34d9f6d\/testem.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/imakewebthings-waypoints-34d9f6d\/testem-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/imakewebthings-waypoints-latest-0-g34d9f6d.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imakewebthings-waypoints-latest-0-g34d9f6d.zip",
+		"oF": 0
+		},
 	"\/img\/bg_main_nav.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/bg_main_nav.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/bg_square.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/bg_square.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -497,6 +1023,33 @@
 		"oS": 1,
 		"rAC": 0
 		},
+	"\/js\/3d-lines-animation.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/js\/3d-lines-animation-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/canvas-renderer.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/canvas-renderer-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/color.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/js\/color-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/jquery-3.1.1-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -515,6 +1068,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/projector.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/js\/projector-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/scripts-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -530,6 +1092,15 @@
 		"oA": 0,
 		"oAP": "\/js\/scripts-min.js",
 		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/three.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/js\/three.min-min.js",
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},

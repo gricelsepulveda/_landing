@@ -15,6 +15,8 @@ html lang="es"
     link rel="stylesheet" href="css/styles.css"
     /! CUSTOM STYLES
     link rel="stylesheet" href="css/icons.css"
+    /! ANIMATE
+    link rel="stylesheet" href="css/animate.css"
     /! FAVICON
     link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"
     link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"
@@ -41,11 +43,16 @@ html lang="es"
     /! FONTAWESOME
     script src="https://use.fontawesome.com/10eea058a9.js"
     /! CUSTOM SCRIPTS
-    script src="js/scripts-min.js"
+    script src="js/scripts.js"
     /! PICTURE FILL
     script src="js/picturefill.min.js"
+    /! 3D ANIMATION BANNER
+    script src="js/three.min.js"
+    script src="js/projector.js"
+    script src="js/canvas-renderer.js"
+    script src="js/color.js"    
   body
-    navbar.cg-navbar_main
+    navbar.cg-navbar_main.cg-navbar_main_bottom
       .flex
         figure.cg-logo_tbk
           img src="img/tbk_logo.svg"
@@ -56,7 +63,7 @@ html lang="es"
             a 
               | Herramientas
               i.fa.fa-caret-down aria-hidden="true"
-            .cg-menu_tool
+            .cg-menu_tool.cg-menu_tool_bottom
               span.cg-span_tool Plugins
               a.cg-tool_li href="#" Webpay Plus
               a.cg-tool_li href="#" Onepay
@@ -85,7 +92,7 @@ html lang="es"
               .chevron_right
             span 
               i.fa.fa-power-off aria-hidden="true"
-      button.cg-nav_mobile.hidden-md.hidden-lg
+      button.cg-nav_mobile.hidden-md.hidden-lg.cg-nav_mobile_bottom
         i.fa.fa-bars aria-hidden="true"
     /! NAVBAR ASIDE
     .cg-wrapper_nav_aside
@@ -314,6 +321,26 @@ html lang="es"
                         i.fa.fa-check aria-hidden="true"
                         .chevron_right
                       span Finalizar
+    /! MAIN SECTIONS
+    /! SECTION WELCOME
+    section.cg-welcome
+      .cg-wrapper_welcome
+        .canvas-wrap
+          .canvas-content
+          #canvas.gradient
+        .cg-bg_welcome
+          figure.cg-welcome_logo_tbk.cg-fade_effect
+            img src="img/tbk_logo.svg"
+          h1.cg-h1_welcome.cg-fade_effect Apoyando el desarrollo del e-commerce nacional.
+          p.cg-p_welcome.cg-fade_effect Última actualización: 2017-01-05.
+          i.fa.fa-chevron-down.cg-fade_effect aria-hidden="true"
+    /! SECTION TOOLS
+    section.cg-section-tools
+      h2.cg-section_h2 Herramientas de integración
+      p.cg-section_p Todas las herramientas tienen sus dos versiones, tanto para Webpay Plus como lo nuevo que es Onepay. Descubrelo ahora. 
+script src="js/3d-lines-animation.js"
+
+
 
 
 
