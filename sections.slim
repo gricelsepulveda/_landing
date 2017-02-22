@@ -19,9 +19,6 @@ html lang="es"
     link rel="stylesheet" href="css/animate.css"
     /! FONTAWESOME
     link rel="stylesheet" href="css/font-awesome.min.css"
-    /! BANNER VIDEO
-    link rel="stylesheet" href="css/unslider.css"
-    link rel="stylesheet" href="css/unslider-dots.css"
     /! FAVICON
     link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"
     link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"
@@ -45,24 +42,16 @@ html lang="es"
     meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png"
     /! JQUERY
     script src="js/jquery-3.1.1-min.js"
+    /! CUSTOM SCRIPTS
     /! ACTIVATE PICTUREFILL
     javascript:
       document.createElement( "picture" );
     /! PICTUREFILL USEFUL FOR OPTIMIZE WEIGHT ON MOBILE DEVICES AND GREAT IMAGE QUALITY ON RETINA DISPLAY
-    /! PICTURE FILL
-    script src="js/picturefill.min.js"
-    /! CUSTOM SCRIPTS
     script src="js/scripts.js"
-    script src="js/navtop.js"
-    /! 3D ANIMATION BANNER
-    script src="js/three.min.js"
-    script src="js/projector.js"
-    script src="js/canvas-renderer.js"
-    script src="js/color.js"    
-    /! BANNER VIDEO
-    script src="js/unslider.js"
+    /! PICTURE FILL
+    script src="js/picturefill.min.js"  
   body
-    navbar.cg-navbar_main.cg-navbar_main_bottom
+    navbar.cg-navbar_main
       .flex
         figure.cg-logo_tbk
           img src="img/tbk_logo.svg"
@@ -104,17 +93,6 @@ html lang="es"
               i.fa.fa-power-off aria-hidden="true"
       button.cg-nav_mobile.hidden-md.hidden-lg.cg-nav_mobile_bottom
         i.fa.fa-bars aria-hidden="true"
-    /! NAVBAR ASIDE
-    .cg-wrapper_nav_aside
-      ul.cg-nav_aside
-        li.cg_nav_aside_li
-          a.icon-developer href="#welcome"
-        li.cg_nav_aside_li
-          a.icon-tools href="#cg-webpoint_tools"
-        li.cg_nav_aside_li
-          a.icon-youtube href="#cg-webpoint_video"
-        li.cg_nav_aside_li
-          a.icon-search href="#cg-webpoint_discover"
     /! POP UPS 
     .cg-bg_popup
     /! POP UP LOGIN
@@ -331,142 +309,20 @@ html lang="es"
                         i.fa.fa-check aria-hidden="true"
                         .chevron_right
                       span Finalizar
-    /! MAIN SECTIONS
-    /! SECTION WELCOME
-    section.cg-welcome id="welcome"
-      .cg-wrapper_welcome
-        .canvas-wrap
-          .canvas-content
-          #canvas.gradient
-        .cg-bg_welcome
-          figure.cg-welcome_logo_tbk.cg-fade_effect
-            img src="img/tbk_logo.svg"
-          h1.cg-h1_welcome.cg-fade_effect Apoyando el desarrollo del e-commerce nacional.
-          p.cg-p_welcome.cg-fade_effect Última actualización: 2017-01-05.
-          i.fa.fa-chevron-down.cg-fade_effect aria-hidden="true"
-          #cg-webpoint_tools
-    /! SECTION TOOLS
-    section.cg-section_tools
-      h2.cg-section_h2.cg-tools-animation Herramientas de integración
-      p.cg-section_p.cg-tools-animation Todas las herramientas tienen sus dos versiones, tanto para Webpay Plus como lo nuevo que es Onepay. Descubrelo ahora.
-      .wrapper_flex_tools
-        .cg-flex_tools
-          article.cg-article_tools.cg-tools-animation_2.cg-article_tools_1
-            .cg-card_article
-              figure.cg-article_tools_front.cg-art_tools_front_1
-                img src="img/box_article_1.svg"
-                h3.cg-article_tools_h3 Plugins
-              figure.cg-article_tools_back.cg-art_tools_back_1
-                header.cg-article_tools_header
-                  h3.cg-article_tools_h3 Plugins
-                .cg-wrapper_buttons_tools.cg-wrap_btn_tools_1
-                  button.cg-button_tool WebPay Plus
-                  button.cg-button_tool One Click
-            .cg-tools_square
-              figure
-          article.cg-article_tools.cg-tools-animation_2.cg-article_tools_2
-            .cg-card_article
-              figure.cg-article_tools_front.cg-art_tools_front_2
-                img src="img/box_article_2.svg"
-                h3.cg-article_tools_h3 SDK
-              figure.cg-article_tools_back.cg-art_tools_back_2
-                header.cg-article_tools_header
-                  h3.cg-article_tools_h3 SDK
-                .cg-wrapper_buttons_tools.cg-wrap_btn_tools_2
-                  button.cg-button_tool WebPay Plus
-                  button.cg-button_tool One Click
-            .cg-tools_square
-              figure
-        .cg-flex_tools
-          article.cg-article_tools.cg-tools-animation_2.cg-article_tools_3
-            .cg-card_article
-              figure.cg-article_tools_front.cg-art_tools_front_3
-                img src="img/box_article_3.svg"
-                h3.cg-article_tools_h3 Api Docs
-              figure.cg-article_tools_back.cg-art_tools_back_3
-                header.cg-article_tools_header
-                  h3.cg-article_tools_h3 Api Docs
-                .cg-wrapper_buttons_tools.cg-wrap_btn_tools_3
-                  button.cg-button_tool WebPay Plus
-                  button.cg-button_tool One Click
-            .cg-tools_square
-              figure
-          article.cg-article_tools.cg-tools-animation_2.cg-article_tools_4
-            .cg-card_article
-              figure.cg-article_tools_front.cg-art_tools_front_4
-                img src="img/box_article_4.svg"
-                h3.cg-article_tools_h3 Manuales
-              figure.cg-article_tools_back.cg-art_tools_back_4
-                header.cg-article_tools_header
-                  h3.cg-article_tools_h3 Manuales
-                .cg-wrapper_buttons_tools.cg-wrap_btn_tools_4
-                  button.cg-button_tool WebPay Plus
-                  button.cg-button_tool One Click
-      #cg-webpoint_video
-    /! SECTION VIDEOS
-    section.cg-videos
-      .my-slider
-        h2.cg-section_videos_h2.cg-video-animation Videos tbk. | Developers
-        ul.cg-slider_video_ul.cg-video-animation_2
-          li.cg-slider_video_li.cg-slider_video_li_1
-            video autoplay="autoplay" muted="" loop="" controls=""
-              source src="sources/sample_video_1.mp4" type="video/mp4"
-            .cg-flex_btn_video
-              .icon-youtube
-            aside.cg-slider_video_aside.cg-video-animation_3
-              h4.cg-slider_video_h4 Te invitamos a conocer
-              img src="img/tbk_logo.svg"
-          li.cg-slider_video_li.cg-slider_video_li_2
-            video autoplay="autoplay" muted="" loop="" controls=""
-              source src="sources/sample_video_2.mp4" type="video/mp4"
-            .cg-flex_btn_video
-              .icon-youtube
-            aside.cg-slider_video_aside.cg-video-animation_3
-              h4.cg-slider_video_h4 Te invitamos a descubrir
-              img src="img/tbk_logo.svg"
-      #cg-webpoint_discover
-    /! SECTION DISCOVER
-    section.cg-section_discover.cg-discover-animation
-      h2.cg-section_h2 Descubre tbk. | Developers
-      .cg-flex_discover
-        article.cg-article_discover
-          .cg-article_discover_part_a.cg-discover-animation
-            img src="img/discover_1.svg"
-            h3.cg-article_discover_h3 Herramientas
-          .cg-article_discover_part_b
-            header.cg-article_discover_header
-              h3.cg-article_discover_h3 Herramientas
-            p.article_discover_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
-        article.cg-article_discover
-          .cg-article_discover_part_a.cg-discover-animation
-            img src="img/discover_2.svg"
-            h3.cg-article_discover_h3 Developers
-          .cg-article_discover_part_b
-            header.cg-article_discover_header
-              h3.cg-article_discover_h3 Developers
-            p.article_discover_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
-        article.cg-article_discover
-          .cg-article_discover_part_a.cg-discover-animation
-            img src="img/discover_3.svg"
-            h3.cg-article_discover_h3 Cursos
-          .cg-article_discover_part_b
-            header.cg-article_discover_header
-              h3.cg-article_discover_h3 Cursos
-            p.article_discover_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
-        article.cg-article_discover
-          .cg-article_discover_part_a.cg-discover-animation
-            img src="img/discover_4.svg"
-            h3.cg-article_discover_h3 Certificación
-          .cg-article_discover_part_b
-            header.cg-article_discover_header
-              h3.cg-article_discover_h3 Certificación
-            p.article_discover_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
-              br
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur.
+    /! SECTION BANNER START
+    header.cg-seccion_header
+      picture.cg-img_header
+        source srcset="img/section_headers/example-header_large.jpg" media="(min-width: 1200px)" alt="transbank developers"
+        source srcset="img/section_headers/example-header_medium.jpg" media="(min-width: 768px)" alt="transbank developers"
+        img srcset="img/section_headers/example-header.jpg" alt="transbank developers"
+    article.cg-titles
+      h1.cg-h1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+      p.cg-description Lorem ipsum dolor sit amet, consectetuer.
+    /! SECTION BANNER END
+    .cg-views
+      .row
+        .cg-view_wrapper.col-xs-10.col-sm-10.col-md-8.col-lg-8.col-xs-offset-1.col-sm-offset-1.col-md-offset-2.col-lg-offset-2
+          p.cg-p En este div puedes colocar el contenido que necesites de otras secciones de la página que ya están hechos. Esto solo es un texto de prueba, puedes borrar todo el párrafo sin problemas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     /! SECTION FOOTER
     section.cg-footer
       .cg-flex_footer
@@ -481,8 +337,6 @@ html lang="es"
           figure.wrapper_cg-tbk_logo2_footer
             img.cg-tbk_logo2_footer src="img/cumbregroup.svg"
           a.cg-tbk_footer_link_2 href="mailto:contacto@cumbregroup.com" contacto@cumbregroup.com
-script src="js/3d-lines-animation.js"
-script src="js/noframework.waypoints.min.js"
 
 
 

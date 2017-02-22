@@ -14,7 +14,7 @@
 .unslider-nav ol {
   list-style: none;
   text-align: center;
-  z-index: 10;
+  z-index: 9;
   width: 100vw;
   position: absolute;
   bottom: 1.5rem;

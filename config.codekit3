@@ -776,6 +776,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/navtop.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navtop-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/noframework.waypoints.min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -878,6 +887,23 @@
 		"oF": 1,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/sections.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sections.html",
+		"oF": 0
+		},
+	"\/sections.slim": {
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/sections.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
 		},
 	"\/sources\/sample_video_1.mp4": {
 		"ft": 8192,
