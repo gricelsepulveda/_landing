@@ -508,7 +508,9 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   @include flex;
   @media #{$sm}
   {
-    display: none;
+    width: 2rem;
+    align-items: flex-start;
+    padding-top: 3.7rem;
   }
 }
 
@@ -520,6 +522,11 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   flex-direction: column;
   border-radius: 0.25rem 0rem 0rem 0.25rem;
   background-color: rgba($black, 0.5);
+  @media #{$sm}
+  {
+    width: 2rem;
+    height: 8rem;
+  }
   .cg_nav_aside_li
   {
     width: 3rem;
@@ -529,6 +536,11 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
     color: rgba($white, 0.5);
     text-align: center;
     @include animate;
+    @media #{$sm}
+    {
+      width: 2rem;
+      height: 2rem;
+    }
     &:last-of-type
     {
       border-bottom: 1px solid transparent;
@@ -546,6 +558,13 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
       line-height: 3rem;
       vertical-align: middle;
       font-size: 1.5rem;
+      @media #{$sm}
+      {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 1.25rem;
+      }
     }
   }
 }
