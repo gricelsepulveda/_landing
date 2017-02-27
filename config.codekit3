@@ -81,16 +81,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/css\/icons-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/icons-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/css\/icons.css": {
 		"aP": 1,
 		"bl": 0,
@@ -693,6 +683,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/triangle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/triangle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/tubes_bg.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -856,6 +856,23 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/profile.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/profile.html",
+		"oF": 0
+		},
+	"\/profile.slim": {
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/profile.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
 		},
 	"\/README.md": {
 		"cS": 0,

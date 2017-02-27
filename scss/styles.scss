@@ -2459,11 +2459,438 @@ a.cg-tbk_footer_link_2
   }
 }
 
+/* PROFILE */
+
+header.cg-profile_header
+{
+  @include flex;
+  align-items: stretch;
+  margin: 1rem 1rem 0rem 1rem;
+  background-color: $red;
+  background:
+  {
+    image: url(../img/bg_lines.svg);
+    size: 100% auto;
+    position: top;
+  }
+  background-blend-mode: hard-light;
+  min-height: 400px;
+  position: relative;
+  z-index: 2;
+  border-radius: 0.5rem 0.5rem 0rem 0rem!important;
+  @media #{$sm}
+  {
+    flex-direction: column;
+    background:
+    {
+      size: 200% auto;
+      position: top left;
+    }
+  }
+  @media #{$xs}
+  {
+    background:
+    {
+      size: 300% auto;
+      position: top left;
+    }
+  }
+}
+
+figure.cg-profile_header_figure
+{
+  display: block;
+  margin: 0rem 1rem 1rem 1rem;
+  height: 6.75rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background:
+  {
+    image: url(../img/triangle.svg);
+    size: 105% auto;
+    position: bottom;
+    repeat: no-repeat;
+  }
+  @media #{$xs}
+  {
+    background-position: top;
+  }
+}
+
+.cg-profile_header_fix
+{
+  background-color: $red;
+  width: 100vw;
+  height: 2rem;
+  position: absolute;
+  top: -0.25rem;
+  left: 0;
+  z-index: 0;
+  display: none;
+  @media #{$sm}
+  {
+    display: block;
+  }
+  @media #{$xs}
+  {
+    display: none;
+  }
+}
+
+ a.cg-go_public_profile
+ {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: $white;
+    font:
+    {
+      size: 0.9rem;
+      weight: 400;
+    }
+    cursor: pointer;
+    text: 
+    {
+      align: left;
+    }
+    @include animate;
+    &:hover 
+    {
+      text-decoration: underline;
+    }
+    i 
+    {
+      margin-right: 0.25rem;
+    }
+ } 
+
+ article.cg-profile_header_a
+ {
+  display: block;
+  width: 50%;
+  padding-right: 0.5rem;
+  @include flex;
+  flex-direction: column;
+  @media #{$sm}
+  {
+    width: 100%;
+    padding-right: 0rem;
+    padding-bottom: 0.5rem;
+    align-content: flex-start;
+    margin-top: 3rem;
+  }
+ }
+
+ figure.cg-profile_header_picture
+ {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    border: 1rem solid rgba($white, 0.5);
+    border-radius: 1.5rem;
+    padding: 4px;
+    position: relative;
+    box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.25);
+ }
+
+ .cg-profile_picture_space
+ {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    border-radius: 0.35rem;
+ }
+
+h3.cg-profile_header_h3
+{
+  display: block;
+  color: $white;
+  font: 
+  {
+    size: 1.2rem;
+    weight: 600;
+  }
+  text: 
+  {
+    transform: capitalize;
+    align: center;
+  }
+  margin-top: 1rem;
+}
+
+p.cg_profile_header_p
+{
+  display: block;
+  color: $white;
+  font: 
+  {
+    size: 0.9rem;
+    weight: 400;
+  }
+  text: 
+  {
+    align: center;
+  }
+  margin-top: 0.25rem;
+}
+
+button.cg-profile_header_up_pic
+{
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: $purple;
+  border-radius: 0.25rem;
+  line-height: 2.4rem;
+  text-align: center;
+  cursor: pointer;
+  color: $white;
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  font-size: 1.05rem;
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.46);
+  @include animate;
+  &:hover 
+  {
+    background-color: $white;
+    color: $purple;
+  }
+}
+
+article.cg-profile_header_b
+{
+display: block;
+width: 50%;
+padding-left: 0.5rem;
+@media #{$sm}
+{
+  width: 100%;
+  padding-left: 0rem;
+  padding-bottom: 0.5rem;
+}
+}
+
+h2.cg-profile_header_h2
+{
+  display: inline-block;
+  color: $white;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  font:
+  {
+    size: 0.9rem;
+    weight: 400;
+  }
+  text: 
+  {
+    align: left;
+  }
+  @include animate;
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+  @media #{$sm}
+  {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+}
+
+.cg-wrapper_goals
+{
+  @include flex;
+  min-height: 4.5rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  padding-right: 5rem;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  @media #{$sm}
+  {
+    padding-right: 0;
+    display: block;
+    margin-left: 1rem;
+    text-align: center;
+    min-height: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+.cg-wrapper_mini_goal
+{
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border: 0.25rem solid rgba($white, 0.5);
+  border-radius: 0.75rem;
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.25);
+  margin: 0.5rem;
+}
+
+figure.cg-wrapper_mini_goal_space
+{
+  background-color: $white;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.5rem;
+  i 
+  {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: $red;
+  }
+}
+
+.cg-wrapper_big_goal
+{
+  display: inline-block;
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: $red;
+  right: 0rem;
+  top: 0rem;
+  border: 0.5rem solid rgba($white, 0.5);
+  border-radius: 1rem;
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.25);
+  @media #{$sm}
+  {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+
+figure.cg-wrapper_big_goal_space
+{
+  background-color: $white;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3.5rem;
+  i 
+  {
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: $red;
+  }
+}
 
 
+span.cg-wrapper_profile_social_span
+{
+  display: block;
+  color: $white;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  font:
+  {
+    size: 0.9rem;
+    weight: 400;
+  }
+  text: 
+  {
+    align: center;
+  }
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+}
 
+article.cg-wrapper_profile_social
+{
+  background-color: rgba($white, 0.5);
+  padding: 1rem;
+  display: block;
+  width: 15rem;
+  height: auto;
+  position: relative;
+  margin-top: 1rem;
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.5);
+}
+.cg-hang_profile_social
+{
+  height: 2rem;
+  @include flex;
+  align-items: flex-start;
+}
 
+button.cg-profile_social_btn
+{
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.25);
+  display: block;
+  margin-bottom: 0.5rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0rem 0.5rem 0rem 2.9rem;
+  position: relative;
+  cursor: pointer;
+  background-color: $white;
+  color: $red;
+  overflow: hidden;
+  @include animate;
+  font:
+  {
+    size: 0.6rem;
+    weight: 400;
+  }
+  text:
+  {
+    align: center;
+    transform: uppercase;
+  }
+  &:last-of-type
+  {
+    margin-bottom: 0;
+  }
+  &:hover 
+  {
+    background-color: $purple;
+    color: $white;
+    figure 
+    {
+      background-color: $white;
+      color: $purple;
+    }
+  }
+}
 
+figure.cg-profile_social_btn_fig
+{
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: $red;
+  color: $white;
+  line-height: 2.4rem;
+  text-align: center;
+  font-size: 1.05rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include animate;
+}
 
 
 
