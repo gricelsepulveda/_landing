@@ -52,6 +52,51 @@ $(document).ready(function(){
     $('.cg-li_section_form').removeClass('cg-li_section_form_active');
     $(this).addClass('cg-li_section_form_active');
   });
+  $('.cg-profile_body_li').click(function() {
+    $('.cg-profile_body_li').removeClass('cg-profile_body_li_active');
+    $(this).addClass('cg-profile_body_li_active');
+  });
+  //CAROUSEL SECTION
+  $("#evalua").click(function(){
+    $(".cg-wrapper_profile_section_carousel").animate
+      ({
+        "marginLeft":'0%'
+      }, 700);
+      $(".cg_profile_section_integrations").css({"visibility":"hidden"});
+      $(".cg_profile_section_edit_profile").css({"visibility":"hidden"});
+      $(".cg_profile_section_delete").css({"visibility":"hidden"});
+      $(".cg_profile_section_course").css({"visibility":"visible"});
+  });
+  $("#mis_integraciones").click(function(){
+    $(".cg-wrapper_profile_section_carousel").animate
+      ({
+        "marginLeft":'-100vw'
+      }, 700);
+      $(".cg_profile_section_course").css({"visibility":"hidden"});
+      $(".cg_profile_section_edit_profile").css({"visibility":"hidden"});
+      $(".cg_profile_section_delete").css({"visibility":"hidden"});
+      $(".cg_profile_section_integrations").css({"visibility":"visible"});
+  });
+  $("#editar_perfil").click(function(){
+    $(".cg-wrapper_profile_section_carousel").animate
+      ({
+        "marginLeft":'-200vw'
+      }, 700);
+      $(".cg_profile_section_integrations").css({"visibility":"hidden"});
+      $(".cg_profile_section_course").css({"visibility":"hidden"});
+      $(".cg_profile_section_delete").css({"visibility":"hidden"});
+      $(".cg_profile_section_edit_profile").css({"visibility":"visible"});
+  });
+  $("#eliminar_perfil").click(function(){
+    $(".cg-wrapper_profile_section_carousel").animate
+      ({
+        "marginLeft":'-300vw'
+      }, 700);
+      $(".cg_profile_section_integrations").css({"visibility":"hidden"});
+      $(".cg_profile_section_edit_profile").css({"visibility":"hidden"});
+      $(".cg_profile_section_course").css({"visibility":"hidden"});
+      $(".cg_profile_section_delete").css({"visibility":"visible"});
+  });
   //POP UP
     //OPEN INTERACTIONS
       // REVEAL POP UP LOGIN
@@ -184,6 +229,15 @@ $(document).ready(function () {
   {
     $('.cg-log_on').addClass('cg_button_different');
     $('.cg-log_off').addClass('cg_button_different');
+  }
+  //BUTTON RED IF SECTION PAGE IS OPEN
+  if ($(document).find(".cg-wrapper-profile_body").length == 0) 
+  { 
+    $('.cg-nav_mobile').removeClass('cg-mobile_btn_except');
+  }
+  else
+  {
+    $('.cg-nav_mobile').addClass('cg-mobile_btn_except');
   }
   //SCROLL LISTENER TOOLS SECTION
   var waypoint = new Waypoint({

@@ -87,7 +87,6 @@ html, body
 {
   font-size: 20px; /* REM */
   font-family: 'Titillium Web', 'Arial', sans-serif;
-  min-height: 100vh;
   @include zero;
   width: 100%;
   overflow-x: hidden;
@@ -942,6 +941,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   }
   select 
   {
+    cursor: pointer;
     width: 10rem;
     height: 2.4rem;
     background-color: transparent;
@@ -2466,6 +2466,7 @@ header.cg-profile_header
   @include flex;
   align-items: stretch;
   margin: 1rem 1rem 0rem 1rem;
+  padding: 2rem 0rem 2rem 0rem;
   background-color: $red;
   background:
   {
@@ -2474,7 +2475,6 @@ header.cg-profile_header
     position: top;
   }
   background-blend-mode: hard-light;
-  min-height: 400px;
   position: relative;
   z-index: 2;
   border-radius: 0.5rem 0.5rem 0rem 0rem!important;
@@ -2601,8 +2601,16 @@ figure.cg-profile_header_figure
     display: block;
     width: 100%;
     height: 100%;
+    position: relative;
     background-color: $white;
     border-radius: 0.35rem;
+    background-image: url("../img/cat.jpg");
+    background:
+    {
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    }
  }
 
 h3.cg-profile_header_h3
@@ -2661,17 +2669,21 @@ button.cg-profile_header_up_pic
   }
 }
 
+
+
 article.cg-profile_header_b
 {
-display: block;
-width: 50%;
-padding-left: 0.5rem;
-@media #{$sm}
-{
-  width: 100%;
-  padding-left: 0rem;
-  padding-bottom: 0.5rem;
-}
+  display: block;
+  width: 50%;
+  padding-left: 0.5rem;
+  @include flex;
+  flex-direction: column;
+  @media #{$sm}
+  {
+    width: 100%;
+    padding-left: 0rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 h2.cg-profile_header_h2
@@ -2708,21 +2720,53 @@ h2.cg-profile_header_h2
   @include flex;
   min-height: 4.5rem;
   margin-right: 1rem;
-  margin-top: 3rem;
-  padding-right: 5rem;
+  margin-top: 1rem;
   position: relative;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   @media #{$sm}
   {
-    padding-right: 0;
     display: block;
     margin-left: 1rem;
     text-align: center;
     min-height: 3rem;
     margin-top: 1rem;
   }
+}
+
+.cg-globe_mini_goal
+{
+  background-color: $purple;
+  color: $white;
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  font:
+  {
+    size: 0.5rem;
+    weight: 300;
+  }
+  text-align: center;
+  position: absolute;
+  line-height: 1.5rem;
+  right: -0.75rem;
+  top: -1.5rem;
+  display: none;
+  @include animate;
+}
+
+.cg-chevron_triangle_goal
+{
+  display: none;
+  top: -0.25rem;
+  left: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  background-color: $purple;
+  transform: rotate(45deg);
+  @include animate;
 }
 
 .cg-wrapper_mini_goal
@@ -2733,7 +2777,42 @@ h2.cg-profile_header_h2
   border: 0.25rem solid rgba($white, 0.5);
   border-radius: 0.75rem;
   box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.25);
-  margin: 0.5rem;
+  margin: -0.25rem;
+  position: relative;
+  cursor: pointer;
+  @include animate;
+  &:nth-child(even)
+  {
+    transform: rotate( 5deg );
+  }
+  &:hover
+  {
+    transform: rotate( 0deg );
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0px 5px 28px 0px rgba(255, 221, 255, 0.81);
+    figure.cg-wrapper_mini_goal_space
+    {
+      width: 3.5rem;
+      height: 3.5rem;
+      line-height: 3.5rem;
+      i 
+      {
+        line-height: 3.5rem;
+        font-size: 3rem;
+      }
+    }
+    .cg-globe_mini_goal
+    {
+      display: block;
+    }
+    .cg-chevron_triangle_goal
+    {
+      display: block;
+    }
+  }
 }
 
 figure.cg-wrapper_mini_goal_space
@@ -2746,33 +2825,39 @@ figure.cg-wrapper_mini_goal_space
   text-align: center;
   vertical-align: middle;
   line-height: 2.5rem;
+  @include animate;
   i 
   {
     display: inline-block;
     font-size: 2rem;
     line-height: 2.5rem;
     color: $red;
+    @include animate;
   }
 }
 
 .cg-wrapper_big_goal
 {
   display: inline-block;
-  position: absolute;
   width: 4.5rem;
   height: 4.5rem;
   background-color: $red;
-  right: 0rem;
-  top: 0rem;
+  margin-left: 1rem;
   border: 0.5rem solid rgba($white, 0.5);
   border-radius: 1rem;
   box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.25);
+  cursor: pointer;
+  @include animate;
   @media #{$sm}
   {
     display: block;
     position: relative;
     margin: 0 auto;
     margin-top: 1rem;
+  }
+  &:hover 
+  {
+    box-shadow: 0px 5px 28px 0px rgba(255, 221, 255, 0.81);
   }
 }
 
@@ -2824,12 +2909,15 @@ article.cg-wrapper_profile_social
   display: block;
   width: 15rem;
   height: auto;
-  position: relative;
   margin-top: 1rem;
   box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.5);
+  position: relative;
+  z-index: 3;
 }
 .cg-hang_profile_social
 {
+  position: relative;
+  z-index: 3;
   height: 2rem;
   @include flex;
   align-items: flex-start;
@@ -2890,6 +2978,1067 @@ figure.cg-profile_social_btn_fig
   top: 0;
   left: 0;
   @include animate;
+}
+
+
+/* PROFILE BODY START */
+
+.cg-wrapper-profile_body
+{
+  display: block;
+  background-color: rgba($white, 0.8);
+  margin: 2rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  position: relative;
+  z-index: 1;
+  @media #{$sm}
+  {
+    margin-top: 1rem;
+    padding: 0rem;
+  }
+}
+
+/* NAVBAR SECTIONS PROFILE */
+
+nav.cg-profile_body_nav
+{
+  display: block;
+  height: auto;
+  border-bottom: 0.25rem solid $gray;
+  padding-bottom: 1rem;
+}
+
+ul.cg-profile_body_ul
+{
+  display: block;
+  @include flex;
+  @media #{$sm} 
+  {
+    justify-content: center;
+  }
+}
+
+li.cg-profile_body_li
+{
+  display: block;
+  margin-right: 3rem;
+  color: $soft_black;
+  cursor: pointer;
+  font: 
+  {
+    size: 0.9rem;
+    weight: 300;
+  }
+  text: 
+  {
+    align: left;
+  }
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+  @include animate;
+  &:hover 
+  {
+    color: $red;
+  }
+  @media #{$sm}
+  {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    i 
+    {
+      align-self: flex-start;
+      display: block;
+      text-align: center;
+      line-height: 2rem;
+      font-size: 0.9rem;
+      width: 3rem;
+      height: 2rem;
+      margin-right: 0;
+    }
+  }
+}
+
+li.cg-profile_body_li_active
+{
+  color: $red;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.cg-mobile_btn_except
+{
+  top: 0.5rem;
+}
+
+.cg-profile_li_text
+{
+  display: inline-block;
+  @media #{$sm}
+  {
+    display: none;
+  }
+}
+
+span.cg-profile_section_description
+{
+  display: block;
+  position: relative;
+  font:
+  {
+    size: 0.9rem;
+    weight: 600;
+  }
+  text: 
+  {
+    align: center;
+  }
+  margin-bottom: 1rem;
+}
+
+.cg-wrapper_profile_courses
+{
+  @include flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  @media #{$xs}
+  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+article.cg-profile_course_article
+{
+  width: 20%;
+  height: auto;
+  border-radius: 0.25rem;
+  border: 1px solid $gray;
+  background-color: $white;
+  overflow: hidden;
+  padding-bottom: 3.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  @media #{$sm}
+  {
+    width: 40%;
+  }
+  @media #{$xs}
+  {
+    margin-right: 0;
+    width: 15rem;
+  }
+}
+
+header.cg-profile_course_header
+{
+  display: block;
+  height: 6rem;
+  background:
+  {
+    image: url("../img/header_article_4.svg");
+    size: 100% auto;
+    repeat: no-repeat;
+    position: bottom;
+  }
+  border-bottom: 1px solid $white;
+}
+
+h3.cg-profile_course_h3
+{
+  display: block;
+  color: $white;
+  text: 
+  {
+    align: center;
+  }
+  font:
+  {
+    size: 1.2rem;
+    weight: 600;
+  }
+  padding-top: 1.5rem;
+}
+
+p.cg-profile_course_p
+{
+  display: block;
+  text:
+  {
+    align: justify;
+  }
+  font:
+  {
+    size: 0.8rem;
+    weight: 300;
+  }
+  color: $soft_black;
+  padding: 1rem;
+}
+
+.cg-divider_course
+{
+  display: block;
+  position: absolute;
+  bottom: 3rem;
+  width: 80%;
+  left: 10%;
+  height: 2px;
+  background-color: $gray;
+  margin-bottom: 0.5rem;
+}
+
+button.cg-profile_course_btn
+{
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+  margin: 0 auto;
+  width: 80%;
+  background-color: $red;
+  color: $white;
+  border: 1px solid $red;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.25rem;
+  font: 
+  {
+    size: 0.9rem;
+    height: 400;
+  }
+  letter-spacing: 2px;
+  text: 
+  {
+    align: center;
+    transform: uppercase;
+  }
+  @include animate;
+  &:hover 
+  {
+    background-color: $white;
+    color: $red;
+  }
+  &:last-of-type
+  {
+    margin-bottom: 0;
+  }
+}
+
+/* SECTION CAROUSEL */
+
+.cg-wrapper_profile_section_carousel
+{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 400vw;
+}
+
+.cg_profile_section_
+{
+  display: block;
+  position: relative;
+  width: 100vw;
+  margin-top: 1rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  @media #{$sm}
+  {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+.cg_profile_section_course
+{
+}
+
+.cg_profile_section_integrations
+{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  span.cg-profile_section_description
+  {
+    text-align: left;
+    align-self: flex-start;
+    padding-right: 11rem;
+    @media #{$sm}
+    {
+      text-align: center;
+      padding-right: 0rem;
+      align-self: center;
+    }
+  }
+}
+
+.cg-select_filter
+{
+  display: block;
+  align-self: flex-start;
+  position: relative;
+  text-align: left;
+  margin-top: 2rem;
+  @media #{$sm}
+  {
+    align-self: center;
+  }
+}
+
+span.cg-filter_title 
+{
+  margin-right: 1rem;
+  font:
+  {
+    size: 0.9rem;
+    weight: 600;
+  }
+  @media #{$sm}
+  {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+span.cg-filter_filter
+{
+  margin-right: 0.5rem;
+  font:
+  {
+    size: 0.7rem;
+    weight: 300;
+  }
+  text-transform: uppercase;
+  input 
+  {
+    margin-left: 0.25rem;
+  }
+  &:last-of-type
+  {
+    margin-right: 0rem;
+  }
+}
+
+.cg-btn_course
+{
+  border: 1px solid $purple;
+  display: inline-block;
+  border-radius: 0.3rem;
+  position: absolute;
+  right: 2.25rem;
+  height: auto;
+  top: 0rem;
+  @media #{$sm}
+  {
+    position: relative;
+    height: 2.5rem;
+    width: 10.45rem;
+    right: inherit;
+    .cg-button_a
+    {
+      position: absolute;
+      top: 0!important;
+      left: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.cg-table_profile
+{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  overflow-x: scroll; 
+  align-self: flex-start;
+  @media #{$sm}
+  {
+    align-self: center;
+  }
+}
+
+table
+{
+  tr
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+    th 
+    {
+      font:
+      {
+        size: 0.65rem;
+        weight: 600;
+      }
+      text:
+      {
+        align: center;
+        transform: uppercase;
+      }
+      background-color: $soft_black;
+      color: $white;
+      padding: 0.5rem;
+      border-right: 1px solid $gray;
+      &:last-of-type
+      {
+        border-right: none;
+      }
+    }
+    td 
+    {
+      font:
+      {
+        size: 0.6rem;
+        weight: 300;
+      }
+      text:
+      {
+        align: center;
+      }
+      background-color: $white;
+      color: $soft_black;
+      padding: 1rem 0.25rem 1rem 0.25rem;
+      border-right: 1px solid $gray;
+      border-bottom: 1px solid $gray;
+      &:last-of-type
+      {
+        border-right: none;
+      }
+      i 
+      {
+        background-color: $red;
+        color: $white;
+        cursor: pointer;
+        @include animate;
+        border-radius: 0.25rem;
+        height: 1.6rem;
+        width: 1.6rem;
+        line-height: 1.6rem!important;
+        text-align: center;
+        border: 1px solid $red;
+        font-size: 1rem!important;
+        &:hover 
+        {
+          background-color: $white;
+          color: $red;
+        }
+      }
+    }
+    th, td
+    {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      &:nth-of-type(1)
+      {
+        width: 5rem!important;
+        min-width: 5rem!important;
+        max-width: 5rem!important;
+        img 
+        {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      &:nth-of-type(2)
+      {
+        width: 13rem!important;
+        min-width: 13rem!important;
+        max-width: 13rem!important;
+      }
+      &:nth-of-type(3)
+      {
+        width: 11rem!important;
+        min-width: 11rem!important;
+        max-width: 11rem!important;
+      }
+      &:nth-of-type(4)
+      {
+        width: 8rem!important;
+        min-width: 8rem!important;
+        max-width: 8rem!important;
+      }
+      &:nth-of-type(5)
+      {
+        width: 4rem!important;
+        min-width: 4rem!important;
+        max-width: 4rem!important;
+      }
+      &:nth-of-type(6)
+      {
+        width: 4rem!important;
+        min-width: 4rem!important;
+        max-width: 4rem!important;
+      }
+      &:nth-of-type(7)
+      {
+        width: 4rem!important;
+        min-width: 4rem!important;
+        max-width: 4rem!important;
+      }
+      &:nth-of-type(8)
+      {
+        width: 4rem!important;
+        min-width: 4rem!important;
+        max-width: 4rem!important;
+      }
+    }
+  }
+}
+
+.cg_profile_section_edit_profile
+{
+  h2.cg-form_edit_profile_h2
+  {
+    margin-bottom: 2rem;
+    @media #{$sm}
+    {
+      text-align: center;
+    }
+  }
+}
+
+form.cg-form_edit_profile_normal
+{
+  width: 50%;
+  padding: 0rem 3rem 0rem 3rem;
+  border-right: 1px solid $white;
+  @media #{$sm}
+  {
+    border-right: none;
+    border-bottom: 1px solid $white;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0rem 1rem 2rem 1rem;
+  }
+  a.cg-button_a
+  {
+    margin-top: 2rem;
+  }
+}
+form.cg-form_edit_profile_public
+{
+  width: 50%;
+  padding: 0rem 3rem 0rem 3rem;
+  @media #{$sm}
+  {
+    width: 100%;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  a.cg-button_a
+  {
+    margin-top: 2rem;
+  }
+  .cg-select_filter
+  {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    @media #{$sm}
+    {
+      text-align: center;
+    }
+    .cg-filter_filter
+    {
+      i 
+      {
+        margin-right: 0.25rem;
+      }
+      &:last-of-type
+      {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.cg-flex_edit_profile
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
+  background-color: $gray;
+  padding: 2rem 0rem 2rem 0rem;
+  margin-bottom: 1rem;
+  @media #{$sm}
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cg-input_form_edit_profile
+{
+  @include flex;
+  height: 2.4rem;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  > input
+  {
+    width: 70%;
+    height: 2.4rem;
+    display: block;
+    position: relative;
+    background-color: $white;
+    border-radius: 0.25rem;
+    border: 1px solid $gray;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    line-height: 2.4rem;
+    font:
+    {
+      size: 0.75rem;
+      weight: 300;
+    }
+    @include animate;
+    &:focus
+    {
+      border: 1px solid $red;
+    }
+  }
+  span 
+  {
+    width: 30%;
+    text-align: left;
+    font:
+    {
+      size: 0.7rem;
+      weight: 400;
+    }
+  }
+}
+
+.cg-select_form_edit_profile
+{
+  @include flex;
+  height: 2.4rem;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  span 
+  {
+    width: 30%;
+    text-align: left;
+    font:
+    {
+      size: 0.7rem;
+      weight: 400;
+    }
+  }
+}
+
+.cg-select_form_edit_profile_wrapper
+{
+  display: block;
+  width: 70%;
+  height: 2.4rem;
+  position: relative;
+  background-color: $white;
+  border-radius: 0.25rem;
+  border: 1px solid $gray;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  figure 
+  {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    width: 2.7rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background: url(../img/icons/select.svg);
+    background:
+    {
+      size: auto 2.2rem;
+      position: center;
+      repeat: no-repeat;
+    }
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
+  }
+  select 
+  {
+    width: 100%;
+    cursor: pointer;
+    height: 2.4rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    appearance: none;
+    font: 
+    {
+      size: 0.7rem;
+      weight: 300;
+      family: 'Titillium Web', sans-serif;
+    }
+    color: darken($gray, 30%);
+  }
+}
+
+
+.cg_profile_section_section_delete
+{
+}
+
+.cg-btn_course_2
+{
+  display: block;
+  border: 1px solid $purple!important;
+  border-radius: 0.3rem;
+  position: relative;
+  height: 2.5rem;
+  width: 9.18rem;
+  right: inherit;
+  margin: 0 auto;
+  .cg-button_a
+  {
+    position: absolute;
+    top: 0!important;
+    left: 0;
+    margin-top: 0;
+  }
+}
+
+
+.cg-delete_integration
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 12rem;
+    @media #{$sm}
+    {
+      height: 13rem;
+    }
+    span.cg-human
+    {
+      @media #{$sm}
+      {
+        display: inline-block;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.cg-revalidate_integration
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 14rem;
+    @media #{$sm}
+    {
+      height: 19rem;
+    }
+    span.cg-human
+    {
+      @media #{$sm}
+      {
+        display: inline-block;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.cg-new_integration
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 24.5rem;
+    @media #{$sm}
+    {
+      height: 85vh;
+    }
+    .cg-form_pop
+    {
+      .cg-wrapper_form_up_img
+      {
+        @include flex;
+        @media #{$sm}
+        {
+          flex-direction: column;
+        }
+        .cg-form_pop_uploaded_img
+        {
+          width: 40%;
+          position: relative;
+          @media #{$sm}
+          {
+            width: 100%;
+            margin-top: 1rem;
+          }
+          figure
+          {
+            display: block;
+            margin: 0 auto;
+            width: 8rem;
+            height: 8rem;
+            position: relative;
+            background-color: $gray;
+            text-align: center;
+            .cg-wrapper_img_fig_integration
+            {
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              width: 8rem;
+              height: 8rem;
+              overflow: hidden;
+              line-height: 8rem;
+              z-index: 0;
+              background-color: blue;
+              img 
+              {
+                position: relative;
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+        .cg-wrapper_input_lot
+        {
+          width: 60%;
+          padding-right: 1rem;
+          @media #{$sm}
+          {
+            width: 100%;
+            margin-top: 1rem;
+            padding-right: 0rem;
+            .cg-input_form_edit_profile
+            {
+              flex-direction: column;
+              height: auto;
+              line-height: auto;
+              span
+              {
+                margin-bottom: 0.25rem;
+                text-align: center;
+                height: auto;
+                line-height: auto;
+              }
+              input 
+              {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    span.cg-human
+    {
+      @media #{$sm}
+      {
+        display: inline-block;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.file_input
+{
+  top: -1.5rem;
+  right: 0rem;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.file_input_2
+{
+  display: inline-block;
+  top: -1.5rem;
+  right: -1.5rem;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+}
+
+
+.cg-info_up_img
+{
+  @include flex;
+  justify-content: space-between;
+  max-width: 40%;
+  margin-right: 3rem;
+  font:
+  {
+    size: 0.7rem;
+    weight: 300;
+  }
+  text:
+  {
+    align: justify;
+  }
+  @media #{$sm}
+  {
+    margin-right: 0rem;
+    max-width: 100%;
+    padding: 0rem 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+  }
+  i 
+  {
+    font-size: 1.2rem;
+    color: $red;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+    @media #{$sm}
+    {
+      margin-right: 0;
+      display: block;
+    }
+  }
+}
+
+.cg-edit_integration
+{
+  #cg-popup, .cg-flex_pop
+  {
+    height: 24.5rem;
+    @media #{$sm}
+    {
+      height: 85vh;
+    }
+    .cg-form_pop
+    {
+      .cg-wrapper_form_up_img
+      {
+        @include flex;
+        @media #{$sm}
+        {
+          flex-direction: column;
+        }
+        .cg-form_pop_uploaded_img
+        {
+          width: 40%;
+          position: relative;
+          @media #{$sm}
+          {
+            width: 100%;
+            margin-top: 1rem;
+          }
+          figure
+          {
+            display: block;
+            margin: 0 auto;
+            width: 8rem;
+            height: 8rem;
+            position: relative;
+            background-color: $gray;
+            text-align: center;
+            .cg-wrapper_img_fig_integration
+            {
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              width: 8rem;
+              height: 8rem;
+              overflow: hidden;
+              line-height: 8rem;
+              z-index: 0;
+              background-color: blue;
+              img 
+              {
+                position: relative;
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+        .cg-wrapper_input_lot
+        {
+          width: 60%;
+          padding-right: 1rem;
+          @media #{$sm}
+          {
+            width: 100%;
+            margin-top: 1rem;
+            padding-right: 0rem;
+            .cg-input_form_edit_profile
+            {
+              flex-direction: column;
+              height: auto;
+              line-height: auto;
+              span
+              {
+                margin-bottom: 0.25rem;
+                text-align: center;
+                height: auto;
+                line-height: auto;
+              }
+              input 
+              {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    span.cg-human
+    {
+      @media #{$sm}
+      {
+        display: inline-block;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
 }
 
 
