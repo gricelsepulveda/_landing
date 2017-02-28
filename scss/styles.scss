@@ -3058,14 +3058,14 @@ figure.cg-profile_social_btn_fig
 {
   display: block;
   background-color: rgba($white, 0.8);
-  margin: -5rem 1rem 1rem 1rem;
+  margin: 0rem 1rem 1rem 1rem;
   padding: 0rem 1rem 0rem 1rem;
   position: relative;
   z-index: 1;
   min-height: 400px;
   @media #{$sm}
   {
-    margin-top: 13rem;
+    margin-top: 24rem;
     padding: 0rem;
   }
 }
@@ -4143,17 +4143,17 @@ h1.cg-profile_public_h2
   margin-top: 1rem;
 }
 
-.cg-integrated-market_li
+li#cg-integrated_market_li
 {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
   padding: 1rem;
-  border-bottom: 2px solid $black!important;
+  border-bottom: 1px solid $gray;
   width: 100%;
-  margin-bottom: 1rem;
   @media #{$sm}
   {
     justify-content: center;
@@ -4175,13 +4175,53 @@ h1.cg-profile_public_h2
   }
 }
 
-.cg-integrated_market_p
+.cg-integrated_market_trusted
 {
-  display: block;
-  color: $black;
+  background-color: rgba($black, 0.8);
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  transform: rotate(-2deg);
+  span 
+  {
+    display: block;
+    font:
+    {
+      size: 0.5rem;
+      weight: 300;
+    }
+    text-align: left; 
+    text-transform: uppercase;
+  }
+  i 
+  {
+    display: block;
+    font-size: 0.7rem;
+    margin-right: 0.25rem;
+  }
 }
 
-h4.cg-integrated_market_h4
+.cg-integrated_market_p
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  color: $black;
+  margin-left: 1rem;
+}
+
+.cg-integrated_market_h4
 {
   display: block;
   font: 
@@ -4192,7 +4232,7 @@ h4.cg-integrated_market_h4
   text-align: left;
 }
 
-a.cg-integrated_market_a
+.cg-integrated_market_a
 {
   margin-top: 0.25rem;
   display: block;
@@ -4204,13 +4244,14 @@ a.cg-integrated_market_a
   color: $red;
   cursor: pointer;
   @include animate;
+  text-align: left;
   &:hover
   {
     text-decoration: underline;
   }
 }
 
-span.cg-integrated_market_span
+.cg-integrated_market_span
 {
   display: block;
   font: 
@@ -4219,5 +4260,24 @@ span.cg-integrated_market_span
     weight: 300;
   }
   margin-top: 0.25rem;
+  text-align: left;
+}
+
+.cg-advertisign_space_transbank
+{
+  display: block;
+  height: 200px;
+  background-color: $gray;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+  cursor: pointer;
+  img 
+  {
+    line-height: 200px;
+    width: 100%;
+    height: auto;
+  }
 }
 
