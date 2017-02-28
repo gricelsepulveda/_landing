@@ -16,7 +16,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -877,6 +877,17 @@
 		"llg": 0,
 		"oA": 0,
 		"oAP": "\/profile.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"\/public_profile.slim": {
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/public_profile.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 1,

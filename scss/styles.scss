@@ -2628,6 +2628,10 @@ h3.cg-profile_header_h3
     align: center;
   }
   margin-top: 1rem;
+  i 
+  {
+    margin-right: 0.25rem;
+  }
 }
 
 p.cg_profile_header_p
@@ -2644,6 +2648,13 @@ p.cg_profile_header_p
     align: center;
   }
   margin-top: 0.25rem;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+#cg-justify
+{
+  text-align: justify;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
 button.cg-profile_header_up_pic
@@ -2871,7 +2882,52 @@ figure.cg-wrapper_big_goal_space
   text-align: center;
   vertical-align: middle;
   line-height: 3.5rem;
-  i 
+  > span 
+  {
+    color: $red;
+    font:
+    {
+      size: 1.5rem;
+      weight: 700;
+    }
+    display: block;
+    line-height: 3rem;
+  }
+  .likes
+  {
+    color: $red;
+    font:
+    {
+      size: 1.5rem;
+      weight: 700;
+    }
+    display: block;
+    line-height: 3rem;
+    i 
+    {
+      margin-left: -0.25rem;
+    }
+  }
+  > p
+  {
+    color: $purple;
+    display: block;
+    text-align: center;
+    font:
+    {
+      size: 0.46rem;
+      weight: 600;
+    }
+    letter-spacing: 0px;
+    line-height: 0.7rem!important;
+    margin-top: -0.7rem;
+    text:
+    {
+      transform: uppercase;
+      align: center;
+    }
+  }
+  > i 
   {
     display: inline-block;
     font-size: 3rem;
@@ -2994,6 +3050,22 @@ figure.cg-profile_social_btn_fig
   @media #{$sm}
   {
     margin-top: 1rem;
+    padding: 0rem;
+  }
+}
+
+.cg-wrapper-public_profile_body
+{
+  display: block;
+  background-color: rgba($white, 0.8);
+  margin: -5rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  position: relative;
+  z-index: 1;
+  min-height: 400px;
+  @media #{$sm}
+  {
+    margin-top: 13rem;
     padding: 0rem;
   }
 }
@@ -3264,9 +3336,6 @@ button.cg-profile_course_btn
   }
 }
 
-.cg_profile_section_course
-{
-}
 
 .cg_profile_section_integrations
 {
@@ -3707,10 +3776,6 @@ form.cg-form_edit_profile_public
 }
 
 
-.cg_profile_section_section_delete
-{
-}
-
 .cg-btn_course_2
 {
   display: block;
@@ -4041,5 +4106,118 @@ form.cg-form_edit_profile_public
   }
 }
 
+/* PUBLIC PROFILE */
+h1.cg-profile_public_h2 
+{
+  margin-top: 4rem;
+  display: block;
+  background-color: $purple;
+  color: $white;
+  font: 
+  {
+    size: 0.9rem;
+    weight: 600;
+  }
+  text: 
+  {
+    align: left;
+    transform: uppercase;
+  }
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  padding: 0.5rem;
+}
 
+.cg-integrated-market_ul
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+}
+
+.cg-integrated-market_li
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+  border-bottom: 2px solid $black!important;
+  width: 100%;
+  margin-bottom: 1rem;
+  @media #{$sm}
+  {
+    justify-content: center;
+  }
+}
+
+.cg-integrated_market_figure
+{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  line-height: 3rem;
+  text-align: center;
+  img 
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cg-integrated_market_p
+{
+  display: block;
+  color: $black;
+}
+
+h4.cg-integrated_market_h4
+{
+  display: block;
+  font: 
+  {
+    size: 1rem;
+    weight: 600;
+  }
+  text-align: left;
+}
+
+a.cg-integrated_market_a
+{
+  margin-top: 0.25rem;
+  display: block;
+  font: 
+  {
+    size: 0.7rem;
+    weight: 400;
+  }
+  color: $red;
+  cursor: pointer;
+  @include animate;
+  &:hover
+  {
+    text-decoration: underline;
+  }
+}
+
+span.cg-integrated_market_span
+{
+  display: block;
+  font: 
+  {
+    size: 0.6rem;
+    weight: 300;
+  }
+  margin-top: 0.25rem;
+}
 
