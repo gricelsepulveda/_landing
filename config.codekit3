@@ -91,6 +91,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/unslider-dots-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/unslider-dots-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/unslider-dots.css": {
 		"aP": 1,
 		"bl": 0,
@@ -869,6 +879,12 @@
 		"oFM": 0,
 		"oS": 1,
 		"rAC": 0
+		},
+	"\/index_.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index_.html",
+		"oF": 0
 		},
 	"\/js\/3d-lines-animation.js": {
 		"ft": 64,
