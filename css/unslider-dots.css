@@ -19,12 +19,7 @@
   position: absolute;
   bottom: 1.5rem;
 }
-@media (max-width: 991px){
-  .unslider-nav ol 
-  {
-    bottom: 5.15rem;
-  }
-}
+
 .unslider-nav ol li {
   display: inline-block;
   width: 32px;
