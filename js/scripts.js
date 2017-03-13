@@ -20,29 +20,29 @@ $(document).ready(function(){
   });
   // TRIGGER TOOL MENU
   $(".cg-main_li_tool").click(function(){
-    if($(".cg-menu_tool").hasClass("cg-display"))
+    if($(".cg-menu_tool, #cg-menu_tool").hasClass("cg-display"))
         {
-          $(".cg-menu_tool").removeClass("cg-display");
+          $(".cg-menu_tool, #cg-menu_tool").removeClass("cg-display");
         }
     else{
-          $(".cg-menu_tool").addClass("cg-display");
+          $(".cg-menu_tool, #cg-menu_tool").addClass("cg-display");
         }
   });
-  $(".cg-menu_tool").mouseleave(function(){
-      $(".cg-menu_tool").removeClass("cg-display");
+  $(".cg-menu_tool, #cg-menu_tool").mouseleave(function(){
+      $(".cg-menu_tool, #cg-menu_tool").removeClass("cg-display");
   });
   $(".cg-tool_li").click(function(){
-    $(".cg-menu_tool").removeClass("cg-display");
+    $(".cg-menu_tool, #cg-menu_tool").removeClass("cg-display");
     $(".cg-menu_ul").animate
       ({
         "left":'-100vw'
       }, 350);
   });
   $(".cg-main_li_out").hover(function(){
-      $(".cg-menu_tool").removeClass("cg-display");
+      $(".cg-menu_tool, #cg-menu_tool").removeClass("cg-display");
   });
   $(".cg-main_li_out").click(function(){
-      $(".cg-menu_tool").removeClass("cg-display");
+      $(".cg-menu_tool, #cg-menu_tool").removeClass("cg-display");
   });
   // HYPERLINKS
   $('.cg-main_li').click(function() {
@@ -229,6 +229,17 @@ $(document).ready(function () {
   }
   else
   {
+    $('.cg-log_on').addClass('cg_button_different');
+    $('.cg-log_off').addClass('cg_button_different');
+    $('#cg-navbar_main').removeClass('cg-navbar_main');
+    $('#cg-navbar_main').addClass('cg-navbar_main_2');
+    $('#cg-menu_tool').removeClass('cg-menu_tool_bottom');
+    $('#cg-menu_tool').removeClass('cg-menu_tool');
+    $('#cg-menu_tool').addClass('cg-menu_tool_2');
+    $('.cg-log_on').addClass('cg_button_different');
+    $('.cg-log_off').addClass('cg_button_different');
+    $('.cg-nav_mobile').addClass('cg-nav_mobile_top');
+    $('.cg-nav_mobile').removeClass('cg-nav_mobile_bottom');
     $('.cg-log_on').addClass('cg_button_different');
     $('.cg-log_off').addClass('cg_button_different');
   }

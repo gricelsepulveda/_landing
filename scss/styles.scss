@@ -196,6 +196,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   @include animate;
 }
 
+
 // ORIGINAL STYLES NAV
 .cg-navbar_main_top
 {
@@ -207,6 +208,21 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   bottom: 0;
   position: absolute;
   background-color: rgba($black, 0.6);
+}
+
+.cg-navbar_main_2
+{
+  background-color: $black;
+  display: block;
+  width: 100vw;
+  height: 3.5rem;
+  left: 0;
+  z-index: 10;
+  vertical-align: middle;
+  bottom: inherit;
+  top: 0;
+  position: fixed;
+  @include animate;
 }
 
 .flex 
@@ -471,6 +487,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
 {
   position: absolute;
   left: 0rem;
+  bottom: 2.25rem;
   display: block;
   border: 1px solid $gray;
   width: 100%;
@@ -484,6 +501,8 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   {
     width: 60vw;
     left: 20vw;
+    bottom: inherit!important;
+    top: 2.25rem!important;
   }
   &:hover
   {
@@ -534,13 +553,74 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   }
 }
 
-.cg-menu_tool_bottom
+.cg-menu_tool_2
 {
-  bottom: 2.25rem;
+  position: absolute;
+  left: 0rem;
+  top: 2.25rem;
+  bottom: 'inherit';
+  display: block;
+  border: 1px solid $gray;
+  width: 100%;
+  background-color: $white;
+  z-index: 11;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  color: $black;
+  display: none!important;
   @media #{$sm}
   {
-    bottom: inherit;
-    top: 2.25rem;
+    width: 60vw;
+    left: 20vw;
+    bottom: inherit!important;
+    top: 2.25rem!important;
+  }
+  &:hover
+  {
+    border: 1px solid $gray;
+  }
+  .cg-span_tool
+  {
+    display: block;
+    color: darken($gray, 30%);
+    text-align: left;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0rem 0rem 0rem 0.5rem;
+    font:
+    {
+      size: 0.75rem;
+      weight: 600;
+    }
+    border-top: 1px solid $gray;
+    &:first-of-type 
+    {
+      border-top: none;
+    }
+  }
+  .cg-tool_li 
+  {
+    display: block;
+    color: $black;
+    text:
+    { 
+      align: left;
+      decoration: none!important;
+    }
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0rem 0.5rem 0rem 1rem;
+    font:
+    {
+      size: 0.75rem;
+      weight: 300;
+    }
+    cursor: pointer;
+    &:hover
+    {
+      background-color: $black;
+      color: $white;
+    }
   }
 }
 
