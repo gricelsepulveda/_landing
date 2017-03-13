@@ -7,7 +7,7 @@
 		"uuidString": "DC5F46CF-288F-439A-BB18-3A23F6614D70"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -151,6 +151,102 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/fonts\/din\/din_alternate_bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_alternate_bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_alternate_bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_alternate_bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_alternate_bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_alternate_bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_alternate_bold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_alternate_bold.woff2",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_condensed_bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_condensed_bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_condensed_bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_condensed_bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_condensed_bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_condensed_bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_condensed_bold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_condensed_bold.woff2",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_light.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_light.eot",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_light.ttf",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_light.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_light.woff",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_light.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_light.woff2",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_medium.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_medium.eot",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_medium.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_medium.ttf",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_medium.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_medium.woff",
+		"oF": 0
+		},
+	"\/fonts\/din\/din_medium.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/din\/din_medium.woff2",
+		"oF": 0
+		},
 	"\/fonts\/fontawesome\/fontawesome-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -249,46 +345,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/box_article_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/box_article_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/box_article_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/box_article_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/box_article_3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/box_article_3.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/box_article_4.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/box_article_4.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/img\/cat.jpg": {
 		"ft": 16384,
 		"iS": 50729,
@@ -307,41 +363,41 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/discover_1.svg": {
+	"\/img\/discover_icon_01.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/discover_1.svg",
+		"oAP": "\/img\/discover_icon_01.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/discover_2.svg": {
+	"\/img\/discover_icon_02.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/discover_2.svg",
+		"oAP": "\/img\/discover_icon_02.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/discover_3.svg": {
+	"\/img\/discover_icon_03.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/discover_3.svg",
+		"oAP": "\/img\/discover_icon_03.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/discover_4.svg": {
+	"\/img\/discover_icon_04.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/discover_4.svg",
+		"oAP": "\/img\/discover_icon_04.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -547,6 +603,86 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icon_tools_01.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_01.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_01_hover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_01_hover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_02.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_02.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_02_hover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_02_hover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_03.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_03.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_03_hover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_03_hover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_04.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_04.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon_tools_04_hover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon_tools_04_hover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icons\/comuna.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -731,6 +867,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/webpay_plus.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/webpay_plus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -759,10 +905,10 @@
 		},
 	"\/js\/canvas-renderer.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/canvas-renderer-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -777,37 +923,37 @@
 		},
 	"\/js\/jquery-3.1.1-min.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/jquery-3.1.1-min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/navtop.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/navtop-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/noframework.waypoints.min.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/noframework.waypoints.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/picturefill.min.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/picturefill.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -822,7 +968,7 @@
 		},
 	"\/js\/scripts-min.js": {
 		"ft": 64,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/js\/scripts-min-min.js",
 		"oF": 0,
@@ -831,10 +977,10 @@
 		},
 	"\/js\/scripts.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/scripts-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -849,7 +995,7 @@
 		},
 	"\/js\/unslider-min.js": {
 		"ft": 64,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/js\/unslider-min-min.js",
 		"oF": 0,
@@ -858,10 +1004,10 @@
 		},
 	"\/js\/unslider.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/unslider-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1840,6 +1986,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -2168,6 +2318,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -2261,6 +2415,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},

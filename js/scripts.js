@@ -9,13 +9,15 @@ $(document).ready(function(){
       ({
         "left":'0'
       }, 700);
-    });
+    $(".cg-wrapper_nav_aside").fadeOut("fast");
+  });
   $(".cg-menu_ul_close").click(function(){
     $(".cg-menu_ul").animate
       ({
         "left":'-100vw'
       }, 350);
-    });
+      $(".cg-wrapper_nav_aside").fadeIn("slow");
+  });
   // TRIGGER TOOL MENU
   $(".cg-main_li_tool").click(function(){
     if($(".cg-menu_tool").hasClass("cg-display"))
@@ -145,13 +147,13 @@ $(document).ready(function(){
     var activate_scroll = true;
     $(".cg-popup").each(function( index ) {
       if($(this).css("display") != "none"){
-        $('html, body').css({'overflow-y': 'hidden', 'height': '100%'});
+        $('html, body').css({'overflow-y': 'hidden'});
         activate_scroll = false;
         return;
       }
     });
     if(activate_scroll){
-      $('html, body').css({'overflow-y': 'auto', 'height': 'auto'});
+      $('html, body').css({'overflow-y': 'auto'});
     }
   }
 });
