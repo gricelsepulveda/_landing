@@ -724,7 +724,6 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   left: 0;
   width: 100vw;
   height: 100vh;
-  cursor: pointer;
   display: none;
 }
 
@@ -1108,7 +1107,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
 .cg-wrapper_form_sections
 {
   display: block;
-  width: 75rem;
+  width: 81rem;
   height: auto;
   position: relative;
   margin-left: 0%;
@@ -1250,10 +1249,10 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   #cg-popup, .cg-flex_pop
   {
     height: 29.5rem;
-    width: 25rem;
+    width: 27rem;
     .cg-nav_pop
     {
-      width: 25rem;
+      width: 27rem;
     }
     @media #{$sm}
     {
@@ -1379,12 +1378,20 @@ section.cg-welcome
       margin-top: 1rem;
     }
   }
-  i 
+  .cg-cnt_chevron-down-welcome
   {
-    color: $white;
-    font-size: 1.5rem;
+    display: block;
+    width: 100%;
     position: absolute;
+    text-align: center;
     bottom: 6rem;
+    left: 0rem;
+    i 
+    {
+      display: inline-block;
+      color: $white;
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -1427,6 +1434,43 @@ section.cg-section_tools
   }
 }
 
+
+#tools
+{
+  position: absolute;
+  background-color: transparent;
+  width: 0.25rem;
+  height: 0.25rem;
+  display: block;
+  top: -3.25rem;
+  left: 0;
+  z-index: 3000;
+}
+
+#cg-video_slider
+{
+  position: absolute;
+  background-color: transparent;
+  width: 0.25rem;
+  height: 0.25rem;
+  display: block;
+  top: 0rem;
+  left: 0;
+  z-index: 3000;
+}
+
+#cg-discover
+{
+  position: absolute;
+  background-color: transparent;
+  width: 0.25rem;
+  height: 0.25rem;
+  display: block;
+  top: 0rem;
+  left: 0;
+  z-index: 3000;
+}
+
 #cg-webpoint_tools
 {
   position: absolute;
@@ -1451,7 +1495,7 @@ section.cg-section_tools
   position: absolute;
   width: 2rem;
   height: 2rem;
-  bottom: 3.1rem;
+  bottom: 6.1rem;
   left: 0;
 }
 
