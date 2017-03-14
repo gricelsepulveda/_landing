@@ -1835,7 +1835,6 @@ section.cg-section_tools
 }
 
 /* VIDEO */
-
 section.cg-videos
 {
   width: 100%;
@@ -1843,6 +1842,7 @@ section.cg-videos
   background-color: $white;
   display: block;
   position: relative;
+  z-index: 1;
   @media #{$sm}
   {
     height: auto;
@@ -1868,6 +1868,7 @@ section.cg-videos
   {
     height: auto;
     visibility: hidden;
+    background-color: $red;
     .cg-slider_video_li
     {
       height: auto;
@@ -1875,6 +1876,7 @@ section.cg-videos
       position: relative;
       overflow: hidden;
       text-align: center;
+      background-color: $red;
       .cg-video_dimensions
       {
         display: inline-block;
@@ -1951,7 +1953,11 @@ aside.cg-slider_video_aside
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 27.3rem;
+  @media #{$sm}
+  {
+    height: 100%;
+  }
   z-index: 9;
   @include flex;
   flex-direction: column;
