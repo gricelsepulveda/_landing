@@ -32,8 +32,21 @@
   cursor: pointer;
   box-shadow: 0px 0px 0px 6px #bc0033; }
 
+@media (max-width: 992px) {
+  .unslider-nav ol li {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 0px 2px #bc0033; } }
+
 .unslider-nav ol li.unslider-active {
   background: #fff;
   border: 2px solid #BC0033;
   box-shadow: 0px 0px 0px 6px white;
   cursor: default; }
+
+@media (max-width: 992px) {
+  .unslider-nav ol li.unslider-active {
+    border: 1px solid #BC0033;
+    box-shadow: 0px 0px 0px 2px white; } }

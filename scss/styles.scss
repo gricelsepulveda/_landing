@@ -1845,7 +1845,7 @@ section.cg-videos
   position: relative;
   @media #{$sm}
   {
-    height: 100vh;
+    height: auto;
   }
   h2.cg-section_h2.cg-video-animation
   {
@@ -1861,30 +1861,29 @@ section.cg-videos
     position: relative;
     @media #{$sm}
     {
-      height: 100vh;
+      height: auto;
     }
   }
   .cg-slider_video_ul
   {
-    height: 100%;
+    height: auto;
     visibility: hidden;
     .cg-slider_video_li
     {
-      height: 100%;
+      height: auto;
       z-index: 8;
       position: relative;
       overflow: hidden;
+      text-align: center;
       .cg-video_dimensions
       {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
         width: 100%;
-        height: 100%;
-        @media #{$sm}
-        {
-          width: auto;
-          height: 100%;
-        }
+        height: auto;
       }
-      &:before
+      &:after
       {
         content: "";
         width: 100%;
