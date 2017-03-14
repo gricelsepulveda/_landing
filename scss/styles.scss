@@ -372,7 +372,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
     display: inline-block;
     position: relative;
     color: $white;
-    background-color: $red;
+    background-color: $black;
     width: 2.4rem;
     height: 2.4rem;
     text-align: center;
@@ -388,7 +388,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
       height: 0; 
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
-      border-left: 5px solid $red;
+      border-left: 5px solid $black;
       position: absolute;
       top: 18px;
       right: -5px;
@@ -400,7 +400,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
     min-width: 2.4rem;
     height: 2.4rem;
     background-color: $white;
-    color: $red;
+    color: $black;
     display: inline-block;
     padding: 0rem 0.5rem 0rem 0.5rem;
     border-radius: 0rem 0.25rem 0.25rem 0rem;
@@ -428,11 +428,11 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
     figure 
     {
       background-color: $white;
-      color: $red;
+      color: $black;
     }
     span 
     {
-      background-color: $red;
+      background-color: $black;
       color: $white;
     }
   }
@@ -1338,10 +1338,10 @@ section.cg-welcome
   display: none;
   .cg-h1_welcome
   {
-    color: #FFD900;
+    color: $white;
     font:
     {
-      size: 1.05rem;
+      size: 0.9rem;
       weight: 400;
       family: 'din_medium', 'Titillium Web', sans-serif;
     }
@@ -1397,7 +1397,7 @@ section.cg-welcome
 
 .cg-welcome_logo_tbk
 {
-  width: 70vw;
+  width: 798px;
   height: auto;
   text-align: center;
   img 
@@ -1419,13 +1419,13 @@ section.cg-section_tools
   height: auto;
   display: block;
   position: relative;
-  padding: 5rem 6rem 3rem 6rem;
+  padding: 6.75rem 6rem 3rem 6rem;
   background-color: $white;
   background: 
   {
-    image: url(../img/bg_lines.svg);
+    image: url(../img/bg_lines_2.svg);
     size: cover;
-    position: bottom;
+    position: center;
     repeat: no-repeat;
   }
   @media #{$sm}
@@ -1466,7 +1466,7 @@ section.cg-section_tools
   width: 0.25rem;
   height: 0.25rem;
   display: block;
-  top: 0rem;
+  top: -3.4rem;
   left: 0;
   z-index: 3000;
 }
@@ -1481,8 +1481,19 @@ section.cg-section_tools
   left: 0;
 }
 
+ #cg-webpoint_discover
+ {
+  position: absolute;
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  bottom: 3.4rem;
+  left: 0;
+ }
+
 #cg-webpoint_video
 {
+  background-color: transparent;
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -1490,14 +1501,6 @@ section.cg-section_tools
   left: 0;
 }
 
-#cg-webpoint_discover
-{
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  bottom: 6.1rem;
-  left: 0;
-}
 
 .cg-section_h2
 {
@@ -1519,11 +1522,14 @@ section.cg-section_tools
   {
     align: center;
   }
+  line-height: 1.5rem;
 }
 
 .cg-img_webpay_plus
 {
-  width: 5rem;
+  width: 5.01rem;
+  margin-bottom: -0.2rem;
+  line-height: 1.5rem;
   height: auto;
   display: inline;
 }
@@ -1545,7 +1551,7 @@ section.cg-section_tools
     align: center;
   }
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .cg-relevant_text
@@ -1568,20 +1574,29 @@ section.cg-section_tools
 
 .cg-flex_tools_wrap
 {
-  @include flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   &:first-of-type
   {
     margin-bottom: 1rem;
   }
   @media #{$sm}
   {
+    flex-direction: row;
+    flex-wrap: wrap!important;
+  }
+  @media #{$xs}
+  {
     flex-direction: column!important;
+    flex-wrap: nowrap;
   }
 }
 
 .cg-article_tools
 {
-  width: 30%;
+  width: 11.6rem;
   height: auto;
   background-color: $white;
   border: 1px solid $red;
@@ -1595,17 +1610,44 @@ section.cg-section_tools
   @include animate;
   @media #{$sm}
   {
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    &:last-of-type
+    width: 11.6rem;
+    margin: 3rem;
+    height: auto;
+    &:nth-of-type(2)
     {
-      margin-bottom: 0rem;
+      margin-right: 0rem;
+    }
+    &:nth-of-type(3)
+    {
+      margin-top: 1rem;
+    }
+    &:nth-of-type(4)
+    {
+      margin-top: 1rem;
     }
   }
   @media #{$xs}
   {
-    width: 75%;
+    margin: inherit;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    width: 11.6rem;
+    &:last-of-type
+    {
+      margin-bottom: 0rem;
+    }
+    &:nth-of-type(2)
+    {
+      margin-right: 0rem;
+    }
+    &:nth-of-type(3)
+    {
+      margin-top: 0rem;
+    }
+    &:nth-of-type(4)
+    {
+      margin-top: 0rem;
+    }
   }
   &:nth-of-type(1)
   {
@@ -1709,7 +1751,7 @@ section.cg-section_tools
   display: block;
   font: 
   {
-    size: 1.6rem;
+    size: 1.725rem;
     weight: 600;
     family: 'din_alternate_bold', 'Titillium Web', sans-serif;
   }
@@ -1719,7 +1761,7 @@ section.cg-section_tools
   }
   color: $red;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
   cursor: pointer;
 }
 
@@ -1730,7 +1772,7 @@ section.cg-section_tools
   position: relative;
   width: 5rem;
   height: 5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background:
   {
     size: cover;
@@ -1769,7 +1811,7 @@ section.cg-section_tools
   display: block;
   font:
   {
-    size: 0.8rem;
+    size: 1rem;
     family: 'din_light', 'Titillium Web', sans-serif;
     weight: 600;
   }
@@ -1778,7 +1820,7 @@ section.cg-section_tools
     align: center;
     transform: uppercase;
   }
-  padding: 0.25rem 1rem 0.25rem 1rem;
+  padding: 0.35rem 1rem 0.35rem 1rem;
   cursor: pointer;
   &:hover
   {
@@ -1928,13 +1970,13 @@ section.cg-section_discover
   width: 100%;
   display: block;
   position: relative;
-  padding: 7rem 6rem 3rem 6rem;
+  padding: 7.5rem 6rem 4rem 6rem;
   background-color: $white;
   background: 
   {
-    image: url(../img/bg_lines.svg);
+    image: url(../img/bg_lines_2.svg);
     size: cover;
-    position: bottom;
+    position: center;
     repeat: no-repeat;
   }
   visibility: hidden;
@@ -2007,7 +2049,7 @@ section.cg-section_discover
   {
     display: block;
     padding-left: 4rem;
-    color: $black;
+    color: $cobalt_blue;
     font:
     {
       size: 1.3rem;
