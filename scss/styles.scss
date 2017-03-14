@@ -1121,7 +1121,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   .cg-form_section_a,  .cg-form_section_b,  .cg-form_section_c
   {
     display: inline-block;
-    width: 50vw;
+    width: 27rem;
     height: auto;
     @media #{$sm}
     {
@@ -1250,17 +1250,21 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   {
     height: 29.5rem;
     width: 27rem;
+    overflow-y: hidden;
     .cg-nav_pop
     {
       width: 27rem;
+      overflow-y: hidden;
     }
     @media #{$sm}
     {
       width: 85vw;
       height: 90vh;
+      overflow-y: scroll;
       .cg-nav_pop
       {
         width: 85vw;
+        overflow-y: scroll;
       }
       .cg-wrap_btns
       {
@@ -1987,7 +1991,6 @@ section.cg-section_discover
     position: center;
     repeat: no-repeat;
   }
-  visibility: hidden;
   @media #{$sm}
   {
     padding: 5rem 1rem 

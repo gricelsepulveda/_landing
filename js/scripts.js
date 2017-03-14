@@ -207,7 +207,7 @@ function form_section_b()
 function form_section_c()
 {
   $(".cg-wrapper_form_sections").animate({
-    "marginLeft":'-202%'
+    "marginLeft":'-200%'
   }, 1000);
   $(".cg-register #cg-popup, .cg-register .cg-flex_pop").animate({
     "height":'24rem'
@@ -277,15 +277,6 @@ $(document).ready(function () {
       $('.cg-slider_video_aside').css(
         {'visibility': "visible"});
       $('.cg-video-animation_3').addClass('animated fadeInLeft');
-    },
-  })
-  //SCROLL LISTENER DISCOVER SECTION
-  var waypoint = new Waypoint({
-    element: document.getElementById('cg-webpoint_discover'),
-    handler: function(direction) {
-      $('.cg-discover-animation').addClass('animated fadeInLeft');
-      $('.cg-discover-animation').css(
-        {'visibility': "visible"});
     },
   })
   //SMOOTH SCROLL
