@@ -1835,10 +1835,14 @@ section.cg-section_tools
 section.cg-videos
 {
   width: 100%;
-  height: 100vh;
+  height: 32.3rem;
   background-color: $white;
   display: block;
   position: relative;
+  @media #{$sm}
+  {
+    height: 100vh;
+  }
   h2.cg-section_h2.cg-video-animation
   {
     position: absolute;
@@ -1848,9 +1852,13 @@ section.cg-videos
   }
   .my-slider
   {
-    height: 100vh;
+    height: 32.3rem;
     padding-top: 5rem;
     position: relative;
+    @media #{$sm}
+    {
+      height: 100vh;
+    }
   }
   .cg-slider_video_ul
   {
@@ -1895,10 +1903,8 @@ section.cg-videos
 aside.cg-slider_video_aside
 {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 4rem;
-  left: 0rem;
   padding: 0rem 1rem 0rem 1rem;
   color: $white;
   visibility: hidden;
@@ -1945,11 +1951,13 @@ aside.cg-slider_video_aside
   height: 100%;
   z-index: 9;
   @include flex;
+  flex-direction: column;
   .icon-youtube
   {
     background-color: $white;
     line-height: 2.5rem;
     margin-right: -1px;
+    margin-top: 1.5rem;
     border-radius: 0.5rem;
     overflow: hidden;
     cursor: pointer;
