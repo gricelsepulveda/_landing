@@ -49,12 +49,7 @@ html lang="es"
     /! PICTUREFILL USEFUL FOR OPTIMIZE WEIGHT ON MOBILE DEVICES AND GREAT IMAGE QUALITY ON RETINA DISPLAY
     script src="js/scripts.js"
     /! PICTURE FILL
-    script src="js/picturefill.min.js"
-    /! 3D ANIMATION BANNER
-    script src="js/three.min.js"
-    script src="js/projector.js"
-    script src="js/canvas-renderer.js"
-    script src="js/color.js"  
+    script src="js/picturefill.min.js"  
   body
     navbar.cg-navbar_main
       .flex
@@ -315,27 +310,77 @@ html lang="es"
                         .chevron_right
                       span Finalizar
     /! PROFILE
-    header.cg-header_personal_profile
-      .canvas-wrap
-        .canvas-content
-          #canvas.gradient
-      .container.cg-container_profile_personal
-        .row
-          .col-xs-1.col-sm-1.col-md-1.col-lg-1
-          .col-xs-10.col-sm-10.col-md-10.col-lg-10
-            .row
-              .col-xs-12.col-sm-12.col-md-4.col-lg-4
-                a.cg-goto_public href="#"
-                  i.fa.fa-globe aria-hidden="true"
-                  | Ver perfil público
-                figure.cg-profile_picture
-                  .cg-profile_picture_cnt style="background-image: url('img/example.jpg');"
-                  .cg-profile_picture_input
-                    input.file_input_2 type="file"
-              .coll-xs-12.col-sm-12.col-md-8.col-lg-8
-                h3.cg-profile_h3
-                  | Nombre Apellido
-          .col-xs-1.col-sm-1.col-md-1.col-lg-1
+    header.cg-profile_header
+      a.cg-go_public_profile 
+        i.fa.fa-globe aria-hidden="true"
+        | Ver perfil público
+      article.cg-profile_header_a
+        figure.cg-profile_header_picture
+          .cg-profile_picture_space
+            input.file_input_2 type="file"
+          button.cg-profile_header_up_pic type="button"
+            i.fa.fa-cloud-upload aria-hidden="true"
+        h3.cg-profile_header_h3
+          | Nombre Apellido
+        p.cg_profile_header_p
+          | Esto es una descripción de ejemplo
+      article.cg-profile_header_b
+        h2.cg-profile_header_h2 
+          i.fa.fa-trophy aria-hidden="true"
+          | Logros:
+        .cg-wrapper_goals
+          .cg-wrapper_mini_goal
+            figure.cg-wrapper_mini_goal_space
+              i.fa.fa-star-o aria-hidden="true"
+              span.cg-globe_mini_goal Nombre del logro.
+              .cg-chevron_triangle_goal
+          .cg-wrapper_mini_goal
+            figure.cg-wrapper_mini_goal_space
+              i.fa.fa-star-o aria-hidden="true"
+              span.cg-globe_mini_goal Nombre del logro.
+              .cg-chevron_triangle_goal
+          .cg-wrapper_mini_goal
+            figure.cg-wrapper_mini_goal_space
+              i.fa.fa-star-o aria-hidden="true"
+              span.cg-globe_mini_goal Nombre del logro.
+              .cg-chevron_triangle_goal
+          .cg-wrapper_mini_goal
+            figure.cg-wrapper_mini_goal_space
+              i.fa.fa-star-o aria-hidden="true"
+              span.cg-globe_mini_goal Nombre del logro.
+              .cg-chevron_triangle_goal
+          .cg-wrapper_mini_goal
+            figure.cg-wrapper_mini_goal_space
+              i.fa.fa-star-o aria-hidden="true"
+              span.cg-globe_mini_goal Nombre del logro.
+              .cg-chevron_triangle_goal
+          .cg-wrapper_mini_goal
+            figure.cg-wrapper_mini_goal_space
+              i.fa.fa-star-o aria-hidden="true"
+              span.cg-globe_mini_goal Nombre del logro.
+              .cg-chevron_triangle_goal
+          .cg-wrapper_big_goal
+            figure.cg-wrapper_big_goal_space
+              i.fa.fa-star aria-hidden="true"
+        span.cg-wrapper_profile_social_span
+            i.fa.fa-share-alt aria-hidden="true"
+            | Comparte y demuestra tus habilidades:
+        .cg-hang_profile_social
+          article.cg-wrapper_profile_social
+            button.cg-profile_social_btn
+              figure.cg-profile_social_btn_fig
+                 i.fa.fa-facebook aria-hidden="true"
+              | Compartir en Facebook
+            button.cg-profile_social_btn
+              figure.cg-profile_social_btn_fig
+                 i.fa.fa-twitter aria-hidden="true"
+              | Compartir en Twitter
+            button.cg-profile_social_btn
+              figure.cg-profile_social_btn_fig
+                 i.fa.fa-linkedin aria-hidden="true"
+              | Compartir en Linkedin
+    figure.cg-profile_header_figure
+      .cg-profile_header_fix
     /! PROFILE BODY
     .cg-wrapper-profile_body
       nav.cg-profile_body_nav
@@ -793,7 +838,6 @@ html lang="es"
           figure.wrapper_cg-tbk_logo2_footer
             img.cg-tbk_logo2_footer src="img/cumbregroup.svg"
           a.cg-tbk_footer_link_2 href="mailto:contacto@cumbregroup.com" contacto@cumbregroup.com
-    script src="js/3d-lines-animation.js"
 
 
 
