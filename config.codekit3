@@ -1442,39 +1442,34 @@
 		"oS": 1,
 		"rAC": 0
 		},
-	"\/profile_public2.html": {
+	"\/profile_.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/profile_public2.html",
+		"oAP": "\/profile_.html",
 		"oF": 0
 		},
-	"\/profile_public2.slim": {
+	"\/profile_public.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/profile_public.html",
+		"oF": 0
+		},
+	"\/profile_public.slim": {
 		"cmO": 0,
 		"ft": 1024,
 		"llg": 0,
 		"oA": 0,
-		"oAP": "\/profile_public2.html",
+		"oAP": "\/profile_public.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 1,
 		"rAC": 0
 		},
-	"\/public_profile.html": {
+	"\/profile_public_.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/public_profile.html",
+		"oAP": "\/profile_public_.html",
 		"oF": 0
-		},
-	"\/public_profile.slim": {
-		"cmO": 0,
-		"ft": 1024,
-		"llg": 0,
-		"oA": 0,
-		"oAP": "\/public_profile.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 1,
-		"rAC": 0
 		},
 	"\/README.md": {
 		"cS": 0,

@@ -3274,6 +3274,10 @@ span.cg-public_stat_span
     background-color: $white;
     border-bottom: 1px solid lighten($soft_gray, 15%);
   }
+  @media #{$sm}
+  {
+    justify-content: flex-start;
+  }
 }
 
 .cg-pub_li_span
@@ -3285,6 +3289,15 @@ span.cg-public_stat_span
   align-content: center;
   flex-wrap: nowrap;
   width: 50%;
+  @media #{$sm}
+  {
+    justify-content: flex-start;
+    margin-right: 1rem;
+    &:first-of-type
+    {
+      width: 25%;
+    }
+  }
 }
 
 .cg-pub_li_figure
@@ -3314,6 +3327,10 @@ span.cg-public_stat_span
     weight: 600;
   }
   text-align: left;
+  @media #{$sm}
+  {
+    font-size: 0.5rem;
+  }
 }
 .cg-label_pub_li_2
 {
@@ -3326,6 +3343,10 @@ span.cg-public_stat_span
     weight: 400;
   }
   text-align: left;
+  @media #{$sm}
+  {
+    font-size: 0.5rem;
+  }
   a 
   {
     cursor: pointer;
@@ -3369,6 +3390,52 @@ span.cg-public_stat_span
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
+  span 
+  {
+    color: $white;
+    font: 
+    {
+      family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+      size: 1.6rem;
+      weight: 300;
+    }
+    text-align: center;
+    margin-bottom: 0.25rem;
+    @media #{$sm}
+    {
+      font-size: 1.2rem;
+    }
+  }
+  a 
+  {
+    background-color: $white;
+    font: 
+    {
+      family: 'helvetica_neue_regular', 'Titillium Web', sans-serif;
+      size: 0.9rem;
+      weight: normal;
+      weight: 400;
+    }
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: $black;
+    @media #{$sm}
+    {
+      font-size: 0.7rem;
+      padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
+    @include animate;
+    &:hover
+    {
+      background-color: $red;
+      color: $white;
+    }
+    i 
+    {
+      margin-left: 0.25rem;
+    }
+  }
 }
 
 nav.cg-space_ad_transbank_nav

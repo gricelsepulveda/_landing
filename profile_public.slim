@@ -49,9 +49,14 @@ html lang="es"
     /! PICTUREFILL USEFUL FOR OPTIMIZE WEIGHT ON MOBILE DEVICES AND GREAT IMAGE QUALITY ON RETINA DISPLAY
     script src="js/scripts.js"
     /! PICTURE FILL
-    script src="js/picturefill.min.js"  
+    script src="js/picturefill.min.js"
+    /! 3D ANIMATION BANNER
+    script src="js/three.min.js"
+    script src="js/projector.js"
+    script src="js/canvas-renderer.js"
+    script src="js/color.js"  
   body
-    navbar.cg-navbar_main
+    navbar.cg-navbar_main id="cg-navbar_main"
       .flex
         figure.cg-logo_tbk
           img src="img/tbk_logo.svg"
@@ -62,7 +67,7 @@ html lang="es"
             a 
               | Herramientas
               i.fa.fa-caret-down aria-hidden="true"
-            .cg-menu_tool.cg-menu_tool_bottom
+            .cg-menu_tool.cg-menu_tool_bottom id="cg-menu_tool"
               span.cg-span_tool Plugins
               a.cg-tool_li href="#" Webpay Plus
               a.cg-tool_li href="#" Onepay
@@ -310,156 +315,382 @@ html lang="es"
                         .chevron_right
                       span Finalizar
     /! PROFILE
-    header.cg-profile_header
-      a.cg-go_public_profile 
-        i.fa.fa-arrow-left aria-hidden="true"
-        | Volver a mi perfil privado
-      article.cg-profile_header_a
-        figure.cg-profile_header_picture
-          .cg-profile_picture_space
-        h3.cg-profile_header_h3
-          i.fa.fa-user aria-hidden="true"
-          | Nombre Apellido
-        p.cg_profile_header_p id="cg-justify"
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-      article.cg-profile_header_b
-        h2.cg-profile_header_h2 
-          i.fa.fa-bar-chart aria-hidden="true"
-          | Stats:
-        .cg-wrapper_goals
-          .cg-wrapper_big_goal
-            figure.cg-wrapper_big_goal_space
-              span 33
-              p Visitas
-          .cg-wrapper_big_goal
-            figure.cg-wrapper_big_goal_space
-              span 9
-              p Integraciones
-          .cg-wrapper_big_goal
-            figure.cg-wrapper_big_goal_space
-              span.likes 27 
-              p
-                i.fa.fa-thumbs-up aria-hidden="true"
-                |  Likes
-        h2.cg-profile_header_h2 
-          i.fa.fa-flash aria-hidden="true"
-          | Habilidades:
-        .cg-wrapper_goals
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-        span.cg-wrapper_profile_social_span
-            i.fa.fa-info-circle aria-hidden="true"
-            | Datos de contacto
-        .cg-hang_profile_social
-          article.cg-wrapper_profile_social
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-user aria-hidden="true"
-              | Gricel Sepúlveda
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-envelope aria-hidden="true"
-              | contacto@gricel.cl
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-phone aria-hidden="true"
-              | +56957363971
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-map-marker aria-hidden="true"
-              | Domeyko #2456
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-map aria-hidden="true"
-              | Región Metropolitana
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-location-arrow aria-hidden="true"
-              | Santiago.
-            button.cg-profile_social_btn type="button"
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-link aria-hidden="true"
-              | www.gricel.cl
-            .cg-advertisign_space_transbank
-              img src="img/cat.jpg"
-    figure.cg-profile_header_figure
-      .cg-profile_header_fix
+    header.cg-header_personal_profile
+      .canvas-wrap
+        .canvas-content
+          #canvas.gradient
+      .container.cg-container_profile_personal
+        .row
+          .col-xs-1.col-sm-1.col-md-1.col-lg-1
+          .col-xs-10.col-sm-10.col-md-10.col-lg-10
+            .row.
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                a.cg-goto_public href="#"
+                  i.fa.fa-arrow-left aria-hidden="true"
+                  | Volver a mi perfil privado
+                figure.cg-profile_picture
+                  .cg-profile_picture_cnt style="background-image: url('img/profile.svg');"
+                  .cg-profile_picture_input
+                    input.file_input_2 type="file"
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                h3.cg-profile_h3
+                  | Nombre Apellido
+                p.cg-profile_p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo.
+                .cg-wrapper_social_prof_btns
+                  /! FACEBOOK
+                  a.cg-btn_social_prof href="#"
+                    figure.cg-social_prof_btn_social
+                      i.fa.fa-facebook aria-hidden="true"
+                    p.cg-span_prof_btn_p
+                      | Compartir en 
+                      span.cg-span_prof_btn_span
+                        | Facebook
+                  /! TWITTER
+                  a.cg-btn_social_prof href="#"
+                    figure.cg-social_prof_btn_social
+                      i.fa.fa-twitter aria-hidden="true"
+                    p.cg-span_prof_btn_p
+                      | Compartir en 
+                      span.cg-span_prof_btn_span
+                        | Twitter
+                  /! LINKEDIN
+                  a.cg-btn_social_prof href="#"
+                    figure.cg-social_prof_btn_social
+                      i.fa.fa-linkedin aria-hidden="true"
+                    p.cg-span_prof_btn_p
+                      | Compartir en 
+                      span.cg-span_prof_btn_span
+                        | Linkedin
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                h4.cg-profile_h4
+                  img src="img/public_icon_stat.svg"
+                  | Estadísticas
+                .cg-wrapper_stats
+                  article.cg-public_stat_article
+                    p.cg-public_stat_number
+                      | 33
+                    span.cg-public_stat_span
+                      img src="img/public_icon_eye.svg"
+                      | Vistas
+                  article.cg-public_stat_article
+                    p.cg-public_stat_number
+                      | 9
+                    span.cg-public_stat_span
+                      img src="img/public_icon_plug.svg"
+                      | Integraciones
+                  article.cg-public_stat_article
+                    p.cg-public_stat_number
+                      | 27
+                    span.cg-public_stat_span
+                      img src="img/public_icon_like.svg"
+                      | Likes
+                h4.cg-profile_h4
+                  i.fa.fa-trophy aria-hidden="true"
+                  | Logros
+                .cg-wrapper_achievement 
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+          .col-xs-1.col-sm-1.col-md-1.col-lg-1
     /! PROFILE BODY
-    .cg-wrapper-public_profile_body
-      h1.cg-profile_public_h2 
-        i.fa.fa-shopping-basket aria-hidden="true"
-        | Comercios integrados:
-      ul.cg-integrated-market_ul
-        /! MARKET
-        li#cg-integrated_market_li
-          figure.cg-integrated_market_figure
-            img src="img/cat.jpg"
-          .cg-integrated_market_p
-            h4.cg-integrated_market_h4
-              | Fitness Solutions
-            a.cg-integrated_market_a href="#"
-              | http://www.hola.cl
-            span.cg-integrated_market_span
-              | 16/03/1990
-          .cg-integrated_market_trusted
-            i.fa.fa-check aria-hidden="true"
-            span certificación verificada
-        /! MARKET
-        li#cg-integrated_market_li
-          figure.cg-integrated_market_figure
-            img src="img/cat.jpg"
-          .cg-integrated_market_p
-            h4.cg-integrated_market_h4
-              | Fitness Solutions
-            a.cg-integrated_market_a href="#"
-              | http://www.hola.cl
-            span.cg-integrated_market_span
-              | 16/03/1990
-          .cg-integrated_market_trusted
-            i.fa.fa-check aria-hidden="true"
-            span certificación verificada
-        /! MARKET
-        li#cg-integrated_market_li
-          figure.cg-integrated_market_figure
-            img src="img/cat.jpg"
-          .cg-integrated_market_p
-            h4.cg-integrated_market_h4
-              | Fitness Solutions
-            a.cg-integrated_market_a href="#"
-              | http://www.hola.cl
-            span.cg-integrated_market_span
-              | 16/03/1990
-          .cg-integrated_market_trusted
-            i.fa.fa-check aria-hidden="true"
-            span certificación verificada
+    .cg-wrapper-profile_body
+      .container-fluid
+        .row
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6.cg-first-commerce
+            h2.cg-profile_body_title_h2
+              | Comercios integrados
+            /! ITERACIÓN INTEGRACIÓN
+            .row.cg-integration_bg.no_margin
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                figure.cg-wrapper_shop_integrated_figure
+                  .cg-img_container_shop_picture style="background-image: url('img/profile.svg')";
+              .col-xs-12.col-sm-6.col-md-8.col-lg-9
+                span.cg-title_container_shop
+                  | Fitness Solutions
+                a.cg-link_shop href="#"
+                  | www.fitsolutions.cl
+                p.cg-date_shop
+                  | Fecha de integracion
+                  span.cg-date_shop_show
+                    | 16-03-1990
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
+            /! ITERACIÓN INTEGRACIÓN
+            .row.cg-integration_bg.no_margin
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                figure.cg-wrapper_shop_integrated_figure
+                  .cg-img_container_shop_picture
+              .col-xs-12.col-sm-6.col-md-8.col-lg-9
+                span.cg-title_container_shop
+                  | Tienda Planet
+                a.cg-link_shop href="#"
+                  | www.tiendaplanet.cl
+                p.cg-date_shop
+                  | Fecha de integracion
+                  span.cg-date_shop_show
+                    | 16-03-1990
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
+            /! ITERACIÓN INTEGRACIÓN
+            .row.cg-integration_bg.no_margin
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                figure.cg-wrapper_shop_integrated_figure
+                  .cg-img_container_shop_picture
+              .col-xs-12.col-sm-6.col-md-8.col-lg-9
+                span.cg-title_container_shop
+                  | YPago.cl
+                a.cg-link_shop href="#"
+                  | www.ypago.cl
+                p.cg-date_shop
+                  | Fecha de integracion
+                  span.cg-date_shop_show
+                    | 16-03-1990
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            h2.cg-profile_body_title_h2
+              | Datos de contacto
+            ul.cg-list_contact_pub
+              /! NOMBRES
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-user aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Nombres:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    | Pagos Web
+              /! CORREO
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-envelope aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Correo:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    a href="mailto:contacto@pagosweb.com"
+                      | contacto@pagosweb.com
+              /! TELEFONO
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-phone aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Teléfono:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    a href="tel:+56912345678"
+                      | +569 12345678
+              /! DIRECCIÓN
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-map-marker aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Dirección:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    | Av. Viel 1020, San Ignacio, dpto 78E
+              /! REGIÓN
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-map-o aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Región:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    | XVIII Región Metropolitana
+              /! COMUNA
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-location-arrow aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Comuna:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    | Santiago
+              /! SITIO WEB
+              li.cg-contact_pub_li
+                figure.cg-pub_li_figure
+                  i.fa.fa-link aria-hidden="true"
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_1
+                    | Sitio web:
+                span.cg-pub_li_span
+                  label.cg-label_pub_li_2
+                    a href="http://www.pagosweb.com"
+                      | www.pagosweb.com
+            figure.cg-space_ad_transbank
+              nav.cg-space_ad_transbank_nav
+                img src="img/transbank_logo_negro.png"
+              .cg-space_ad_img_transbank
+                img src="img/ad.png"
+                .cg-flex_ad
+                  span
+                    | ¿Aún no eres cliente de Transbank?
+                  a href="#"
+                    | Hacerme cliente de Transbank
+                    i.fa.fa-angle-right aria-hidden="true"
+    /! POP UP DELETE INTEGRATION
+    .cg-wrapper_popup.cg-delete_integration.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Eliminar integración
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            figure.cg-form_icon_dialog
+              i.fa.fa-info-circle aria-hidden="true"
+            span.cg-form_big_txt
+              | ¿Está seguro que desea eliminar la integración?
+            .cg-wrap_btns
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-close_pop
+                      figure
+                        i.fa.fa-trash aria-hidden="true"
+                        .chevron_right
+                      span Eliminar
+    /! POP UP REVALIDATE
+    .cg-wrapper_popup.cg-revalidate_integration.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Revalidar integración
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            figure.cg-form_icon_dialog
+              i.fa.fa-info aria-hidden="true"
+            span.cg-form_big_txt
+              | Se enviará un correo con Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+            .cg-wrap_btns
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-first_btn.cg-pop_trigger id="edit_integration"
+                      figure
+                        i.fa.fa-pencil aria-hidden="true"
+                        .chevron_right
+                      span Editar
+                  .cg-wrapper_btn_form
+                    a.cg-button_b.cg-close_pop
+                      figure
+                        i.fa.fa-paper-plane aria-hidden="true"
+                        .chevron_right
+                      span Revalidar
+    /! POP UP NEW INTEGRATION
+    .cg-wrapper_popup.cg-new_integration.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Nueva integración
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            .cg-wrapper_form_up_img
+              .cg-form_pop_uploaded_img
+                figure
+                  .cg-wrapper_img_fig_integration
+                    img src="img/cat.jpg"
+                  button.cg-profile_header_up_pic type="button"
+                      i.fa.fa-cloud-upload aria-hidden="true"
+                  input.file_input type="file"
+              .cg-wrapper_input_lot
+                .cg-input_form_edit_profile
+                  span Nombre:
+                  input type="text" placeholder="Gricel Dayhanna"
+                .cg-input_form_edit_profile
+                  span URL:
+                  input type="text" placeholder="http://www.gricel.cl"
+                .cg-input_form_edit_profile
+                  span Correo comercio:
+                  input type="text" placeholder="nombre@correo.com"
+                .cg-input_form_edit_profile
+                  span Código comercio:
+                  input type="text" placeholder="124.344.316"
+                .cg-input_form_edit_profile
+                  span RUT integrador:
+                  input type="text" placeholder="17.315.726-6"
+            .cg-wrap_btns
+              p.cg-info_up_img
+                i.fa.fa-info-circle aria-hidden="true"
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+              .cg-wrapper_btn_form
+                a.cg-button_b.cg-close_pop
+                  figure
+                    i.fa.fa-plus aria-hidden="true"
+                    .chevron_right
+                  span Registrar
+    /! POP UP EDIT INTEGRATION
+    .cg-wrapper_popup.cg-edit_integration.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span Editar integración
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          form.cg-form_pop
+            .cg-wrapper_form_up_img
+              .cg-form_pop_uploaded_img
+                figure
+                  .cg-wrapper_img_fig_integration
+                    img src="img/cat.jpg"
+                  button.cg-profile_header_up_pic type="button"
+                      i.fa.fa-cloud-upload aria-hidden="true"
+                  input.file_input type="file"
+              .cg-wrapper_input_lot
+                .cg-input_form_edit_profile
+                  span Nombre:
+                  input type="text" placeholder="Gricel Dayhanna"
+                .cg-input_form_edit_profile
+                  span URL:
+                  input type="text" placeholder="http://www.gricel.cl"
+                .cg-input_form_edit_profile
+                  span Correo comercio:
+                  input type="text" placeholder="nombre@correo.com"
+                .cg-input_form_edit_profile
+                  span Código comercio:
+                  input type="text" placeholder="124.344.316"
+                .cg-input_form_edit_profile
+                  span RUT integrador:
+                  input type="text" placeholder="17.315.726-6"
+            .cg-wrap_btns
+              p.cg-info_up_img
+                i.fa.fa-info-circle aria-hidden="true"
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+              .cg-wrapper_btn_form
+                    a.cg-button_b.cg-first_btn.cg-pop_trigger id="revalidate_integration"
+                      figure
+                        i.fa.fa-paper-plane aria-hidden="true"
+                        .chevron_right
+                      span Revalidar
+              .cg-wrapper_btn_form
+                a.cg-button_b.cg-close_pop
+                  figure
+                    i.fa.fa-save aria-hidden="true"
+                    .chevron_right
+                  span Guardar
     /! SECTION FOOTER
     section.cg-footer
       .cg-flex_footer
@@ -474,6 +705,7 @@ html lang="es"
           figure.wrapper_cg-tbk_logo2_footer
             img.cg-tbk_logo2_footer src="img/cumbregroup.svg"
           a.cg-tbk_footer_link_2 href="mailto:contacto@cumbregroup.com" contacto@cumbregroup.com
+    script src="js/3d-lines-animation.js"
 
 
 
