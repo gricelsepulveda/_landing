@@ -224,7 +224,7 @@ $(document).ready(function () {
      divs.css({ 'opacity' : (1 - st/300) });
   });
   //BUTTON RED IF SECTION PAGE IS OPEN
-  if ($(document).find(".cg-views").length == 0) 
+  if ($(document).find(".cg-views, .cg-goto_public").length == 0) 
   { 
   }
   else
