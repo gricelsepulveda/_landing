@@ -22,6 +22,14 @@
 
 @font-face 
 {
+  font-family: 'helvetica_neue_condensed_bold';
+  src: url('../fonts/helvetica_neue/HelveticaNeueLTStd-BdCn.otf') format("opentype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face 
+{
   font-family: 'helvetica_neue_regular';
   src: url('../fonts/helvetica_neue/HelveticaNeueLTStd-Hvlt.otf') format("opentype");
   font-weight: normal;
@@ -2694,6 +2702,10 @@ header.cg-header_personal_profile
   {
     text-align: center;
   }
+  &:hover
+  {
+    border-bottom: 1px solid $white;
+  }
 }
 
 .cg-profile_h5
@@ -2716,6 +2728,10 @@ header.cg-header_personal_profile
   @media #{$sm}
   {
     text-align: center;  
+  }
+  &:hover
+  {
+    border-bottom: 1px solid $white;
   }
 }
 
@@ -2761,12 +2777,24 @@ header.cg-header_personal_profile
   }
   padding-bottom: 0.375rem;
   border-bottom: 1px solid $white;
+  &:hover
+  {
+    border-bottom: 1px solid $white;
+  }
   @media #{$sm}
   {
     text-align: center;  
   }
   i 
   {
+    margin-right: 0.25rem;
+  }
+  > img
+  {
+    height: 0.8rem;
+    width: auto;
+    text-align: center;
+    display: inline;
     margin-right: 0.25rem;
   }
 }
@@ -2938,6 +2966,90 @@ header.cg-header_personal_profile
   color: $red;
 }
 
+
+.cg-wrapper_stats
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  @media #{$sm}
+  {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.cg-public_stat_article
+{
+  width: 4.5rem;
+  min-height: 4.5rem;
+  background-color: $white;
+  position: relative;
+  height: auto;
+  margin-top: 0.5rem;
+  &:last-of-type
+  {
+    margin-right: 0.25rem;
+  }
+  @media #{$sm}
+  {
+    margin-right: 0.5rem;
+  }
+}
+
+
+.cg-public_stat_number
+{
+  display: block;
+  color: $cobalt_blue;
+  margin-top: 1rem;
+  font:
+  {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
+    size: 2.5rem;
+    weight: bolder;
+    weight: 600;
+  }
+  text: 
+  {
+    align: center;
+  }
+}
+
+span.cg-public_stat_span
+{
+  width: 4.5rem;
+  padding: 0.35rem 0rem 0.25rem 0rem;
+  display: block;
+  background-color: $red;
+  color: $white;
+  font:
+  {
+    family: 'helvetica_neue_condensed_bold', 'Titillium Web', sans-serif;
+    size: 0.53rem;
+    weight: bolder;
+    weight: 300;
+  }
+  text: 
+  {
+    align: center;
+    transform: uppercase;
+  }
+  line-height: 0.6rem;
+  vertical-align: middle;
+  img 
+  {
+    height: 0.53rem;
+    width: auto;
+    margin-right: 0.25rem;
+    vertical-align: middle;
+    margin-top: -0.1rem;
+  }
+}
+
 /* PROFILE BODY START */
 
 .cg-wrapper-profile_body
@@ -2954,6 +3066,191 @@ header.cg-header_personal_profile
     padding: 0rem;
   }
 }
+
+/* PUBLIC PROFILE STYLES */
+
+.cg-profile_body_title_h2
+{
+  color: $white;
+  background-color: $cobalt_blue;
+  padding: 0.5rem 1rem 0.25rem 1rem;
+  display: block;
+  text:
+  {
+    align: center;
+    transform: uppercase;
+  }
+  font:
+  {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
+    size: 0.7rem;
+    weight: bolder;
+    weight: 600;
+  }
+}
+
+.cg-integration_bg
+{
+  position: relative;
+  margin-top: 1rem;
+  display: block;
+  position: relative;
+  background-color: $light_gray;
+  height: auto;
+  width: auto;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  &:nth-child(2n+1)
+  {
+    background-color: $white;
+  }
+}
+
+.cg-title_container_shop
+{
+  display: block;
+  text:
+  {
+    align: left;
+    transform: capitalize;
+  }
+  font:
+  {
+    family: 'helvetica_neue_regular', 'Titillium Web', sans-serif;
+    size: 1.2rem;
+    weight: bolder;
+    weight: 400;
+  }
+  margin-top: 1rem;
+  color: $black;
+  @media #{$sm}
+  {
+    text-align: center;
+  }
+}
+
+.cg-link_shop
+{
+  display: block;
+  text:
+  {
+    align: left;
+  }
+  font:
+  {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
+    size: 0.6rem;
+    weight: bolder;
+    weight: 600;
+  }
+  margin-top: 0.25rem;
+  color: $black;
+  cursor: pointer;
+  @include animate;
+  &:hover
+  {
+    text-decoration: underline;
+  }
+  @media #{$sm}
+  {
+    text-align: center;
+  }
+}
+
+.cg-date_shop
+{
+  display: block;
+  text:
+  {
+    align: left;
+  }
+  font:
+  {
+    family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+    size: 0.6rem;
+    weight: lighter;
+    weight: 300;
+  }
+  margin-top: 0.25rem;
+  color: $gray;
+  @media #{$sm}
+  {
+    text-align: center;
+  }
+}
+
+.cg-trusted_shop_certified
+{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  img 
+  {
+    width: 5rem;
+    height: auto;
+  }
+  @media #{$sm}
+  {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    right: inherit;
+    top: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.cg-wrapper_shop_integrated_figure
+{
+  margin: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid $black;
+  display: block;
+  position: relative;
+  background-color: $white;
+  background:
+  {
+    image: url("../img/new_image.svg");
+    size: 3rem auto;
+    position: center;
+    repeat: no-repeat;
+  }
+  &:hover
+  {
+    border: 1px solid $black;
+  }
+  @media #{$sm}
+  {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+
+
+.cg-first-commerce
+{
+  padding-bottom: 1rem;
+}
+
+.cg-img_container_shop_picture
+{
+  display: block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background:
+  {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+
+
+/* END PUBLIC PROFILE STYLES */
 
 .cg-wrapper-public_profile_body
 {

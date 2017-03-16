@@ -49,9 +49,14 @@ html lang="es"
     /! PICTUREFILL USEFUL FOR OPTIMIZE WEIGHT ON MOBILE DEVICES AND GREAT IMAGE QUALITY ON RETINA DISPLAY
     script src="js/scripts.js"
     /! PICTURE FILL
-    script src="js/picturefill.min.js"  
+    script src="js/picturefill.min.js"
+    /! 3D ANIMATION BANNER
+    script src="js/three.min.js"
+    script src="js/projector.js"
+    script src="js/canvas-renderer.js"
+    script src="js/color.js"  
   body
-    navbar.cg-navbar_main
+    navbar.cg-navbar_main id="cg-navbar_main"
       .flex
         figure.cg-logo_tbk
           img src="img/tbk_logo.svg"
@@ -62,7 +67,7 @@ html lang="es"
             a 
               | Herramientas
               i.fa.fa-caret-down aria-hidden="true"
-            .cg-menu_tool.cg-menu_tool_bottom
+            .cg-menu_tool.cg-menu_tool_bottom id="cg-menu_tool"
               span.cg-span_tool Plugins
               a.cg-tool_li href="#" Webpay Plus
               a.cg-tool_li href="#" Onepay
@@ -310,386 +315,163 @@ html lang="es"
                         .chevron_right
                       span Finalizar
     /! PROFILE
-    header.cg-profile_header
-      a.cg-go_public_profile 
-        i.fa.fa-globe aria-hidden="true"
-        | Ver perfil público
-      article.cg-profile_header_a
-        figure.cg-profile_header_picture
-          .cg-profile_picture_space
-            input.file_input_2 type="file"
-          button.cg-profile_header_up_pic type="button"
-            i.fa.fa-cloud-upload aria-hidden="true"
-        h3.cg-profile_header_h3
-          | Nombre Apellido
-        p.cg_profile_header_p
-          | Esto es una descripción de ejemplo
-      article.cg-profile_header_b
-        h2.cg-profile_header_h2 
-          i.fa.fa-trophy aria-hidden="true"
-          | Logros:
-        .cg-wrapper_goals
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_mini_goal
-            figure.cg-wrapper_mini_goal_space
-              i.fa.fa-star-o aria-hidden="true"
-              span.cg-globe_mini_goal Nombre del logro.
-              .cg-chevron_triangle_goal
-          .cg-wrapper_big_goal
-            figure.cg-wrapper_big_goal_space
-              i.fa.fa-star aria-hidden="true"
-        span.cg-wrapper_profile_social_span
-            i.fa.fa-share-alt aria-hidden="true"
-            | Comparte y demuestra tus habilidades:
-        .cg-hang_profile_social
-          article.cg-wrapper_profile_social
-            button.cg-profile_social_btn
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-facebook aria-hidden="true"
-              | Compartir en Facebook
-            button.cg-profile_social_btn
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-twitter aria-hidden="true"
-              | Compartir en Twitter
-            button.cg-profile_social_btn
-              figure.cg-profile_social_btn_fig
-                 i.fa.fa-linkedin aria-hidden="true"
-              | Compartir en Linkedin
-    figure.cg-profile_header_figure
-      .cg-profile_header_fix
+    header.cg-header_personal_profile
+      .canvas-wrap
+        .canvas-content
+          #canvas.gradient
+      .container.cg-container_profile_personal
+        .row
+          .col-xs-1.col-sm-1.col-md-1.col-lg-1
+          .col-xs-10.col-sm-10.col-md-10.col-lg-10
+            .row.
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                a.cg-goto_public href="#"
+                  i.fa.fa-arrow-left aria-hidden="true"
+                  | Volver a mi perfil privado
+                figure.cg-profile_picture
+                  .cg-profile_picture_cnt style="background-image: url('img/profile.svg');"
+                  .cg-profile_picture_input
+                    input.file_input_2 type="file"
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                h3.cg-profile_h3
+                  | Nombre Apellido
+                p.cg-profile_p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo.
+                .cg-wrapper_social_prof_btns
+                  /! FACEBOOK
+                  a.cg-btn_social_prof href="#"
+                    figure.cg-social_prof_btn_social
+                      i.fa.fa-facebook aria-hidden="true"
+                    p.cg-span_prof_btn_p
+                      | Compartir en 
+                      span.cg-span_prof_btn_span
+                        | Facebook
+                  /! TWITTER
+                  a.cg-btn_social_prof href="#"
+                    figure.cg-social_prof_btn_social
+                      i.fa.fa-twitter aria-hidden="true"
+                    p.cg-span_prof_btn_p
+                      | Compartir en 
+                      span.cg-span_prof_btn_span
+                        | Twitter
+                  /! LINKEDIN
+                  a.cg-btn_social_prof href="#"
+                    figure.cg-social_prof_btn_social
+                      i.fa.fa-linkedin aria-hidden="true"
+                    p.cg-span_prof_btn_p
+                      | Compartir en 
+                      span.cg-span_prof_btn_span
+                        | Linkedin
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                h4.cg-profile_h4
+                  img src="img/public_icon_stat.svg"
+                  | Estadísticas
+                .cg-wrapper_stats
+                  article.cg-public_stat_article
+                    p.cg-public_stat_number
+                      | 33
+                    span.cg-public_stat_span
+                      img src="img/public_icon_eye.svg"
+                      | Vistas
+                  article.cg-public_stat_article
+                    p.cg-public_stat_number
+                      | 9
+                    span.cg-public_stat_span
+                      img src="img/public_icon_plug.svg"
+                      | Integraciones
+                  article.cg-public_stat_article
+                    p.cg-public_stat_number
+                      | 27
+                    span.cg-public_stat_span
+                      img src="img/public_icon_like.svg"
+                      | Likes
+                h4.cg-profile_h4
+                  i.fa.fa-trophy aria-hidden="true"
+                  | Logros
+                .cg-wrapper_achievement 
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+          .col-xs-1.col-sm-1.col-md-1.col-lg-1
     /! PROFILE BODY
     .cg-wrapper-profile_body
-      nav.cg-profile_body_nav
-        ul.cg-profile_body_ul
-          li.cg-profile_body_li.cg-profile_body_li_active
-            a id="evalua"
-              i.fa.fa-graduation-cap aria-hidden="true"
-              .cg-profile_li_text
-                | Evalúa tus conocimientos
-              .visible-xs.visible-sm
-                | Pruebas
-          li.cg-profile_body_li
-            a id="mis_integraciones"
-              i.fa.fa-credit-card-alt aria-hidden="true"
-              .cg-profile_li_text
-                | Mis integraciones
-              .visible-xs.visible-sm
-                | Integraciones
-          li.cg-profile_body_li
-            a id="editar_perfil"
-              i.fa.fa-pencil aria-hidden="true"
-              .cg-profile_li_text
-                | Editar perfil
-              .visible-xs.visible-sm
-                | Editar
-          li.cg-profile_body_li
-            a id="eliminar_perfil"
-              i.fa.fa-times aria-hidden="true"
-              .cg-profile_li_text
-                | Eliminar perfil
-              .visible-xs.visible-sm
-                | Eliminar
-    /! SECTION CAROUSEL
-    .cg-wrapper_profile_section_carousel
-      .cg_profile_section_course.cg_profile_section_
-        /! SECTION EVALUATION
-        span.cg-profile_section_description
-          | Pon a prueba los conocimientos aprendidos en Transbank Developers.
-        .cg-wrapper_profile_courses
-          /! COURSE
-          article.cg-profile_course_article
-            header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
-            p.cg-profile_course_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura.
-            .cg-divider_course
-            button.cg-profile_course_btn Ingresar
-          /! COURSE
-          article.cg-profile_course_article
-            header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
-            p.cg-profile_course_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura.
-            .cg-divider_course
-            button.cg-profile_course_btn Ingresar
-          /! COURSE
-          article.cg-profile_course_article
-            header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
-            p.cg-profile_course_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura.
-            .cg-divider_course
-            button.cg-profile_course_btn Ingresar
-          /! COURSE
-          article.cg-profile_course_article
-            header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
-            p.cg-profile_course_p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            .cg-divider_course
-            button.cg-profile_course_btn Ingresar
-      /! SECTION INTEGRACIONES
-      .cg_profile_section_integrations.cg_profile_section_
-        span.cg-profile_section_description
-          | Crea integraciones, edita tus integraciones aprobadas o revisa las pendientes.
-        .cg-btn_course
-          a.cg-button_a.cg-pop_trigger id="new_integration"
-            figure
-              i.fa.fa-plus aria-hidden="true"
-              .chevron_right
-            span Nueva integración
-        .cg-select_filter
-          span.cg-filter_title 
-            | Filtrar por:
-          span.cg-filter_filter
-            | Pendientes
-            input type="radio" name="filter"
-          span.cg-filter_filter 
-            | Aprobadas
-            input type="radio" name="filter"
-        .cg-table_profile
-          table
-            tr
-              th 
-                i.fa.fa-picture-o aria-hidden="true"
-              th Nombre completo
-              th Sitio WEB
-              th Fecha registro
-              th Estado
-              th Revalidar
-              th Editar
-              th Eliminar
-            tr
-              td
-                img src="img/cat.jpg"
-              td Gricel Sepúlveda
-              td http://www.gricel.cl
-              td 10/03/2017
-              td 
-                i.fa.fa-check aria-hidden="true"
-              td
-                i.fa.fa-clock-o.cg-pop_trigger aria-hidden="true" id="revalidate_integration"
-              td 
-                i.fa.fa-pencil.cg-pop_trigger aria-hidden="true" id="edit_integration"
-              td
-                i.fa.fa-trash.cg-pop_trigger aria-hidden="true" id="delete_integration"
-            tr
-              td
-                img src="img/cat.jpg"
-              td Gricel Sepúlveda
-              td http://www.gricel.cl
-              td 10/03/2017
-              td 
-                i.fa.fa-check aria-hidden="true"
-              td
-                i.fa.fa-clock-o.cg-pop_trigger aria-hidden="true" id="revalidate_integration"
-              td 
-                i.fa.fa-pencil.cg-pop_trigger aria-hidden="true" id="edit_integration"
-              td
-                i.fa.fa-trash.cg-pop_trigger aria-hidden="true" id="delete_integration"
-            tr
-              td
-                img src="img/cat.jpg"
-              td Gricel Sepúlveda
-              td http://www.gricel.cl
-              td 10/03/2017
-              td 
-                i.fa.fa-check aria-hidden="true"
-              td
-                i.fa.fa-clock-o.cg-pop_trigger aria-hidden="true" id="revalidate_integration"
-              td 
-                i.fa.fa-pencil.cg-pop_trigger aria-hidden="true" id="edit_integration"
-              td
-                i.fa.fa-trash.cg-pop_trigger aria-hidden="true" id="delete_integration"
-            tr
-              td
-                img src="img/cat.jpg"
-              td Gricel Sepúlveda
-              td http://www.gricel.cl
-              td 10/03/2017
-              td 
-                i.fa.fa-check aria-hidden="true"
-              td
-                i.fa.fa-clock-o.cg-pop_trigger aria-hidden="true" id="revalidate_integration"
-              td 
-                i.fa.fa-pencil.cg-pop_trigger aria-hidden="true" id="edit_integration"
-              td
-                i.fa.fa-trash.cg-pop_trigger aria-hidden="true" id="delete_integration"
-            tr
-              td
-                img src="img/cat.jpg"
-              td Gricel Sepúlveda
-              td http://www.gricel.cl
-              td 10/03/2017
-              td 
-                i.fa.fa-check aria-hidden="true"
-              td
-                i.fa.fa-clock-o aria-hidden="true"
-              td 
-                i.fa.fa-pencil.cg-pop_trigger aria-hidden="true" id="edit_integration"
-              td
-                i.fa.fa-trash.cg-pop_trigger aria-hidden="true" id="delete_integration"
-      /! SECTION EDIT PROFILE
-      .cg_profile_section_edit_profile.cg_profile_section_
-        span.cg-profile_section_description
-          | Crea integraciones, edita tus integraciones aprobadas o revisa las pendientes.
-        .cg-flex_edit_profile
-          form.cg-form_edit_profile_normal
-            h2.cg-form_edit_profile_h2 Datos registros:
-            .cg-input_form_edit_profile
-              span Nombre:
-              input type="text" placeholder="Gricel Dayhanna"
-            .cg-input_form_edit_profile
-              span Apellido:
-              input type="text" placeholder="Sepúlveda Rozas"
-            .cg-select_form_edit_profile
-              span Región:
-              .cg-select_form_edit_profile_wrapper
-                figure
-                select
-                  option disabled="" selected="" Elegir Región
-                  option Región Metropolitana
-                  option I Región
-                  option II Región
-                  option III Región
-                  option IV Región
-                  option V Región
-                  option VI Región
-                  option VII Región
-                  option VIII Región
-                  option IX Región
-                  option X Región
-                  option XI Región
-                  option XII Región
-                  option XIII Región
-                  option XIV Región
-            .cg-select_form_edit_profile
-              span Comuna:
-              .cg-select_form_edit_profile_wrapper
-                figure
-                select
-                  option disabled="" selected="" Elegir Comuna
-                  option Santiago Centro
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-            .cg-input_form_edit_profile
-              span Correo:
-              input type="email" placeholder="nombre@correo.com"
-            .cg-input_form_edit_profile
-              span Contraseña:
-              input type="password" placeholder="Mínimo 8 caracteres"
-            a.cg-button_a
-              figure
-                i.fa.fa-floppy-o aria-hidden="true"
-                .chevron_right
-              span Guardar
-          form.cg-form_edit_profile_public
-            h2.cg-form_edit_profile_h2 Perfil público:
-            .cg-select_filter
-              span.cg-filter_filter
-                i.fa.fa-user aria-hidden="true"
-                | Persona
-                input type="radio" name="filter"
-              span.cg-filter_filter 
-                i.fa.fa-building aria-hidden="true"
-                | Empresa
-                input type="radio" name="filter"
-            .cg-input_form_edit_profile
-              span Nombre:
-              input type="text" placeholder="Gricel Dayhanna"
-            .cg-input_form_edit_profile
-              span Apellido:
-              input type="text" placeholder="Sepúlveda Rozas"
-            .cg-input_form_edit_profile
-              span Teléfono:
-              input type="text" placeholder="+56957363971"
-            .cg-input_form_edit_profile
-              span Dirección:
-              input type="text" placeholder="+56957363971"
-            .cg-select_form_edit_profile
-              span Región:
-              .cg-select_form_edit_profile_wrapper
-                figure
-                select
-                  option disabled="" selected="" Elegir Región
-                  option Región Metropolitana
-                  option I Región
-                  option II Región
-                  option III Región
-                  option IV Región
-                  option V Región
-                  option VI Región
-                  option VII Región
-                  option VIII Región
-                  option IX Región
-                  option X Región
-                  option XI Región
-                  option XII Región
-                  option XIII Región
-                  option XIV Región
-            .cg-select_form_edit_profile
-              span Comuna:
-              .cg-select_form_edit_profile_wrapper
-                figure
-                select
-                  option disabled="" selected="" Elegir Comuna
-                  option Santiago Centro
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-                  option Comuna
-            .cg-input_form_edit_profile
-              span Sitio web:
-              input type="text" placeholder="http://www.gricel.cl"
-            a.cg-button_a
-              figure
-                i.fa.fa-floppy-o aria-hidden="true"
-                .chevron_right
-              span Guardar
-      /! SECTION DELETE PROFILE
-      .cg_profile_section_delete.cg_profile_section_
-        span.cg-profile_section_description
-          | Desde acá puedes eliminar todos tus datos asociados a tu perfil de Transbank Developers. Una vez que confirmes la eliminación no podrás volver atrás. Procura proceder con cuidado.
-        .cg-btn_course_2
-          a.cg-button_a
-            figure
-              i.fa.fa-trash aria-hidden="true"
-              .chevron_right
-            span Eliminar perfil
+      .container-fluid
+        .row
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6.cg-first-commerce
+            h2.cg-profile_body_title_h2
+              | Comercios integrados
+            /! ITERACIÓN INTEGRACIÓN
+            .row.cg-integration_bg.no_margin
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                figure.cg-wrapper_shop_integrated_figure
+                  .cg-img_container_shop_picture style="background-image: url('img/profile.svg')";
+              .col-xs-12.col-sm-6.col-md-8.col-lg-9
+                span.cg-title_container_shop
+                  | Fitness Solutions
+                a.cg-link_shop href="#"
+                  | www.fitsolutions.cl
+                p.cg-date_shop
+                  | Fecha de integracion
+                  span.cg-date_shop_show
+                    | 16-03-1990
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
+            /! ITERACIÓN INTEGRACIÓN
+            .row.cg-integration_bg.no_margin
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                figure.cg-wrapper_shop_integrated_figure
+                  .cg-img_container_shop_picture
+              .col-xs-12.col-sm-6.col-md-8.col-lg-9
+                span.cg-title_container_shop
+                  | Tienda Planet
+                a.cg-link_shop href="#"
+                  | www.tiendaplanet.cl
+                p.cg-date_shop
+                  | Fecha de integracion
+                  span.cg-date_shop_show
+                    | 16-03-1990
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
+            /! ITERACIÓN INTEGRACIÓN
+            .row.cg-integration_bg.no_margin
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                figure.cg-wrapper_shop_integrated_figure
+                  .cg-img_container_shop_picture
+              .col-xs-12.col-sm-6.col-md-8.col-lg-9
+                span.cg-title_container_shop
+                  | YPago.cl
+                a.cg-link_shop href="#"
+                  | www.ypago.cl
+                p.cg-date_shop
+                  | Fecha de integracion
+                  span.cg-date_shop_show
+                    | 16-03-1990
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            h2.cg-profile_body_title_h2
+              | Datos de contacto
     /! POP UP DELETE INTEGRATION
     .cg-wrapper_popup.cg-delete_integration.cg-popup
       #cg-popup
@@ -838,6 +620,7 @@ html lang="es"
           figure.wrapper_cg-tbk_logo2_footer
             img.cg-tbk_logo2_footer src="img/cumbregroup.svg"
           a.cg-tbk_footer_link_2 href="mailto:contacto@cumbregroup.com" contacto@cumbregroup.com
+    script src="js/3d-lines-animation.js"
 
 
 

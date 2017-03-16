@@ -1107,6 +1107,56 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/public_icon_eye.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/public_icon_eye.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/public_icon_like.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/public_icon_like.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/public_icon_plug.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/public_icon_plug.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/public_icon_stat.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/public_icon_stat.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/seal.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/seal.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/section_headers\/example-header.jpg": {
 		"ft": 16384,
 		"iS": 31500,
@@ -1376,12 +1426,18 @@
 		"oS": 1,
 		"rAC": 0
 		},
-	"\/profile_c.slim": {
+	"\/profile_public2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/profile_public2.html",
+		"oF": 0
+		},
+	"\/profile_public2.slim": {
 		"cmO": 0,
 		"ft": 1024,
 		"llg": 0,
 		"oA": 0,
-		"oAP": "\/profile_c.html",
+		"oAP": "\/profile_public2.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 1,
