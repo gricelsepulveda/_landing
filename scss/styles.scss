@@ -30,6 +30,14 @@
 
 @font-face 
 {
+  font-family: 'helvetica_neue_light';
+  src: url('../fonts/helvetica_neue/HelveticaNeueLTStd-Lt.otf') format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face 
+{
   font-family: 'din_alternate_bold';
   src: url('../fonts/din/din_alternate_bold.eot');
   src: url('../fonts/din/din_alternate_bold.eot?#iefix') format('embedded-opentype'),
@@ -2553,6 +2561,10 @@ header.cg-header_personal_profile
     weight: bolder;
   }
   text-align: left;
+  @media #{$sm}
+  {
+    text-align: center;
+  }
   @include animate;
   i 
   {
@@ -2568,6 +2580,10 @@ header.cg-header_personal_profile
 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  @media #{$sm}
+  {
+    padding-left: 0;
+  }
 }
 
 .cg-profile_picture
@@ -2586,14 +2602,21 @@ header.cg-header_personal_profile
   //height: 19.5862rem;
   //width: 10rem;
   //height: 10.37945rem;
-  height: 15rem;
-  width: 15.5692rem;
+  //height: 15rem;
+  //width: 15.5692rem;
+  height: 13.75rem;
+  width: 14.2718rem;
   position: relative;
   margin-top: 0.25rem;
   @media #{$md}
   {
     width: 10rem;
     height: 10.37945rem;
+  }
+  @media #{$sm}
+  {
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 }
 
@@ -2648,11 +2671,271 @@ header.cg-header_personal_profile
   }
 }
 
-h3.cg-profile_h3
+.cg-profile_h3
 {
+  display: block;
+  margin-top: 1.2rem;
   font:
   {
+    family:'HelveticaNeueLTStd-Bd', 'Titillium web', sans-serif;
+    size: 1.2rem;
+    weight: bolder;
   }
+  color: $white;
+  text:
+  {
+    align: left;
+    transform: uppercase;
+  }
+  padding-bottom: 0.18rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid $white;
+  @media #{$sm}
+  {
+    text-align: center;
+  }
+}
+
+.cg-profile_h5
+{
+  display: block;
+  padding-top: 1rem;
+  font:
+  {
+    family:'HelveticaNeueLTStd-Bd', 'Titillium web', sans-serif;
+    size: 0.9rem;
+    weight: bolder;
+  }
+  color: $white;
+  text:
+  {
+    align: left;
+    transform: uppercase;
+  }
+  margin-bottom: 0.25rem;
+  @media #{$sm}
+  {
+    text-align: center;  
+  }
+}
+
+.cg-wrapper_share_skills
+{
+  border-bottom: 1px solid $white;
+  background-color: rgba($white, 0.2);
+  padding: 0rem 1rem 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.cg-profile_p
+{
+  color: $white;
+  font:
+  {
+    family:'HelveticaNeueLTStd-Bd', 'Titillium web', sans-serif;
+    size: 0.6rem;
+    weight: bolder;
+  }
+  line-height: 0.7rem;
+  text:
+  {
+    align: justify;
+  }
+}
+
+.cg-profile_h4
+{
+  display: block;
+  margin-top: 1.28rem;
+  font:
+  {
+    family:'HelveticaNeueLTStd-Bd', 'Titillium web', sans-serif;
+    size: 0.8rem;
+    weight: bolder;
+  }
+  color: $white;
+  text:
+  {
+    align: left;
+    transform: uppercase;
+  }
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid $white;
+  @media #{$sm}
+  {
+    text-align: center;  
+  }
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+}
+
+.cg-wrapper_achievement
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  @media #{$sm}
+  {
+    justify-content: center;  
+  }
+}
+
+.cg-achievement_figure
+{
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  background-color: $white;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+  text-align: center;
+  line-height: 1rem;
+  padding: 0;
+  cursor: pointer;
+  @include animate;
+  &:last-of-type
+  {
+    margin-right: 0rem;
+  }
+  .cg-tooltip_achievement
+  {
+    @include animate;
+    display: none;
+    background-color: $black;
+    color: $white;
+    font: 
+    {
+      family: 'Titillium Web', sans-serif;
+      size: 0.4rem;
+      weight: 300;
+    }
+    text:
+    {
+      align: center;
+      transform: uppercase;
+    }
+    border-radius: 0.25rem;
+    padding: 0.125rem;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -0.25rem;
+    right: -2rem;
+    line-height: 0.5rem;
+    z-index: 2;
+  }
+  &:hover 
+  {
+    .cg-tooltip_achievement
+    {
+      display: inline-block;
+    }
+    box-shadow: -1px 1px 20px 0px rgba(255,255,255,0.5);
+  }
+}
+
+.cg-achievement_img
+{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  text-align: center;
+}
+
+
+.cg-btn_social_prof
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 2.2rem;
+  width: auto;
+  position: relative;
+  line-height: 2.2rem;
+  padding: 0rem 1rem 0rem 3.2rem;
+  background-color: $white;
+  max-width: 17.1rem;
+  margin-top: 0.25rem;
+  &:first-of-type
+  {
+    margin-top: 1rem;
+  }
+  &:hover 
+  {
+    background-color: $red;
+    .cg-social_prof_btn_social
+    {
+      background-color: $white;
+      color: $red;
+    }
+    .cg-span_prof_btn_p
+    {
+      color: $white;
+    }
+    .cg-span_prof_btn_span
+    {
+      color: $white;
+    }
+  }
+  @media #{$sm}
+  {
+    margin: 0 auto;
+    margin-top: 0.25rem; 
+    &:first-of-type
+    {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.cg-social_prof_btn_social
+{
+  background-color: $red;
+  color: $white;
+  line-height: 2.2rem;
+  text-align: center;
+  width: 2.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  i 
+  {
+    font-size: 1.2rem;
+  }
+}
+
+.cg-span_prof_btn_p
+{
+  font: 
+  {
+    family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+    size: 0.6rem;
+    weight: lighter;
+    weight: 300;
+  }
+  color: $red;
+}
+
+.cg-span_prof_btn_span
+{
+  display: inline;
+  font: 
+  {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
+    size: 0.6rem;
+    weight: bolder;
+    weight: 600;
+  }
+  color: $red;
 }
 
 /* PROFILE BODY START */
@@ -2694,7 +2977,7 @@ nav.cg-profile_body_nav
 {
   display: block;
   height: auto;
-  border-bottom: 0.25rem solid $gray;
+  border-bottom: 0.25rem solid lighten($light_gray, 15%);
   padding-bottom: 1rem;
 }
 
@@ -2811,20 +3094,15 @@ span.cg-profile_section_description
 
 article.cg-profile_course_article
 {
-  width: 20%;
+  width: 15rem;
   height: auto;
-  border-radius: 0.25rem;
   border: 1px solid $gray;
   background-color: $white;
   overflow: hidden;
-  padding-bottom: 3.5rem;
+  padding-bottom: 4.25rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   position: relative;
-  @media #{$sm}
-  {
-    width: 40%;
-  }
   @media #{$xs}
   {
     margin-right: 0;
@@ -2835,15 +3113,17 @@ article.cg-profile_course_article
 header.cg-profile_course_header
 {
   display: block;
-  height: 6rem;
+  height: auto;
   background:
   {
-    image: url("../img/header_article_4.svg");
-    size: 100% auto;
+    color: $cobalt_blue;
+    image: url("../img/header_mini_texture.svg");
+    size: 200% auto;
     repeat: no-repeat;
-    position: bottom;
+    position: center;
   }
   border-bottom: 1px solid $white;
+  padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
 h3.cg-profile_course_h3
@@ -2853,13 +3133,15 @@ h3.cg-profile_course_h3
   text: 
   {
     align: center;
+    transform: uppercase;
   }
   font:
   {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
     size: 1.2rem;
+    weight: bolder;
     weight: 600;
   }
-  padding-top: 1.5rem;
 }
 
 p.cg-profile_course_p
@@ -2885,9 +3167,9 @@ p.cg-profile_course_p
   bottom: 3rem;
   width: 80%;
   left: 10%;
-  height: 2px;
+  height: 1px;
   background-color: $gray;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 button.cg-profile_course_btn
@@ -2901,15 +3183,16 @@ button.cg-profile_course_btn
   background-color: $red;
   color: $white;
   border: 1px solid $red;
-  border-radius: 0.25rem;
   cursor: pointer;
-  height: 1.8rem;
-  line-height: 1.8rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
   margin-bottom: 0.25rem;
   font: 
   {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
     size: 0.9rem;
-    height: 400;
+    weight: bolder;
+    weight: 600;
   }
   letter-spacing: 2px;
   text: 
@@ -3027,7 +3310,7 @@ span.cg-filter_filter
 
 .cg-btn_course
 {
-  border: 1px solid $purple;
+  border: 1px solid $black;
   display: inline-block;
   border-radius: 0.3rem;
   position: absolute;
@@ -3037,8 +3320,9 @@ span.cg-filter_filter
   @media #{$sm}
   {
     position: relative;
-    height: 2.5rem;
-    width: 10.45rem;
+    height: 2.7rem;
+    overflow: hidden;
+    width: 9.8rem;
     right: inherit;
     .cg-button_a
     {
@@ -3228,6 +3512,8 @@ form.cg-form_edit_profile_normal
   a.cg-button_a
   {
     margin-top: 2rem;
+    background-color: transparent;
+    border: none;
   }
 }
 form.cg-form_edit_profile_public
@@ -3242,6 +3528,8 @@ form.cg-form_edit_profile_public
   a.cg-button_a
   {
     margin-top: 2rem;
+    background-color: transparent;
+    border: none;
   }
   .cg-select_filter
   {
@@ -3273,7 +3561,7 @@ form.cg-form_edit_profile_public
   flex-wrap: nowrap;
   align-content: center;
   align-items: stretch;
-  background-color: $gray;
+  background-color: lighten($light_gray, 10%);
   padding: 2rem 0rem 2rem 0rem;
   margin-bottom: 1rem;
   @media #{$sm}
@@ -3297,7 +3585,7 @@ form.cg-form_edit_profile_public
     position: relative;
     background-color: $white;
     border-radius: 0.25rem;
-    border: 1px solid $gray;
+    border: 1px solid $light_gray;
     padding: 0rem 0.5rem 0rem 0.5rem;
     line-height: 2.4rem;
     font:
@@ -3349,7 +3637,7 @@ form.cg-form_edit_profile_public
   position: relative;
   background-color: $white;
   border-radius: 0.25rem;
-  border: 1px solid $gray;
+  border: 1px solid $light_gray;
   margin-bottom: 0.25rem;
   overflow: hidden;
   figure 
@@ -3397,13 +3685,14 @@ form.cg-form_edit_profile_public
 .cg-btn_course_2
 {
   display: block;
-  border: 1px solid $purple!important;
+  border: 1px solid $black;
   border-radius: 0.3rem;
   position: relative;
-  height: 2.5rem;
+  height: 2.7rem;
   width: 9.18rem;
   right: inherit;
   margin: 0 auto;
+  overflow: hidden;
   .cg-button_a
   {
     position: absolute;
@@ -3724,4 +4013,14 @@ form.cg-form_edit_profile_public
   }
 }
 
+#new_integration
+{
+  span
+  {
+    @media #{$sm}
+    {
+      letter-spacing: -1px;
+    }
+  }
+}
 

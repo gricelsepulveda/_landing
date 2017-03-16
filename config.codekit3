@@ -591,6 +591,14 @@
 		"oAP": "\/fonts\/icomoon\/icomoon.woff",
 		"oF": 0
 		},
+	"\/img\/achievement_example.png": {
+		"ft": 32768,
+		"iS": 4208,
+		"oA": 0,
+		"oAP": "\/img\/achievement_example.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_lines.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -688,14 +696,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/img\/example.jpg": {
-		"ft": 16384,
-		"iS": 65461,
-		"oA": 0,
-		"oAP": "\/img\/example.jpg",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/img\/favicon\/apple-touch-icon-114x114.png": {
 		"ft": 32768,
@@ -897,6 +897,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/header_mini_texture.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/header_mini_texture.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icon_tools_01.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1082,6 +1092,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/new_image.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/profile.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/profile.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

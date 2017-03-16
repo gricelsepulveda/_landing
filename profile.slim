@@ -323,18 +323,80 @@ html lang="es"
         .row
           .col-xs-1.col-sm-1.col-md-1.col-lg-1
           .col-xs-10.col-sm-10.col-md-10.col-lg-10
-            .row
+            .row.
               .col-xs-12.col-sm-12.col-md-4.col-lg-4
                 a.cg-goto_public href="#"
                   i.fa.fa-globe aria-hidden="true"
                   | Ver perfil público
                 figure.cg-profile_picture
-                  .cg-profile_picture_cnt style="background-image: url('img/example.jpg');"
+                  .cg-profile_picture_cnt style="background-image: url('img/profile.svg');"
                   .cg-profile_picture_input
                     input.file_input_2 type="file"
-              .coll-xs-12.col-sm-12.col-md-8.col-lg-8
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
                 h3.cg-profile_h3
                   | Nombre Apellido
+                p.cg-profile_p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo.
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4
+                h4.cg-profile_h4
+                  i.fa.fa-trophy aria-hidden="true"
+                  | Logros
+                .cg-wrapper_achievement 
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                  figure.cg-achievement_figure
+                    img.cg-achievement_img src="img/achievement_example.png"
+                    .cg-tooltip_achievement
+                      | Nombre del logro
+                .cg-wrapper_social_prof_btns
+                    /! FACEBOOK
+                    a.cg-btn_social_prof href="#"
+                      figure.cg-social_prof_btn_social
+                        i.fa.fa-facebook aria-hidden="true"
+                      p.cg-span_prof_btn_p
+                        | Compartir en 
+                        span.cg-span_prof_btn_span
+                          | Facebook
+                    /! TWITTER
+                    a.cg-btn_social_prof href="#"
+                      figure.cg-social_prof_btn_social
+                        i.fa.fa-twitter aria-hidden="true"
+                      p.cg-span_prof_btn_p
+                        | Compartir en 
+                        span.cg-span_prof_btn_span
+                          | Twitter
+                    /! LINKEDIN
+                    a.cg-btn_social_prof href="#"
+                      figure.cg-social_prof_btn_social
+                        i.fa.fa-linkedin aria-hidden="true"
+                      p.cg-span_prof_btn_p
+                        | Compartir en 
+                        span.cg-span_prof_btn_span
+                          | Linkedin
+              .col-xs-12.col-sm-12.col-md-12.col-lg-12
+                .cg-wrapper_share_skills
+                  h5.cg-profile_h5
+                    | Comparte y demuestra tus habilidades
+                  p.cg-profile_p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
           .col-xs-1.col-sm-1.col-md-1.col-lg-1
     /! PROFILE BODY
     .cg-wrapper-profile_body
@@ -378,7 +440,7 @@ html lang="es"
           /! COURSE
           article.cg-profile_course_article
             header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
+              h3.cg-profile_course_h3 Base
             p.cg-profile_course_p
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura.
             .cg-divider_course
@@ -394,7 +456,7 @@ html lang="es"
           /! COURSE
           article.cg-profile_course_article
             header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
+              h3.cg-profile_course_h3 Sdk/Api
             p.cg-profile_course_p
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura.
             .cg-divider_course
@@ -402,7 +464,23 @@ html lang="es"
           /! COURSE
           article.cg-profile_course_article
             header.cg-profile_course_header
-              h3.cg-profile_course_h3 Plugins
+              h3.cg-profile_course_h3 Q.A. Básico
+            p.cg-profile_course_p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            .cg-divider_course
+            button.cg-profile_course_btn Ingresar
+          /! COURSE
+          article.cg-profile_course_article
+            header.cg-profile_course_header
+              h3.cg-profile_course_h3 Q.A. Avanzado
+            p.cg-profile_course_p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            .cg-divider_course
+            button.cg-profile_course_btn Ingresar
+          /! COURSE
+          article.cg-profile_course_article
+            header.cg-profile_course_header
+              h3.cg-profile_course_h3 Comercial
             p.cg-profile_course_p
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetura. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             .cg-divider_course
