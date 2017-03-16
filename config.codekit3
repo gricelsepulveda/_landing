@@ -599,6 +599,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/ad.png": {
+		"ft": 32768,
+		"iS": 112347,
+		"oA": 0,
+		"oAP": "\/img\/ad.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_lines.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1200,6 +1208,14 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/transbank_logo_negro.png": {
+		"ft": 32768,
+		"iS": 7616,
+		"oA": 0,
+		"oAP": "\/img\/transbank_logo_negro.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/img\/triangle.svg": {
 		"ft": 2097152,
