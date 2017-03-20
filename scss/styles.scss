@@ -1465,10 +1465,15 @@ section.cg-welcome
 section.cg-section_tools
 {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   position: relative;
-  padding: 6.75rem 6rem 3rem 6rem;
+  padding: 0rem 6rem 3rem 6rem;
   background-color: $white;
   background: 
   {
@@ -1477,9 +1482,11 @@ section.cg-section_tools
     position: center;
     repeat: no-repeat;
   }
+  margin-top: 1rem;
   @media #{$sm}
   {
-    padding: 5rem 1rem 3rem 1rem;
+    height: auto;
+    padding: 0rem 1rem 3rem 1rem;
   }
 }
 
@@ -1491,7 +1498,7 @@ section.cg-section_tools
   width: 0.25rem;
   height: 0.25rem;
   display: block;
-  top: -3.25rem;
+  top: 0.25rem;
   left: 0;
   z-index: 3000;
 }
@@ -1515,7 +1522,7 @@ section.cg-section_tools
   width: 0.25rem;
   height: 0.25rem;
   display: block;
-  top: -3.4rem;
+  top: 0rem;
   left: 0;
   z-index: 3000;
 }
@@ -1557,7 +1564,7 @@ section.cg-section_tools
   width: 100%;
   position: absolute;
   padding: 1rem 1rem 0.75rem 1rem;
-  top: 0;
+  top: 3.25rem;
   left: 0;
   font:
   {
@@ -1599,8 +1606,8 @@ section.cg-section_tools
   {
     align: center;
   }
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  padding-top: 10rem;
+  margin-bottom: 2rem;
 }
 
 .cg-relevant_text
@@ -1883,16 +1890,12 @@ section.cg-section_tools
 section.cg-videos
 {
   width: 100%;
-  height: 32.3rem;
+  height: 100vh;
   background-color: $white;
   display: block;
   position: relative;
   z-index: 1;
-  @media #{$sm}
-  {
-    height: auto;
-  }
-  h2.cg-section_h2.cg-video-animation
+  h2.cg-section_h2
   {
     position: absolute;
     top: 3.5rem;
@@ -1901,8 +1904,7 @@ section.cg-videos
   }
   .my-slider
   {
-    height: 32.3rem;
-    padding-top: 5rem;
+    height: 100vh;
     position: relative;
     @media #{$sm}
     {
@@ -1929,6 +1931,11 @@ section.cg-videos
         margin: 0 auto;
         width: 100%;
         height: auto;
+        @media #{$sm}
+        {
+          height: 100vh;
+          width: auto;
+        }
       }
       &:after
       {
@@ -1998,11 +2005,8 @@ aside.cg-slider_video_aside
   top: 0;
   left: 0;
   width: 100vw;
-  height: 27.3rem;
-  @media #{$sm}
-  {
-    height: 100%;
-  }
+  height: 100vh;
+  padding-top: 3.5rem;
   z-index: 9;
   @include flex;
   flex-direction: column;
@@ -2030,9 +2034,10 @@ aside.cg-slider_video_aside
 section.cg-section_discover
 {
   width: 100%;
+  height: 100vh;
   display: block;
   position: relative;
-  padding: 7.5rem 6rem 4rem 6rem;
+  padding: 10rem 6rem 1rem 6rem;
   background-color: $white;
   background: 
   {
@@ -2043,7 +2048,8 @@ section.cg-section_discover
   }
   @media #{$sm}
   {
-    padding: 5rem 1rem 
+    height: auto;
+    padding: 10rem 1rem 4rem 1rem;
   }
 }
 
@@ -2052,6 +2058,7 @@ section.cg-section_discover
   @include flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  position: relative;
   align-items: stretch;
   flex-wrap: wrap;
   @media #{$sm}
