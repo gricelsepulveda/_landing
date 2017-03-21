@@ -822,7 +822,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   z-index: 15;
   top: 0;
   left: 0;
-  background-color: $black;
+  background-color: $red;
   color: $white;
   text-align: center;
   height: 2.4rem;
@@ -863,7 +863,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
     margin: 0 auto;
     position: relative;
     height: 2.4rem;
-    width: 10rem;
+    width: 20rem;
     background-color: $white;
     border-radius: 0.25rem;
     border: 1px solid $light_gray;
@@ -882,6 +882,10 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
       repeat: no-repeat;
     }
     @include animate;
+    @media #{$sm}
+    {
+      width: 10rem;
+    } 
     &:focus
     {
       border: 1px solid $red;
@@ -1078,7 +1082,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
 .cg-select_wrapper
 {
   display: block;
-  width: 10rem;
+  width: 20rem;
   height: 2.4rem;
   position: relative;
   background-color: $white;
@@ -1087,6 +1091,10 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   margin: 0 auto;
   margin-bottom: 0.5rem;
   overflow: hidden;
+  @media #{$sm}
+  {
+    width: 10rem;
+  } 
   figure 
   {
     position: absolute;
@@ -1107,7 +1115,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   select 
   {
     cursor: pointer;
-    width: 10rem;
+    width: 20rem;
     height: 2.4rem;
     background-color: transparent;
     border: none;
@@ -1124,6 +1132,10 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
       family: 'Titillium Web', sans-serif;
     }
     color: darken($light_gray, 30%);
+    @media #{$sm}
+    {
+      width: 10rem;
+    } 
   }
 }
 
@@ -1172,7 +1184,7 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   height: 10rem;
   overflow-y: scroll;
   color: $white;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 300;
   text-align: left;
   padding: 1rem;
@@ -1250,10 +1262,10 @@ button, input, select, textarea, label, option, figure, ul, li, p, h1, h2, h3, h
   #cg-popup, .cg-flex_pop
   {
     height: 17.5rem;
-    width: 20rem;
+    width: 23rem;
     .cg-nav_pop
     {
-      width: 20rem;
+      width: 23rem;
     }
     @media #{$sm}
     {
@@ -1947,8 +1959,7 @@ section.cg-videos
         left: 0;
         background:
         {
-          image: url(../img/grid_texture.svg);
-          size: 200px;
+          image: url(../img/overlay.png);
           position: center;
           repeat: repeat;
         }
