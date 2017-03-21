@@ -2049,7 +2049,6 @@ section.cg-section_discover
   height: 100vh;
   display: block;
   position: relative;
-  padding: 10rem 6rem 1rem 6rem;
   background-color: $white;
   background: 
   {
@@ -2061,14 +2060,31 @@ section.cg-section_discover
   @media #{$sm}
   {
     height: auto;
-    padding: 10rem 1rem 4rem 1rem;
+  }
+}
+
+.cg-wrapper_discover
+{
+  width: 100%;
+  height: 100vh;
+  padding: 6.5rem 6rem 0rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  @media #{$sm}
+  {
+    height: auto;
+    padding: 8.5rem 1rem 2rem 1rem;
   }
 }
 
 .cg-flex_discover
 {
   @include flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 1rem;
   position: relative;
   align-items: stretch;
@@ -2091,19 +2107,53 @@ section.cg-section_discover
 {
   @include flex;
   flex-wrap: wrap;
-  width: 45%;
+  //width: 45%;
+  width: 20rem;
   height: auto;
   cursor: pointer;
   border-radius: 0.5rem;
-  margin-right: 1rem;
   position: relative;
-  @include animate;
-  @media #{$sm}
+  &:nth-of-type(1)
+  {
+    margin-right: 2rem;
+    @media #{$sm}
+    {
+      margin-bottom: 2rem;
+      width: 80%;
+      margin-right: 0rem;
+    }
+  }
+  &:nth-of-type(2)
   {
     margin-right: 0rem;
-    margin-bottom: 2rem;
-    width: 80%;
+    @media #{$sm}
+    {
+      margin-bottom: 2rem;
+      width: 80%;
+      margin-right: 0rem;
+    }
   }
+  &:nth-of-type(3)
+  {
+    margin-right: 2rem;
+    @media #{$sm}
+    {
+      margin-bottom: 2rem;
+      width: 80%;
+      margin-right: 0rem;
+    }
+  }
+  &:nth-of-type(4)
+  {
+    margin-right: 0rem;
+    @media #{$sm}
+    {
+      margin-bottom: 2rem;
+      width: 80%;
+      margin-right: 0rem;
+    }
+  }
+  @include animate;
   &:last-of-type
   {
     margin-bottom: 0rem;
@@ -2582,11 +2632,12 @@ header.cg-header_personal_profile
   cursor: pointer;
   font:
   {
-    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
-    size: 0.8rem;
-    weight: 600;
+    family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+    size: 0.7rem;
+    weight: 300;
     weight: bolder;
   }
+  padding-bottom: 0.5rem;
   text-align: left;
   @media #{$sm}
   {
@@ -2824,7 +2875,7 @@ header.cg-header_personal_profile
 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
@@ -2898,21 +2949,20 @@ header.cg-header_personal_profile
   text-align: center;
 }
 
-
 .cg-btn_social_prof
 {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 2.2rem;
-  width: auto;
+  width: 100%;
   position: relative;
   line-height: 2.2rem;
   padding: 0rem 1rem 0rem 3.2rem;
   background-color: $white;
-  max-width: 17.1rem;
   margin-top: 0.25rem;
   &:first-of-type
   {
@@ -3200,6 +3250,25 @@ span.cg-public_stat_span
   }
 }
 
+.cg-paragraph_description_shop
+{
+  display: block;
+  text:
+  {
+    align: left;
+  }
+  font:
+  {
+    family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
+    size: 0.6rem;
+    weight: bolder;
+    weight: 600;
+  }
+  width: 65%;
+  margin-top: 0.25rem;
+  color: $gray;
+}
+
 .cg-trusted_shop_certified
 {
   position: absolute;
@@ -3220,6 +3289,19 @@ span.cg-public_stat_span
     top: inherit;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+}
+
+.cg-star_rating_shop
+{
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  color: $red;
+  i 
+  {
+    margin-right: 0.125rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -3389,6 +3471,7 @@ span.cg-public_stat_span
   display: block;
   height: auto;
   margin-bottom: 1rem;
+  position: relative;
   .cg-space_ad_img_transbank
   {
     width: 100%;
@@ -4608,6 +4691,18 @@ form.cg-form_edit_profile_public
     {
       letter-spacing: -1px;
     }
+  }
+}
+
+.cg-divider_3_3
+{
+  display: block;
+  background-color: transparent;
+  height: 0rem;
+  width: 100%;
+  @media #{$sm}
+  {
+    display: none;
   }
 }
 
