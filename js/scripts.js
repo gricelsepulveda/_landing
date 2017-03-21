@@ -64,40 +64,24 @@ $(document).ready(function(){
       ({
         "marginLeft":'0%'
       }, 700);
-      $(".cg_profile_section_integrations").css({"visibility":"hidden"});
-      $(".cg_profile_section_edit_profile").css({"visibility":"hidden"});
-      $(".cg_profile_section_delete").css({"visibility":"hidden"});
-      $(".cg_profile_section_course").css({"visibility":"visible"});
   });
   $("#mis_integraciones").click(function(){
     $(".cg-wrapper_profile_section_carousel").animate
       ({
         "marginLeft":'-100vw'
       }, 700);
-      $(".cg_profile_section_course").css({"visibility":"hidden"});
-      $(".cg_profile_section_edit_profile").css({"visibility":"hidden"});
-      $(".cg_profile_section_delete").css({"visibility":"hidden"});
-      $(".cg_profile_section_integrations").css({"visibility":"visible"});
   });
   $("#editar_perfil").click(function(){
     $(".cg-wrapper_profile_section_carousel").animate
       ({
         "marginLeft":'-200vw'
       }, 700);
-      $(".cg_profile_section_integrations").css({"visibility":"hidden"});
-      $(".cg_profile_section_course").css({"visibility":"hidden"});
-      $(".cg_profile_section_delete").css({"visibility":"hidden"});
-      $(".cg_profile_section_edit_profile").css({"visibility":"visible"});
   });
   $("#eliminar_perfil").click(function(){
     $(".cg-wrapper_profile_section_carousel").animate
       ({
         "marginLeft":'-300vw'
       }, 700);
-      $(".cg_profile_section_integrations").css({"visibility":"hidden"});
-      $(".cg_profile_section_edit_profile").css({"visibility":"hidden"});
-      $(".cg_profile_section_course").css({"visibility":"hidden"});
-      $(".cg_profile_section_delete").css({"visibility":"visible"});
   });
   //POP UP
     //OPEN INTERACTIONS

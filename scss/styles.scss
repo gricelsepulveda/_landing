@@ -98,6 +98,7 @@ $xs: "(max-width: 767px)";
 $sm: "(max-width: 991px)";
 $md: "(max-width: 1199px)";
 $lg: "(min-width: 1200px)";
+$xlg: "(min-width: 1600px)";
 
 // CUSTOM BREAKPOINTS
 $xxs_absolute: "(min-width: 0px) and (max-width: 339px)";
@@ -2626,19 +2627,21 @@ header.cg-header_personal_profile
   }
   //width: 18.8701rem;
   //height: 19.5862rem;
+  width: 6.5rem;
+  height: 6.706rem;
   //width: 10rem;
   //height: 10.37945rem;
   //height: 15rem;
   //width: 15.5692rem;
-  height: 13.75rem;
-  width: 14.2718rem;
+  //height: 13.75rem;
+  //width: 14.2718rem;
   position: relative;
   margin-top: 0.25rem;
-  @media #{$md}
+  /*@media #{$xlg}
   {
     width: 10rem;
     height: 10.37945rem;
-  }
+  }*/
   @media #{$sm}
   {
     margin: 0 auto;
@@ -3302,11 +3305,12 @@ span.cg-public_stat_span
 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
-  width: 50%;
+  width: 100%;
+  padding-right: 1rem;
   @media #{$sm}
   {
     justify-content: flex-start;
@@ -3345,6 +3349,8 @@ span.cg-public_stat_span
     weight: 600;
   }
   text-align: left;
+  width: 100%;
+  display: block;
   @media #{$sm}
   {
     font-size: 0.5rem;
@@ -3352,6 +3358,8 @@ span.cg-public_stat_span
 }
 .cg-label_pub_li_2
 {
+  display: block;
+  width: 100%;
   color: $black;
   font:
   {
@@ -3854,21 +3862,30 @@ span.cg-filter_filter
 
 .cg-table_profile
 {
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   overflow-x: scroll; 
   align-self: flex-start;
+  background-color: orange;
   @media #{$sm}
   {
     align-self: center;
+    width: auto;
+    max-width: 100%;
   }
 }
 
 table
 {
+  width: 100%;
+  border-right: 1px solid $gray;
+  border-left: 1px solid $gray;
+  @media #{$sm}
+  {
+    width: auto;
+  }
   tr
   {
     display: flex;
@@ -3947,9 +3964,15 @@ table
       align-content: center;
       &:nth-of-type(1)
       {
-        width: 5rem!important;
-        min-width: 5rem!important;
-        max-width: 5rem!important;
+        width: 5%!important;
+        min-width: 5%!important;
+        max-width: 5%!important;
+        @media #{$sm}
+        {
+          width: 5rem!important;
+          min-width: 5rem!important;
+          max-width: 5rem!important;
+        }
         img 
         {
           width: 2rem;
@@ -3958,45 +3981,87 @@ table
       }
       &:nth-of-type(2)
       {
-        width: 13rem!important;
-        min-width: 13rem!important;
-        max-width: 13rem!important;
+        width: 30%!important;
+        min-width: 30%!important;
+        max-width: 30%!important;
+        @media #{$sm}
+        {
+          width: 13rem!important;
+          min-width: 13rem!important;
+          max-width: 13rem!important;
+        }
       }
       &:nth-of-type(3)
       {
-        width: 11rem!important;
-        min-width: 11rem!important;
-        max-width: 11rem!important;
+        width: 25%!important;
+        min-width: 25%!important;
+        max-width: 25%!important;
+        @media #{$sm}
+        {
+          width: 11rem!important;
+          min-width: 11rem!important;
+          max-width: 11rem!important;
+        }
       }
       &:nth-of-type(4)
       {
-        width: 8rem!important;
-        min-width: 8rem!important;
-        max-width: 8rem!important;
+        width: 20%!important;
+        min-width: 20%!important;
+        max-width: 20%!important;
+        @media #{$sm}
+        {
+          width: 8rem!important;
+          min-width: 8rem!important;
+          max-width: 8rem!important;
+        }
       }
       &:nth-of-type(5)
       {
-        width: 4rem!important;
-        min-width: 4rem!important;
-        max-width: 4rem!important;
+        width: 5%!important;
+        min-width: 5%!important;
+        max-width: 5%!important;
+        @media #{$sm}
+        {
+          width: 4rem!important;
+          min-width: 4rem!important;
+          max-width: 4rem!important;
+        }
       }
       &:nth-of-type(6)
       {
-        width: 4rem!important;
-        min-width: 4rem!important;
-        max-width: 4rem!important;
+        width: 5%!important;
+        min-width: 5%!important;
+        max-width: 5%!important;
+        @media #{$sm}
+        {
+          width: 4rem!important;
+          min-width: 4rem!important;
+          max-width: 4rem!important;
+        }
       }
       &:nth-of-type(7)
       {
-        width: 4rem!important;
-        min-width: 4rem!important;
-        max-width: 4rem!important;
+        width: 5%!important;
+        min-width: 5%!important;
+        max-width: 5%!important;
+        @media #{$sm}
+        {
+          width: 4rem!important;
+          min-width: 4rem!important;
+          max-width: 4rem!important;
+        }
       }
       &:nth-of-type(8)
       {
-        width: 4rem!important;
-        min-width: 4rem!important;
-        max-width: 4rem!important;
+        width: 5%!important;
+        min-width: 5%!important;
+        max-width: 5%!important;
+        @media #{$sm}
+        {
+          width: 4rem!important;
+          min-width: 4rem!important;
+          max-width: 4rem!important;
+        }
       }
     }
   }
@@ -4017,8 +4082,10 @@ table
 form.cg-form_edit_profile_normal
 {
   width: 50%;
-  padding: 0rem 3rem 0rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   border-right: 1px solid $white;
+  background-color: $light_gray;
+  text-align: right;
   @media #{$sm}
   {
     border-right: none;
@@ -4032,12 +4099,15 @@ form.cg-form_edit_profile_normal
     margin-top: 2rem;
     background-color: transparent;
     border: none;
+    display: inline-block;
   }
 }
 form.cg-form_edit_profile_public
 {
   width: 50%;
-  padding: 0rem 3rem 0rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
+  text-align: right;
+  background-color: lighten($light_gray, 10%);
   @media #{$sm}
   {
     width: 100%;
@@ -4048,6 +4118,7 @@ form.cg-form_edit_profile_public
     margin-top: 2rem;
     background-color: transparent;
     border: none;
+    display: inline-block;
   }
   .cg-select_filter
   {
@@ -4079,8 +4150,6 @@ form.cg-form_edit_profile_public
   flex-wrap: nowrap;
   align-content: center;
   align-items: stretch;
-  background-color: lighten($light_gray, 10%);
-  padding: 2rem 0rem 2rem 0rem;
   margin-bottom: 1rem;
   @media #{$sm}
   {
