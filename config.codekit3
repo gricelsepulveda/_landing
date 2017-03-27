@@ -21,6 +21,29 @@
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
+	"\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contact.html",
+		"oF": 0
+		},
+	"\/contact.slim": {
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/contact.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"\/contact_.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contact_.html",
+		"oF": 0
+		},
 	"\/css\/animate.css": {
 		"aP": 1,
 		"bl": 0,
@@ -647,14 +670,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/cat.jpg": {
-		"ft": 16384,
-		"iS": 50729,
-		"oA": 0,
-		"oAP": "\/img\/cat.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/img\/cumbregroup.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -854,16 +869,6 @@
 		"oAP": "\/img\/favicon\/mstile-70x70.png",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/img\/grid_texture.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/grid_texture.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/header_article_1.svg": {
 		"ft": 2097152,
@@ -1095,6 +1100,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/mail_tbk.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/img\/mail_tbk.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/new_image.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1202,6 +1215,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/tbk_logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/tbk_mini.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/tbk_mini.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/tbk_mini_logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/tbk_mini_logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1531,18 +1564,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sections_.html",
-		"oF": 0
-		},
-	"\/sources\/sample_video_1.mp4": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sources\/sample_video_1.mp4",
-		"oF": 0
-		},
-	"\/sources\/sample_video_2.mp4": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sources\/sample_video_2.mp4.crdownload",
 		"oF": 0
 		}
 	},

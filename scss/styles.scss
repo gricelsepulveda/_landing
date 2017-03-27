@@ -4706,3 +4706,529 @@ form.cg-form_edit_profile_public
   }
 }
 
+
+/* CONTACT STYLES */ 
+
+.cg-header_contact
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $cobalt_blue;
+  height: 350px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cg-head_contact_img
+{
+  position: relative;
+  width: auto;
+  height: 350px;
+  text-align: center;
+}
+
+.cg_cover_header_contact
+{
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 350px;
+  display: block;
+  background:
+  {
+    image: url(../img/bg_lines_2.svg);
+    size: 100%;
+    position: bottom left;
+    repeat: no-repeat;
+  } 
+  z-index: 1; 
+}
+
+.cg-section_h2_
+{
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 1rem 1rem 0.75rem 1rem;
+  font:
+  {
+    size: 1.5rem;
+    weight: 600;
+    family: 'din_alternate_bold', 'Titillium Web', sans-serif;
+  }
+  color: $white;
+  background-color: $red;
+  text:
+  {
+    align: center;
+  }
+  line-height: 1.5rem;
+}
+
+
+.cg-form_contact_message
+{
+  display: block;
+  position: relative;
+}
+
+.cg_label_contact_select
+{
+  background-color: lighten($light_gray, 10%);
+  display: block;
+  margin-bottom: 1rem;
+  p 
+  {
+    display: block;
+    color: $black;
+    font:
+    {
+      family: 'Titillium Web', sans-serif;
+      size: 1rem;
+      weight: bolder;
+      weight: 600;
+    }
+    text: 
+    {
+      align: center;
+      transform: uppercase;
+    }
+    padding: 1rem;
+    @media #{$sm}
+    {
+      font-size: 0.8rem;
+      text-align: left;
+    }
+    span 
+    {
+      color: $red;
+      @media #{$sm}
+      {
+        display: block;
+      }
+    }
+    &:first-of-type
+    {
+      border-bottom: 2px dotted $red;
+    }
+  }
+}
+
+.cg-cnt_radio
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+  @media #{$sm}
+  {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.cg-flex_select_label_contact
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  @media #{$sm}
+  {
+    width: 100%;
+  }
+  &:first-of-type
+  {
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+    @media #{$sm}
+    {
+      justify-content: flex-start;
+      padding-right: 0;
+    }
+  }
+  &:last-of-type
+  {
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    @media #{$sm}
+    {
+      justify-content: flex-start;
+      padding-left: 0;
+    }
+  }
+}
+
+.div input[type=radio]
+{
+  width   : 1rem;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+
+.cg-select_radio_contact
+{
+  appearance: none;
+  content: '';
+  &:after 
+  {
+    background-color: $white;
+    background-image: none;
+    border: 2px solid $red;
+    cursor: pointer;
+    display: inline-block;
+    height: 1rem;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    width: 1rem;
+    appearance: none;
+    content: '';
+    display: block;
+    line-height: 1rem;
+    vertical-align: middle;
+  }
+  &:checked:after 
+  {
+    background-color: $red;
+  }
+}
+
+.cg-span_select_contact
+{
+  padding-left: 0.4rem;
+  vertical-align: middle;
+  font:
+  {
+    family: 'helvetica_neue_condensed_bold', 'Titillium Web', sans-serif;
+    size: 0.8rem;
+    weight: bolder;
+    weight: 600;
+  }
+  letter-spacing: 2px;
+  line-height: 1rem;
+  text: 
+  {
+    align: left;
+    transform: uppercase;
+  }
+  margin-top: 5px;
+}
+
+.cg-flex_contact_form_input
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  i 
+  {
+    position: absolute;
+    top: 0.25rem;
+    font-size: 1rem; 
+    left: 0;
+    color: $gray;
+    margin-top: -4px;
+  }
+  input 
+  {
+    display: block;
+    vertical-align: bottom;
+    background-color: $white;
+    width: 100%;
+    height: 1.5rem;
+    padding: 0rem 1rem 0rem 1.5rem;
+    border-bottom: 1px solid $red;
+    color: $gray;
+    font:
+    {
+      family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+      size: 0.7rem;
+      weight: lighter;
+      weight: 300;
+    }
+    text-align: left;
+    &:focus
+    {
+      color: $black;
+    }
+  }
+}
+
+.cg-flex_contact_form_textarea
+{
+  textarea
+  {
+    background-color: lighten($light_gray, 10%);
+    width: 100%;
+    height: 7rem;
+    display: block;
+    border: 1px solid lighten($light_gray, 10%);
+    border-radius: 0;
+    padding: 1rem;
+    color: $gray;
+    font:
+    {
+      family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+      size: 0.7rem;
+      weight: lighter;
+      weight: 300;
+    }
+    text-align: left;
+    &:focus
+    {
+      color: $black;
+    }
+  }
+  margin-bottom: 0.5rem;
+}
+
+.cg-contact_form_file
+{
+  display: block;
+  position: relative;
+
+}
+
+.file_input_3
+{
+  position: relative;
+  width: 8rem;
+  height: 1.5rem;
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+  box-shadow: none;
+  outline: none;
+}
+
+.cg-cover_contact_form_file_
+{
+  position: absolute;
+  width: 8rem;
+  height: 1.5rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  background-color: $light_gray;
+  filter: blur(2px)
+}
+
+.cg_file_input_3_txt
+{
+  display: inline-block;
+  color: $soft_gray;
+  font:
+  {
+    family: 'Titillium Web', sans-serif;
+    size: 0.65rem;
+    weight: lighter;
+    weight: 300;
+  }
+  text-align: left;
+  margin-left: 8.5rem;
+}
+
+.cg-cover_contact_form_file
+{
+  position: absolute;
+  width: 8rem;
+  height: 1.5rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: $gray;
+  color: $white;
+  font:
+  {
+    family: 'helvetica_neue_light', 'Titillium Web', sans-serif;
+    size: 0.65rem;
+    weight: lighter;
+    weight: 300;
+  }
+  text-align: center;
+  line-height: 1.7rem;
+  i 
+  {
+    margin-right: 0.25rem;
+  }
+}
+
+
+
+.cg-space_human_proof
+{
+  display: inline-block;
+  width: 15rem;
+  height: 3.75rem;
+  background-color: $light_gray;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  position: relative;
+  @media #{$sm}
+  {
+    display: block;
+  }
+}
+
+.cg-flex_human_and_btn
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  @media #{$sm}
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cg-btn_contact_form
+{
+  height: 3.75rem;
+  width: auto;
+  padding: 0rem 2rem 0rem 2rem;
+  background-color: $red;
+  border: 2px solid $red!important;
+  display: inline-block;
+  position: relative;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font:
+  {
+    family: 'Titillium Web', sans-serif;
+    weight: 600;
+    size: 0.9rem;
+  }
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  @include animate; 
+  &:hover
+  {
+    background-color: $white;
+    color: $red;
+  }
+  @media #{$sm}
+  {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
+.cg-contact_form_body
+{
+  background-color: $white;
+  background: 
+  {
+    image: url(../img/bg_lines_2.svg);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.cg-aside_contact_form
+{
+  display: block;
+  margin-bottom: 3rem;
+  &:first-of-type
+  {
+    @media #{$sm}
+    {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.cg-aside_contact_title_h3
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  color: $red;
+  font:
+  {
+    family: 'Titillium Web', sans-serif;
+    weight: 600;
+    size: 1.5rem;
+  }
+  text:
+  {
+    align: left;
+    transform: uppercase;
+  }
+  img 
+  {
+    width: auto;
+    height: 1.5rem;
+    margin-right: 0.25rem;
+  }
+  @media #{$sm}
+  {
+    text-align: center;
+    justify-content: center;
+  }
+  &:last-of-type
+  {
+    img 
+    {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
+
+.cg-aside_contact_p
+{
+  display: block;
+  font:
+  {
+    family: 'Titillium Web', sans-serif;
+    weight: 300;
+    size: 0.9rem;
+  }
+  text:
+  {
+    align: justify;
+  }
+  color: $gray;
+  margin-top: 0.25rem;
+}
+
+
+
+
