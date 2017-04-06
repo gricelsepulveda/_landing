@@ -1,0 +1,152 @@
+doctype html
+html lang="es" 
+  head
+    meta charset="utf-8"
+    title Transbank
+    meta name="description" content="Apoyando el desarrollo del e-commerce nacional"/
+    meta name="keywords" content="transbank, transbank developers, developers, desarrollador, implementacion transbank"/
+    meta name="author" content="Cumbregroup"/
+    meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/
+    /! BOOTSTRAP
+    link rel="stylesheet" href="css/bootstrap.css"
+    /! ELEN MEYER RESET
+    link rel="stylesheet" href="css/reset.css"
+    /! CUSTOM STYLES
+    link rel="stylesheet" href="css/styles.css"
+    /! CUSTOM STYLES
+    link rel="stylesheet" href="css/icons.css"
+    /! ANIMATE
+    link rel="stylesheet" href="css/animate.css"
+    /! RATEYO
+    link rel="stylesheet" href="css/jquery.rateyo.css"
+    /! FONTAWESOME
+    link rel="stylesheet" href="css/font-awesome.min.css"
+    /! FAVICON
+    link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"
+    link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"
+    link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"
+    link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png"
+    link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png"
+    link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png"
+    link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png"
+    link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png"
+    link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196"
+    link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96"
+    link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32"
+    link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"
+    link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128"
+    meta name="application-name" content="&nbsp;"
+    meta name="msapplication-TileColor" content="#FFFFFF"
+    meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png"
+    meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png"
+    meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png"
+    meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png"
+    meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png"
+    /! JQUERY
+    script src="js/jquery-3.1.1-min.js"
+    /! CUSTOM SCRIPTS
+    /! ACTIVATE PICTUREFILL
+    javascript:
+      document.createElement( "picture" );
+    /! PICTUREFILL USEFUL FOR OPTIMIZE WEIGHT ON MOBILE DEVICES AND GREAT IMAGE QUALITY ON RETINA DISPLAY
+    script src="js/scripts.js"
+    /! PICTURE FILL
+    script src="js/picturefill.min.js"
+    /! 3D ANIMATION BANNER
+    script src="js/three.min.js"
+    script src="js/projector.js"
+    script src="js/canvas-renderer.js"
+    script src="js/color.js"  
+  body
+    .cg-body_form
+      h2.cg-section_h2__ 
+        figure.cg-section_h2_img_logo
+          img src="img/tbk_logo.svg"
+      /! PROFILE BODY
+      .container-fluid
+        .row
+          .col-xs-1.col-sm-1.col-md-2.col-lg-2
+          /! FORM
+          .col-xs-10.col-sm-10.col-md-8.col-lg-8
+            form.cg-form_transbank_dev
+              figure.cg-decoration_top_form
+                .cg-wrapper_shopping_cart
+                  i.fa.fa-shopping-cart aria-hidden="true"
+              h3.cg-form_apply_title_h3
+                | Estimados 
+                span.cg-span_cursive_apply_title
+                  | “Nombre comercio”, 
+                |  Gusto de saludarte
+              p.cg-form_apply_p
+                span.cg-form_apply_p_span
+                  | Victor Araya 
+                | es un integrador registrado en TransbankDevelopers.cl y solicita que valides y califiques la integración realizada de tu comercio al sistema de pago en línea de Transbank.
+                br
+                br
+                | Para verificar la autenticidad de vuestro comercio necesitamos nos respondas dos preguntas de seguridad:
+              .cg-flex_apply_form
+                .cg-flex_apply_input
+                  label.cg-flex_apply_input_label
+                    | Rut cliente Transbank:
+                  input.cg-flex_apply_input_input type="text"
+                .cg-flex_apply_input
+                  label.cg-flex_apply_input_label
+                    | Rut representante legal:
+                  input.cg-flex_apply_input_input type="text"
+                .cg-flex_apply_star_rank
+                  | CALIFICA DE 1 A 5 EL SERVICIO  RECIBIDO POR EL INTEGRADOR
+                  .cg-flex_star_rank_space
+                    #rateYo
+                textarea.cg-flex_apply_textarea placeholder="Dejar comentario"
+              article.cg-alert_message_apply_form
+                i.fa.fa-info-circle aria-hidden="true"
+                p.cg-alert_message_apply_form_p
+                  | Al presionar el botón validar , 
+                  span.cg-alert_message_apply_form_span
+                    | verificas que el integrador realizó de forma satisfactoria la integración de tu comercio 
+                  | con el sistema de pago en línea de Transbank.
+                button.cg-send_apply_form_btn type="button"
+                  | enviar
+          .col-xs-1.col-sm-1.col-md-2.col-lg-2
+    /! SECTION FOOTER
+    section.cg-footer
+      .cg-flex_footer
+        article.cg-article_footer
+          img.cg-tbk_logo_footer src="img/tbk_logo.svg"
+          span.cg-tbk_footer_span de la empresa
+          a href="http://www.transbank.cl"
+            img.cg-transbank_logo_footer src="img/transbank_logo.svg"
+          a.cg-tbk_footer_link href="#" Términos y condiciones de uso
+        article.cg-article_footer
+          span.cg-tbk_footer_span_2 Powered by
+          figure.wrapper_cg-tbk_logo2_footer
+            img.cg-tbk_logo2_footer src="img/cumbregroup.svg"
+          a.cg-tbk_footer_link_2 href="mailto:contacto@cumbregroup.com" contacto@cumbregroup.com
+    script src="js/jquery.rateyo.js"
+    script src="js/3d-lines-animation.js"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+

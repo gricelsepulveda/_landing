@@ -7,7 +7,7 @@
 		"uuidString": "DC5F46CF-288F-439A-BB18-3A23F6614D70"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25813",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -91,6 +91,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/icons-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/jquery.rateyo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/jquery.rateyo-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -614,13 +624,33 @@
 		"oAP": "\/fonts\/icomoon\/icomoon.woff",
 		"oF": 0
 		},
+	"\/form.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/form.html",
+		"oF": 0
+		},
+	"\/form.slim": {
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/form.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
 	"\/img\/achievement_example.png": {
 		"ft": 32768,
 		"iS": 4208,
 		"oA": 0,
 		"oAP": "\/img\/achievement_example.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/ad.png": {
 		"ft": 32768,
@@ -628,7 +658,21 @@
 		"oA": 0,
 		"oAP": "\/img\/ad.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/bg_form.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/img\/bg_form.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/bg_lines.svg": {
 		"ft": 2097152,
@@ -726,7 +770,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-114x114.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-120x120.png": {
 		"ft": 32768,
@@ -734,7 +781,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-120x120.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-144x144.png": {
 		"ft": 32768,
@@ -742,7 +792,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-144x144.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-152x152.png": {
 		"ft": 32768,
@@ -750,7 +803,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-152x152.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-57x57.png": {
 		"ft": 32768,
@@ -758,7 +814,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-57x57.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-60x60.png": {
 		"ft": 32768,
@@ -766,7 +825,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-60x60.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-72x72.png": {
 		"ft": 32768,
@@ -774,7 +836,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-72x72.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/apple-touch-icon-76x76.png": {
 		"ft": 32768,
@@ -782,7 +847,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/apple-touch-icon-76x76.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/favicon-128.png": {
 		"ft": 32768,
@@ -790,7 +858,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/favicon-16x16.png": {
 		"ft": 32768,
@@ -798,7 +869,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-16x16.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/favicon-196x196.png": {
 		"ft": 32768,
@@ -806,7 +880,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-196x196.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/favicon-32x32.png": {
 		"ft": 32768,
@@ -814,7 +891,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-32x32.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/favicon-96x96.png": {
 		"ft": 32768,
@@ -822,7 +902,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/favicon-96x96.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/favicon.ico": {
 		"ft": 8192,
@@ -836,7 +919,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/mstile-144x144.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/mstile-150x150.png": {
 		"ft": 32768,
@@ -844,7 +930,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/mstile-150x150.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/mstile-310x150.png": {
 		"ft": 32768,
@@ -852,7 +941,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/mstile-310x150.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/mstile-310x310.png": {
 		"ft": 32768,
@@ -860,7 +952,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/mstile-310x310.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/favicon\/mstile-70x70.png": {
 		"ft": 32768,
@@ -868,7 +963,10 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon\/mstile-70x70.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/header_article_1.svg": {
 		"ft": 2097152,
@@ -1106,7 +1204,10 @@
 		"oA": 0,
 		"oAP": "\/img\/mail_tbk.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/new_image.svg": {
 		"ft": 2097152,
@@ -1124,7 +1225,10 @@
 		"oA": 0,
 		"oAP": "\/img\/overlay.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/profile.svg": {
 		"ft": 2097152,
@@ -1192,7 +1296,9 @@
 		"oA": 0,
 		"oAP": "\/img\/section_headers\/example-header.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/section_headers\/example-header_large.jpg": {
 		"ft": 16384,
@@ -1200,7 +1306,9 @@
 		"oA": 0,
 		"oAP": "\/img\/section_headers\/example-header_large.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/section_headers\/example-header_medium.jpg": {
 		"ft": 16384,
@@ -1208,7 +1316,9 @@
 		"oA": 0,
 		"oAP": "\/img\/section_headers\/example-header_medium.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/tbk_logo.svg": {
 		"ft": 2097152,
@@ -1256,7 +1366,10 @@
 		"oA": 0,
 		"oAP": "\/img\/transbank_logo_negro.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/triangle.svg": {
 		"ft": 2097152,
@@ -1400,6 +1513,15 @@
 		"oA": 1,
 		"oAP": "\/js\/jquery-3.1.1-min-min.js",
 		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/jquery.rateyo.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery.rateyo-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1564,6 +1686,94 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sections_.html",
+		"oF": 0
+		},
+	"\/v2.2.0\/examples\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/v2.2.0\/examples\/index.html",
+		"oF": 0
+		},
+	"\/v2.2.0\/jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/v2.2.0\/jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/v2.2.0\/jquery.rateyo-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/v2.2.0\/jquery.rateyo-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/v2.2.0\/jquery.rateyo.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/v2.2.0\/jquery.rateyo.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/v2.2.0\/jquery.rateyo.min.css.map",
+		"oF": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/v2.2.0\/jquery.rateyo.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/v2.2.0\/jquery.rateyo.min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/v2.2.0\/jquery.rateyo.min.js.map",
+		"oF": 0
+		},
+	"\/v2.2.0\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/v2.2.0\/LICENSE",
 		"oF": 0
 		}
 	},
@@ -2247,6 +2457,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -2531,6 +2745,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2726,6 +2944,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -3326,7 +3548,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3349,14 +3572,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -3419,7 +3634,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
