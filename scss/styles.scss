@@ -1418,6 +1418,10 @@ section.cg-welcome
     {
       font-size: 0.8rem;
     }
+    @media (max-width: 767px) and (orientation: landscape)
+    {
+      margin-top: 0.5rem;
+    }
   }
   .cg-p_welcome
   {
@@ -1439,6 +1443,10 @@ section.cg-welcome
       font-size: 0.7rem;
       margin-top: 1rem;
     }
+    @media (max-width: 767px) and (orientation: landscape)
+    {
+      margin-top: 0.5rem;
+    }
   }
   .cg-cnt_chevron-down-welcome
   {
@@ -1454,6 +1462,20 @@ section.cg-welcome
       color: $white;
       font-size: 1.5rem;
     }
+    @media (max-width: 767px) and (orientation: landscape)
+    {
+      bottom: 4rem;
+    }
+  }
+}
+
+.cg_h1_welcome_span
+{
+  display: inline;
+  @media #{$xs}
+  {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -1472,6 +1494,12 @@ section.cg-welcome
   @media #{$sm}
   {
     width: 85vw;
+  }
+  @media (max-width: 767px) and (orientation: landscape)
+  { 
+    width: auto;
+    height: 10vh;
+    margin-top: -20vh;
   }
 }
 
@@ -1592,6 +1620,22 @@ section.cg-section_tools
     align: center;
   }
   line-height: 1.5rem;
+  @media #{$sm}
+  {
+    font-size: 1.05rem;
+  }
+  @media (max-width: 767px) and (orientation: landscape)
+  {
+    padding: 0.25rem 1rem 0.125rem 1rem;
+  }
+}
+
+.cg-section_h2_vi 
+{
+  @media (max-width: 767px) and (orientation: landscape)
+  {
+    top: 1.625rem;
+  }
 }
 
 .cg-img_webpay_plus
@@ -1621,6 +1665,15 @@ section.cg-section_tools
   }
   padding-top: 10rem;
   margin-bottom: 2rem;
+}
+
+.cg-section_p_tool
+{
+  @media (max-width: 767px) and (orientation: landscape)
+  {
+    padding-top: 7rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .cg-relevant_text
@@ -1993,6 +2046,10 @@ aside.cg-slider_video_aside
       margin:  0 auto;
       position: relative;
     }
+    @media (max-width: 767px) and (orientation: landscape)
+    {
+      font-size: 0.9rem;
+    }
   }
   img 
   {
@@ -2007,6 +2064,10 @@ aside.cg-slider_video_aside
     @media #{$sm}
     {
       width: 80%;
+    }
+    @media (max-width: 767px) and (orientation: landscape)
+    {
+      width: 50%;
     }
   }
 }
@@ -2038,6 +2099,13 @@ aside.cg-slider_video_aside
     {
       background-color: $red;
       color: $white;
+    }
+    @media (max-width: 767px) and (orientation: landscape)
+    {
+      font-size: 2rem;
+      line-height: 1.5rem;
+      border-radius: 0.25rem;
+      margin-top: 0.75rem;
     }
   }
 }
@@ -2078,6 +2146,10 @@ section.cg-section_discover
   {
     height: auto;
     padding: 8.5rem 1rem 2rem 1rem;
+  }
+  @media (max-width: 767px) and (orientation: landscape)
+  {
+    padding-top: 6.5rem;
   }
 }
 
@@ -4773,6 +4845,10 @@ form.cg-form_edit_profile_public
     align: center;
   }
   line-height: 1.5rem;
+  @media #{$sm}
+  {
+    font-size: 1.05rem;
+  }
 }
 
 
@@ -5227,6 +5303,7 @@ form.cg-form_edit_profile_public
   }
   color: $gray;
   margin-top: 0.25rem;
+  line-height: 1.1rem;
 }
 
 // FORM 
@@ -5287,6 +5364,10 @@ form.cg-form_edit_profile_public
   padding: 1rem 1rem 1rem 1rem; 
   position: relative;
   z-index: 2;
+  @media #{$sm}
+  {
+    font-size: 1.05rem;
+  }
 }
 
 .cg-section_h2_img_logo
