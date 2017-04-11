@@ -2958,6 +2958,24 @@ header.cg-header_personal_profile
   }
 }
 
+.cg-achievement_img
+{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  text-align: center;
+  @media #{$xs}
+  {
+    width: 4rem;
+    height: 4rem;
+  }
+  @media #{$xxs}
+  {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .cg-achievement_figure
 {
   display: inline-block;
@@ -2972,6 +2990,24 @@ header.cg-header_personal_profile
   padding: 0;
   cursor: pointer;
   @include animate;
+  @media #{$xs}
+  {
+    width: 4rem;
+    height: 4rem;
+    &:nth-of-type(3)
+    {
+      margin-right: 0;
+    }
+  }
+  @media #{$xxs}
+  {
+    width: 3rem;
+    height: 3rem;
+    &:nth-of-type(3)
+    {
+      margin-right: 0;
+    }
+  }
   &:last-of-type
   {
     margin-right: 0rem;
@@ -3011,14 +3047,6 @@ header.cg-header_personal_profile
     }
     box-shadow: -1px 1px 20px 0px rgba(255,255,255,0.5);
   }
-}
-
-.cg-achievement_img
-{
-  width: 2.5rem;
-  height: 2.5rem;
-  position: relative;
-  text-align: center;
 }
 
 .cg-btn_social_prof
@@ -3122,6 +3150,7 @@ header.cg-header_personal_profile
   {
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -3339,6 +3368,12 @@ span.cg-public_stat_span
   width: 65%;
   margin-top: 0.25rem;
   color: $gray;
+  @media #{$sm}
+  {
+    text-align: center;
+    width: auto;
+    padding: 0.5rem;
+  }
 }
 
 .cg-trusted_shop_certified
@@ -3374,6 +3409,17 @@ span.cg-public_stat_span
   {
     margin-right: 0.125rem;
     font-size: 0.95rem;
+  }
+  @media #{$sm}
+  {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 }
 
@@ -3452,6 +3498,34 @@ span.cg-public_stat_span
   @media #{$sm}
   {
     justify-content: flex-start;
+    padding-left: 3rem;
+    padding-right: 0.5rem;
+    overflow: hidden;
+  }
+}
+
+
+.row_inverse 
+{
+  @media #{$sm}
+  {
+    transform: rotate(-180deg);
+  }
+}
+
+.col-inverse
+{
+  @media #{$sm}
+  {
+    transform: rotate(-180deg);
+    &:nth-of-type(3)
+    {
+      direction: ltr;
+    }
+    &:nth-of-type(2)
+    {
+      direction: rtl;
+    }
   }
 }
 
@@ -4229,7 +4303,8 @@ table
     margin-bottom: 2rem;
     @media #{$sm}
     {
-      text-align: center;
+      text-align: left;
+      padding-top: 1rem;
     }
   }
 }
@@ -5168,6 +5243,7 @@ form.cg-form_edit_profile_public
   @media #{$sm}
   {
     display: block;
+    width: 100%;
   }
 }
 
