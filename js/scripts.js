@@ -292,8 +292,32 @@ $(document).ready(function($) {
   });
 });
 
-//SLIDER VIDEO
+//FUNCION AUTORESIZE WRAPPER PROFILE
 
 
-
-
+$(document).ready(function () {
+  $("#evalua").click(function()
+    {
+      $('.cg-wrapper_profile_section_carousel').css('height', $('.cg_profile_section_course').height()+40
+        );
+    }
+  );
+  $("#mis_integraciones").click(function()
+    {
+      $('.cg-wrapper_profile_section_carousel').css('height', $('.cg_profile_section_integrations').height()+40
+        );
+    }
+  );
+  $("#editar_perfil").click(function()
+    {
+      $('.cg-wrapper_profile_section_carousel').css('height', $('.cg_profile_section_edit_profile').height()+40
+        );
+    }
+  );
+  $("#eliminar_perfil").click(function()
+    {
+      $('.cg-wrapper_profile_section_carousel').css('height', $('.cg_profile_section_delete').height()+40
+        );
+    }
+  );
+});

@@ -3977,6 +3977,7 @@ button.cg-profile_course_btn
   align-items: flex-start;
   position: relative;
   width: 400vw;
+  overflow: hidden;
 }
 
 .cg_profile_section_
@@ -3985,10 +3986,13 @@ button.cg-profile_course_btn
   position: relative;
   width: 100vw;
   margin-top: 1rem;
-  padding: 0rem 1.5rem 0rem 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
   @media #{$sm}
   {
-    padding: 0rem 0.5rem 0rem 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -4000,7 +4004,6 @@ button.cg-profile_course_btn
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: auto;
   span.cg-profile_section_description
   {
     text-align: left;
@@ -4295,6 +4298,7 @@ table
     }
   }
 }
+
 
 .cg_profile_section_edit_profile
 {
