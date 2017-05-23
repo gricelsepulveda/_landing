@@ -6253,7 +6253,7 @@ aside.cg-award_title_var
 
 figure.cg-spec_know_figure
 {
-  border: 3px solid $black;
+  border: 2px solid $black;
   width: 80px;
   height: 80px;
   position: relative;
@@ -6374,7 +6374,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_01g.svg);
   }
   .cg-spec_know_title
@@ -6386,7 +6386,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_02g.svg);
   }
   .cg-spec_know_title
@@ -6399,7 +6399,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_03g.svg);
   }
   .cg-spec_know_title
@@ -6412,7 +6412,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_04g.svg);
   }
   .cg-spec_know_title
@@ -6425,7 +6425,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_05g.svg);
   }
   .cg-spec_know_title
@@ -6438,7 +6438,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_06g.svg);
   }
   .cg-spec_know_title
@@ -6451,7 +6451,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_07g.svg);
   }
   .cg-spec_know_title
@@ -6464,7 +6464,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_08g.svg);
   }
   .cg-spec_know_title
@@ -6477,7 +6477,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_09g.svg);
   }
   .cg-spec_know_title
@@ -6490,7 +6490,7 @@ figure.cg-spec_know_figure
 {
   figure.cg-spec_know_figure
   {
-    border: 3px solid $light_gray;
+    border: 2px solid $light_gray;
     background-image: url(../img/marcas/marca_10g.svg);
   }
   .cg-spec_know_title
@@ -6534,3 +6534,69 @@ aside.cg-spec_know_bars
 }
 
 /* SPECIFIC KNOWNOLEDGE STAND ALONE END */
+
+/* SPECIFIC KNOWLEDGE SPACES PUBLIC PROFILE  START*/
+
+.cg-wrapper_specific_know_spaces
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.cg-know_space_title
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  flex-wrap: nowrap;
+  margin-bottom: 0.25rem;
+}
+
+.cg-know_space_span
+{
+  display: inline-block;
+  width: auto;
+  margin-right: 0.5rem;
+  font:
+  {
+    size: 16px;
+    weight: 700;
+  }
+  text:
+  {
+    align: left;
+    transform: uppercase;
+  }
+  letter-spacing: 2px;
+}
+
+.cg-know_line
+{
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $black;
+}
+
+.cg-know_space_article
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
