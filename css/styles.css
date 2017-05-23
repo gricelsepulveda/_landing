@@ -4936,39 +4936,21 @@ figure.cg-award_figure {
 /*AWARDS INACTIVE IMAGES*/
 .cg-award_01_inactive .cg-award_figure {
   background-image: url(../img/logros/logro_01g.svg); }
-  .cg-award_01_inactive .cg-award_figure:hover {
-    background-image: url(../img/logros/logro_01c.svg);
-    border: 1px solid #b16d00; }
 
 .cg-award_02_inactive .cg-award_figure {
   background-image: url(../img/logros/logro_02g.svg); }
-  .cg-award_02_inactive .cg-award_figure:hover {
-    background-image: url(../img/logros/logro_02c.svg);
-    border: 1px solid #3b6672; }
 
 .cg-award_03_inactive .cg-award_figure {
   background-image: url(../img/logros/logro_03g.svg); }
-  .cg-award_03_inactive .cg-award_figure:hover {
-    background-image: url(../img/logros/logro_03c.svg);
-    border: 1px solid #b6481e; }
 
 .cg-award_04_inactive .cg-award_figure {
   background-image: url(../img/logros/logro_04g.svg); }
-  .cg-award_04_inactive .cg-award_figure:hover {
-    background-image: url(../img/logros/logro_04c.svg);
-    border: 1px solid #2a814b; }
 
 .cg-award_05_inactive .cg-award_figure {
   background-image: url(../img/logros/logro_05g.svg); }
-  .cg-award_05_inactive .cg-award_figure:hover {
-    background-image: url(../img/logros/logro_05c.svg);
-    border: 1px solid #fcc02a; }
 
 .cg-award_06_inactive .cg-award_figure {
   background-image: url(../img/logros/logro_06g.svg); }
-  .cg-award_06_inactive .cg-award_figure:hover {
-    background-image: url(../img/logros/logro_06c.svg);
-    border: 1px solid #1a2d38; }
 
 /* AWARDS BARS*/
 aside.cg-award_bars {
@@ -5174,3 +5156,196 @@ figure.cg-smb_fig_webpay {
   border: 1px solid #4f5d9c; }
 
 /* AWARDS PUBLIC PROFILE */
+.cg-wrapper_award_profile {
+  margin-top: 0.5rem; }
+
+aside.cg-award_title_var span {
+  color: #ffffff;
+  background-color: transparent; }
+
+/* SPECIFIC KNOWNOLEDGE STAND ALONE START */
+.cg-wrapper_specific_knowledge {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.cg-spec_know_item {
+  display: inline-block;
+  width: 80px;
+  height: auto;
+  position: relative;
+  margin-right: 10px; }
+  .cg-spec_know_item:last-of-type {
+    margin-right: 0px; }
+
+figure.cg-spec_know_figure {
+  border: 3px solid #000000;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out; }
+
+.cg-spec_know_title {
+  display: block;
+  margin-top: -3px;
+  color: #ffffff;
+  background-color: #000000;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* SPECIFIC KNOWNOLEDGE ACTIVE IMAGES*/
+.cg-spec_know_01_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_01c.svg); }
+
+.cg-spec_know_02_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_02c.svg); }
+
+.cg-spec_know_03_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_03c.svg); }
+
+.cg-spec_know_04_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_04c.svg); }
+
+.cg-spec_know_05_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_05c.svg); }
+
+.cg-spec_know_06_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_06c.svg); }
+
+.cg-spec_know_07_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_07c.svg); }
+
+.cg-spec_know_08_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_08c.svg); }
+
+.cg-spec_know_09_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_09c.svg); }
+
+.cg-spec_know_10_active figure.cg-spec_know_figure {
+  background-image: url(../img/marcas/marca_10c.svg); }
+
+/* SPECIFIC KNOWNOLEDGE INACTIVE IMAGES*/
+.cg-spec_know_01_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_01g.svg); }
+
+.cg-spec_know_01_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_02_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_02g.svg); }
+
+.cg-spec_know_02_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_03_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_03g.svg); }
+
+.cg-spec_know_03_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_04_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_04g.svg); }
+
+.cg-spec_know_04_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_05_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_05g.svg); }
+
+.cg-spec_know_05_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_06_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_06g.svg); }
+
+.cg-spec_know_06_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_07_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_07g.svg); }
+
+.cg-spec_know_07_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_08_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_08g.svg); }
+
+.cg-spec_know_08_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_09_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_09g.svg); }
+
+.cg-spec_know_09_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+.cg-spec_know_10_inactive figure.cg-spec_know_figure {
+  border: 3px solid #cccccc;
+  background-image: url(../img/marcas/marca_10g.svg); }
+
+.cg-spec_know_10_inactive .cg-spec_know_title {
+  background-color: #cccccc; }
+
+/* KNOWLEDGE BARS*/
+aside.cg-spec_know_bars {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-top: 4px; }
+
+.cg-bar_spec_know {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  height: 8px;
+  margin-bottom: 2px; }
+  .cg-bar_spec_know:last-of-type {
+    margin-bottom: 0; }
+
+.cg-bar_spec_know_a {
+  border: 1px solid #c83e87;
+  background-color: #d366a0; }
+
+.cg-bar_spec_know_b {
+  border: 1px solid #4f5d9c;
+  background-color: #6a78b4; }
+
+/* SPECIFIC KNOWNOLEDGE STAND ALONE END */
