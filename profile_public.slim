@@ -427,11 +427,10 @@ html lang="es"
     /! PROFILE BODY
     .cg-wrapper-profile_body
       .container-fluid
-        .row
+        .row.reorder-xs
           .col-md-1.col-lg-1.hidden-xs.hidden-sm
           .col-xs-12.col-sm-12.col-md-6.col-lg-6.cg-first-commerce
-            h2.cg-profile_body_title_h2
-              | Comercios integrados
+            | Comercios integrados
             /! ITERACIÓN INTEGRACIÓN
             .row.cg-integration_bg.no_margin
               .col-xs-12.col-sm-6.col-md-4.col-lg-3
@@ -470,16 +469,16 @@ html lang="es"
                   | Fecha de integracion
                   span.cg-date_shop_show
                     | 16-03-1990
-                p.cg-paragraph_description_shop
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-                aside.cg-trusted_shop_certified
-                  img src="img/seal.svg"
                 aside.cg-star_rating_shop
                   i.fa.fa-star aria-hidden="true"
                   i.fa.fa-star aria-hidden="true"
                   i.fa.fa-star-o aria-hidden="true"
                   i.fa.fa-star-o aria-hidden="true"
                   i.fa.fa-star-o aria-hidden="true"
+                p.cg-paragraph_description_shop
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
             /! ITERACIÓN INTEGRACIÓN
             .row.cg-integration_bg.no_margin
               .col-xs-12.col-sm-6.col-md-4.col-lg-3
@@ -494,20 +493,21 @@ html lang="es"
                   | Fecha de integracion
                   span.cg-date_shop_show
                     | 16-03-1990
-                p.cg-paragraph_description_shop
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-                aside.cg-trusted_shop_certified
-                  img src="img/seal.svg"
                 aside.cg-star_rating_shop
                   i.fa.fa-star aria-hidden="true"
                   i.fa.fa-star aria-hidden="true"
                   i.fa.fa-star-o aria-hidden="true"
                   i.fa.fa-star-o aria-hidden="true"
                   i.fa.fa-star-o aria-hidden="true"
+                p.cg-paragraph_description_shop
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                aside.cg-trusted_shop_certified
+                  img src="img/seal.svg"
           .col-xs-12.col-sm-12.col-md-4.col-lg-4
-            h2.cg-profile_body_title_h2
+            h2.cg-profile_body_title_h2.cg-specific_knowledge_info
               | Conocimientos específicos
-            .cg-wrapper_specific_know_spaces
+              i.fa.fa-caret-down aria-hidden="true"
+            .cg-wrapper_specific_know_spaces.cg-specific_knowledge_accordion
               /! PLUGINS
               article.cg-know_space_article
                 .cg-know_space_title
@@ -554,7 +554,7 @@ html lang="es"
               article.cg-know_space_article
                 .cg-know_space_title
                   span.cg-know_space_span
-                    | SDK
+                    | SDK / API
                   .cg-know_line
               .cg-wrapper_specific_knowledge
                 .cg-spec_know_item.cg-spec_know_06_active
@@ -592,50 +592,9 @@ html lang="es"
                   aside.cg-spec_know_bars
                     .cg-bar_spec_know
                     .cg-bar_spec_know
-              /! API
-              article.cg-know_space_article
-                .cg-know_space_title
-                  span.cg-know_space_span
-                    | API
-                  .cg-know_line
-              .cg-wrapper_specific_knowledge
-                .cg-spec_know_item.cg-spec_know_06_active
-                  figure.cg-spec_know_figure
-                  .cg-spec_know_title
-                    | Java
-                  aside.cg-spec_know_bars
-                    .cg-bar_spec_know.cg-bar_spec_know_a
-                    .cg-bar_spec_know
-                .cg-spec_know_item.cg-spec_know_07_inactive
-                  figure.cg-spec_know_figure
-                  .cg-spec_know_title
-                    | Php
-                  aside.cg-spec_know_bars
-                    .cg-bar_spec_know
-                    .cg-bar_spec_know
-                .cg-spec_know_item.cg-spec_know_08_active
-                  figure.cg-spec_know_figure
-                  .cg-spec_know_title
-                    | .Net
-                  aside.cg-spec_know_bars
-                    .cg-bar_spec_know.cg-bar_spec_know_a
-                    .cg-bar_spec_know.cg-bar_spec_know_b
-                .cg-spec_know_item.cg-spec_know_09_inactive
-                  figure.cg-spec_know_figure
-                  .cg-spec_know_title
-                    | Ruby
-                  aside.cg-spec_know_bars
-                    .cg-bar_spec_know
-                    .cg-bar_spec_know
-                .cg-spec_know_item.cg-spec_know_10_inactive
-                  figure.cg-spec_know_figure
-                  .cg-spec_know_title
-                    | Phyton
-                  aside.cg-spec_know_bars
-                    .cg-bar_spec_know
-                    .cg-bar_spec_know
-            h2.cg-profile_body_title_h2
+            h2.cg-profile_body_title_h2.cg-contact_accordion
               | Datos de contacto
+              i.fa.fa-caret-down aria-hidden="true"
             ul.cg-list_contact_pub
               /! NOMBRES
               li.cg-contact_pub_li

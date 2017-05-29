@@ -321,3 +321,34 @@ $(document).ready(function () {
     }
   );
 });
+
+//FUNCTION ACORDION
+$(document).ready(function () {
+  $(".cg-contact_accordion").click(function(){
+    if($(".cg-list_contact_pub").css("height")=='0px')
+        {
+            $(".cg-list_contact_pub").css({
+                                                "height":'auto'
+                                            });
+        }
+    else{
+            $(".cg-list_contact_pub").css({
+                                                "height":''
+                                            });
+        }
+  });
+  $(".cg-specific_knowledge_info").click(function(){
+    if($(".cg-specific_knowledge_accordion").css("height")=='0px')
+        {
+            $(".cg-specific_knowledge_accordion").css({
+                                                "height":'auto'
+                                            });
+        }
+    else{
+            $(".cg-specific_knowledge_accordion").css({
+                                                "height":''
+                                            });
+        }
+  });
+});
+

@@ -3150,7 +3150,7 @@ header.cg-header_personal_profile
   {
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -3177,7 +3177,7 @@ header.cg-header_personal_profile
 {
   display: block;
   color: $cobalt_blue;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font:
   {
     family: 'helvetica_neue_bold', 'Titillium Web', sans-serif;
@@ -3212,6 +3212,9 @@ span.cg-public_stat_span
   }
   line-height: 0.6rem;
   vertical-align: middle;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   img 
   {
     height: 0.53rem;
@@ -3245,6 +3248,7 @@ span.cg-public_stat_span
 {
   color: $white;
   background-color: $cobalt_blue;
+  position: relative;
   padding: 0.5rem 1rem 0.25rem 1rem;
   display: block;
   text:
@@ -3258,6 +3262,19 @@ span.cg-public_stat_span
     size: 0.7rem;
     weight: bolder;
     weight: 600;
+  }
+  > i 
+  {
+      display: none;
+      @media #{$sm}
+      {
+        display: inline-block;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.25rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
   }
 }
 
@@ -3475,6 +3492,12 @@ span.cg-public_stat_span
   display: block;
   margin-top: 1rem;
   position: relative;
+  @include animate;
+  @media #{$sm}
+  {
+    height: 0;
+    overflow: hidden;
+  }
 }
 
 .cg-contact_pub_li
@@ -5810,6 +5833,10 @@ form.cg-form_edit_profile_public
   {
     margin-right: 0px;
   }
+  @media #{$sm}
+  {
+    margin-top: 0.5rem;
+  }
 }
 
 figure.cg-award_figure
@@ -6211,6 +6238,13 @@ figure.cg-smb_fig_webpay
 .cg-wrapper_award_profile
 {
   margin-top: 0.5rem;
+  justify-content: space-between;
+  @media #{$sm}
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+  }
 }
 
 aside.cg-award_title_var
@@ -6232,10 +6266,15 @@ aside.cg-award_title_var
   height: auto;
   position: relative;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
+  @media #{$sm}
+  {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .cg-spec_know_item
@@ -6244,7 +6283,7 @@ aside.cg-award_title_var
   width: 80px;
   height: auto;
   position: relative;
-  margin-right: 10px;
+  margin: 5px;
   &:last-of-type
   {
     margin-right: 0px;
@@ -6600,3 +6639,25 @@ aside.cg-spec_know_bars
   margin-top: 1rem;
 }
 
+.cg-specific_knowledge_accordion
+{
+  @include animate;
+  @media #{$sm}
+  {
+    height: 0;
+    overflow: hidden;
+    @include animate;
+  }
+}
+
+@media (max-width: 767px) {
+  .row.reorder-xs {
+    transform: rotate(180deg);
+    direction: rtl; /* Fix the horizontal alignment */
+  }
+
+  .row.reorder-xs > [class*="col-"] {
+    transform: rotate(-180deg);
+    direction: ltr; /* Fix the horizontal alignment */
+  }
+}
